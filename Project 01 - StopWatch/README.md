@@ -1,3 +1,3 @@
 # StopWatch
 实现秒表功能
-![](https://github.com/cjiong/StopWatch/raw/master/Stopwatch.gif)
+![](https://github.com/cjiong/LearnSwift/raw/master/Project 01 - StopWatch/Stopwatch.gif)
