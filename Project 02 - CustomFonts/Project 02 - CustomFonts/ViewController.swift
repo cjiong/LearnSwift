@@ -19,7 +19,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
                  "你赤手空拳来到人世间，为找到那片海不顾一切",
                  "                                                         --- 许巍"]
     //字体名字
-    let fontNames = ["Copperplate-Bold", "IowanOldStyle-Bold","IowanOldStyle-Roman"]
+    let fontNames = ["Copperplate-Bold", "Copperplate","Copperplate-Light"]
     
     var fontRowIndex = 0
 
