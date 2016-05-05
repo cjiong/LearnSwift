@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
-    var data = ["生活不止眼前的苟且", "还有诗和远方的田野"]
+    var data = ["生活不止眼前的苟且", "还有明天的苟且", "后天的苟且", "和那读不懂的诗", "还有那到不了的远方"]
     
     let fontNames = ["MFJinHei_Noncommercial-Regular", "MFTongXin_Noncommercial-Regular", "MFTongXin_Noncommercial-Regular1"]
     
@@ -47,13 +47,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
     }
     
-    //实现数据源协议
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
-    }
     //返回行高
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 50
+        return 80
+    }
+    //
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     //设置单元格样式
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -62,16 +62,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
             cell.textLabel?.text = text
             cell.textLabel?.textColor = UIColor.whiteColor()
-            cell.textLabel?.font = UIFont(name: self.fontNames[fontRowIndex], size: 16)
+            cell.textLabel?.font = UIFont(name: self.fontNames[fontRowIndex], size: 36)
         
         return cell
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //实现数据源协议
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
     }
-
 
 }
 

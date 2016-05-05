@@ -48,19 +48,25 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="396" id="92n-0m-pbH"/>
                                 </constraints>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JzH-0Y-V46">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FontCell" id="JzH-0Y-V46" userLabel="FontCell">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JzH-0Y-V46" id="17l-qu-t8X">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="aAD-fA-apM" id="e1b-uL-Onp"/>
+                                    <outlet property="delegate" destination="aAD-fA-apM" id="SyZ-Ww-Xtb"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RZ3-L0-Xzq" firstAttribute="leading" secondItem="aAD-fA-apM" secondAttribute="leading" constant="137" id="0lA-fQ-q0e"/>
                             <constraint firstItem="8YI-Ya-tk5" firstAttribute="centerX" secondItem="p8v-hd-ABo" secondAttribute="centerX" id="5JD-57-vHD"/>
