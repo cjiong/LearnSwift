@@ -49,10 +49,6 @@
 		19AD55E21CD8E828008826B7 /* Project 02 - CustomFontsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 02 - CustomFontsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19AD55E61CD8E828008826B7 /* Project_02___CustomFontsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_02___CustomFontsUITests.swift"; sourceTree = "<group>"; };
 		19AD55E81CD8E828008826B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19AD55F41CD8F35B008826B7 /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
-		19AD55F51CD8F35B008826B7 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
-		19AD55F61CD8F35B008826B7 /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
-		19AD55F71CD8F35B008826B7 /* MFTongXin_Noncommercial-Regular1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular1.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +104,6 @@
 				19AD55C71CD8E828008826B7 /* Main.storyboard */,
 				19AD55CD1CD8E828008826B7 /* Assets.xcassets */,
 				19AD55CF1CD8E828008826B7 /* LaunchScreen.storyboard */,
-				19AD55F81CD8F379008826B7 /* Fonts */,
 				19AD55D21CD8E828008826B7 /* Info.plist */,
 				19AD55CA1CD8E828008826B7 /* Project_02___CustomFonts.xcdatamodeld */,
 			);
@@ -131,17 +126,6 @@
 				19AD55E81CD8E828008826B7 /* Info.plist */,
 			);
 			path = "Project 02 - CustomFontsUITests";
-			sourceTree = "<group>";
-		};
-		19AD55F81CD8F379008826B7 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				19AD55F41CD8F35B008826B7 /* Gaspar Regular.otf */,
-				19AD55F51CD8F35B008826B7 /* MFJinHei_Noncommercial-Regular.ttf */,
-				19AD55F61CD8F35B008826B7 /* MFTongXin_Noncommercial-Regular.ttf */,
-				19AD55F71CD8F35B008826B7 /* MFTongXin_Noncommercial-Regular1.ttf */,
-			);
-			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -504,6 +488,7 @@
 				19AD55ED1CD8E828008826B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19AD55EE1CD8E828008826B7 /* Build configuration list for PBXNativeTarget "Project 02 - CustomFontsTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +497,7 @@
 				19AD55F01CD8E828008826B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19AD55F11CD8E828008826B7 /* Build configuration list for PBXNativeTarget "Project 02 - CustomFontsUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +506,7 @@
 				19AD55F31CD8E828008826B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
-    var data = ["生活不止眼前的苟且", "还有明天的苟且", "后天的苟且", "和那读不懂的诗", "还有那到不了的远方"]
-    
-    let fontNames = ["MFJinHei_Noncommercial-Regular", "MFTongXin_Noncommercial-Regular", "MFTongXin_Noncommercial-Regular1"]
+    var data = [ "《生活不止眼前的苟且》",
+                 "妈妈坐在门前，哼着花儿与少年",
+                 "虽已时隔多年，记得她泪水涟涟",
+                 "那些幽暗的时光，那些坚持与慌张",
+                 "在临别的门前，妈妈望着我说",
+                 "生活不止眼前的苟且，还有诗和远方的田野",
+                 "你赤手空拳来到人世间，为找到那片海不顾一切",
+                 "                                                         --- 许巍"]
+    //字体名字
+    let fontNames = ["Copperplate-Bold", "IowanOldStyle-Bold","IowanOldStyle-Roman"]
     
     var fontRowIndex = 0
 
@@ -35,7 +42,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         fontTableView.delegate = self
         fontTableView.dataSource = self
         
-        //改变字体
+        //遍历电脑的字体
         for family in UIFont.familyNames() {
             for font in UIFont.fontNamesForFamilyName(family) {
                 print(font)
@@ -49,7 +56,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     //返回行高
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 80
+        return 50
     }
     //
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -62,8 +69,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
             cell.textLabel?.text = text
             cell.textLabel?.textColor = UIColor.whiteColor()
-            cell.textLabel?.font = UIFont(name: self.fontNames[fontRowIndex], size: 36)
-        
+            cell.textLabel?.font = UIFont(name: self.fontNames[fontRowIndex], size: 16)
         return cell
     }
 
