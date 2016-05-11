@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194874771CE3587900DC2EF3 /* BeginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194874761CE3587900DC2EF3 /* BeginPageViewController.swift */; };
 		19F0F5D41CE238390082023A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0F5D31CE238390082023A /* AppDelegate.swift */; };
 		19F0F5D61CE238390082023A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F0F5D51CE238390082023A /* ViewController.swift */; };
 		19F0F5D91CE238390082023A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F0F5D71CE238390082023A /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194874761CE3587900DC2EF3 /* BeginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginPageViewController.swift; sourceTree = "<group>"; };
 		19F0F5D01CE238390082023A /* Project 03 - LoginPageAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 03 - LoginPageAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F0F5D31CE238390082023A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F0F5D51CE238390082023A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				19F0F5D31CE238390082023A /* AppDelegate.swift */,
 				19F0F5D51CE238390082023A /* ViewController.swift */,
+				194874761CE3587900DC2EF3 /* BeginPageViewController.swift */,
 				19F0F5D71CE238390082023A /* Main.storyboard */,
 				19F0F5DD1CE238390082023A /* Assets.xcassets */,
 				19F0F5DF1CE238390082023A /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F0F5D61CE238390082023A /* ViewController.swift in Sources */,
+				194874771CE3587900DC2EF3 /* BeginPageViewController.swift in Sources */,
 				19F0F5DC1CE238390082023A /* Project_03___LoginPageAnimation.xcdatamodeld in Sources */,
 				19F0F5D41CE238390082023A /* AppDelegate.swift in Sources */,
 			);
@@ -488,6 +492,7 @@
 				19F0F5FD1CE238390082023A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19F0F5FE1CE238390082023A /* Build configuration list for PBXNativeTarget "Project 03 - LoginPageAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				19F0F6001CE238390082023A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19F0F6011CE238390082023A /* Build configuration list for PBXNativeTarget "Project 03 - LoginPageAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				19F0F6031CE238390082023A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
