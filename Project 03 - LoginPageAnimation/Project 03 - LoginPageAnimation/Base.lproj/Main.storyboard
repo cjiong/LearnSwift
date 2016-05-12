@@ -34,7 +34,7 @@
                                 </constraints>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="yrJ-rY-5mX" kind="show" id="PZW-a8-6dx"/>
+                                    <segue destination="yrJ-rY-5mX" kind="presentation" id="gwi-5B-ppJ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterlogo" translatesAutoresizingMaskIntoConstraints="NO" id="U4V-dv-UIF">
@@ -134,6 +134,7 @@
                             <constraint firstItem="LTL-xm-wN1" firstAttribute="top" secondItem="dkl-JL-hCG" secondAttribute="bottom" constant="74" id="9GW-PM-gLd"/>
                             <constraint firstItem="2hB-xD-ls9" firstAttribute="top" secondItem="dkl-JL-hCG" secondAttribute="bottom" constant="8" id="9Sw-Wc-Svg"/>
                             <constraint firstItem="2hB-xD-ls9" firstAttribute="leading" secondItem="qG8-4o-6ak" secondAttribute="leadingMargin" constant="11" id="L61-FL-ARN"/>
+                            <constraint firstItem="b3N-AV-ClK" firstAttribute="centerX" secondItem="qG8-4o-6ak" secondAttribute="centerX" id="SWY-Xa-HSX"/>
                             <constraint firstItem="LTL-xm-wN1" firstAttribute="centerX" secondItem="qG8-4o-6ak" secondAttribute="centerX" id="XOE-lh-Nu6"/>
                             <constraint firstItem="b3N-AV-ClK" firstAttribute="top" secondItem="LTL-xm-wN1" secondAttribute="bottom" constant="17" id="cEd-4w-05N"/>
                             <constraint firstItem="3MY-0b-YbF" firstAttribute="centerX" secondItem="qG8-4o-6ak" secondAttribute="centerX" id="cId-dj-G8X"/>
@@ -149,6 +150,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="centerAlignPassword" destination="SWY-Xa-HSX" id="YbS-nx-V1x"/>
+                        <outlet property="centerAlignUsername" destination="XOE-lh-Nu6" id="qu0-nQ-VPu"/>
                         <outlet property="loginButton" destination="KzD-UK-uLz" id="a2a-V1-ebd"/>
                         <outlet property="passwordTextFiled" destination="b3N-AV-ClK" id="e8h-p1-w8O"/>
                         <outlet property="usernameTextFiled" destination="LTL-xm-wN1" id="3is-Er-YYZ"/>

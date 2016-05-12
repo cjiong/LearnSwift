@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameTextFiled: UITextField!
     @IBOutlet weak var passwordTextFiled: UITextField!
     
-    //约束
+    //水平居中约束
     @IBOutlet weak var centerAlignUsername: NSLayoutConstraint!
     @IBOutlet weak var centerAlignPassword: NSLayoutConstraint!
     
@@ -80,10 +80,10 @@ class ViewController: UIViewController {
         
         let bounds = self.loginButton.bounds
         
-        //点击按钮出现的动画
+        //点击按钮出现的动画 按钮变宽
         UIView.animateWithDuration(1.0, delay: 0.00, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveLinear, animations: {
             
-            self.loginButton.bounds = CGRect(x: bounds.origin.x, y: bounds.origin.y, width: bounds.size.width + 80, height: bounds.size.height + 80)
+            self.loginButton.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 80, height: bounds.size.height)
             self.loginButton.enabled = true
             }, completion: { finished in self.loginButton.enabled = true
                 
