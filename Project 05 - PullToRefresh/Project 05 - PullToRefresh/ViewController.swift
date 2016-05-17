@@ -12,13 +12,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     let cellIdentifer = "NewCellIdentifer"
     
-    let originEmoji = ["😏😏😏", "😂😂😂", "😘😘😘"]
-    let newEmoji = ["🌚🌚🌚", "😱😱😱", "😳😳😳", "😄😄😄"]
+    let originEmoji = ["😏😏😏", "😂😂😂", "😘😘😘", "👀👀👀", "👊🏻👊🏻👊🏻", "👍🏼👍🏼👍🏼", "🐔🐔🐔"]
+    let newEmoji = ["🌚🌚🌚", "😱😱😱", "😳😳😳", "😄😄😄", "😂😂😂", "😘😘😘", "👀👀👀", "🙊🙊🙊", "🐶🐶🐶"]
     var emojiData = [String]()
     var tableViewController = UITableViewController(style: .Plain)
     
     var refreshControl = UIRefreshControl()
-    var navigationBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: 375, height: 64))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,21 +34,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableViewController.refreshControl = self.refreshControl
         self.refreshControl.addTarget(self, action: "didRoadEmoji", forControlEvents: .ValueChanged)
         
-        self.refreshControl.backgroundColor = UIColor.brownColor()
+        self.refreshControl.backgroundColor = UIColor.blackColor()
         let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         self.refreshControl.attributedTitle = NSAttributedString(string: "最近一次加载\(NSDate())", attributes: attributes)
         self.refreshControl.tintColor = UIColor.blueColor()
         
-        self.title = "emoji"
-        self.navigationBar.barStyle = UIBarStyle.BlackTranslucent
-        
         emojiTableView.rowHeight = UITableViewAutomaticDimension
-        emojiTableView.estimatedRowHeight = 60.0
+        emojiTableView.estimatedRowHeight = 80.0
         emojiTableView.tableFooterView = UIView(frame: CGRectZero)
         emojiTableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         self.view.addSubview(emojiTableView)
-        self.view.addSubview(navigationBar)
+        //self.view.addSubview(navigationBar)
         
     }
 
@@ -77,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func didRoadEmoji() {
-        self.emojiData = newEmoji
+        self.emojiData = newEmoji + originEmoji
         self.tableViewController.tableView.reloadData()
         self.refreshControl.endRefreshing()
     }
