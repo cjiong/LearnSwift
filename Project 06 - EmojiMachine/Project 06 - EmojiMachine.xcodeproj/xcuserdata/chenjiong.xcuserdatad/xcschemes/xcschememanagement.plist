@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Project 06 - EmojiMachine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>190B7A101CEB75C800E9F9DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>190B7A271CEB75C900E9F9DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>190B7A321CEB75C900E9F9DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
