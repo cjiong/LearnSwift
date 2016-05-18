@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,30 +18,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-by-hnw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COA" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-by-hnw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="K9y-WY-Zx3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K9y-WY-Zx3"/>
+                                    </mask>
+                                </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7J-0V-ru9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7J-0V-ru9">
                                 <rect key="frame" x="87" y="600" width="200" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JV4-fA-qB3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="17"/>
+                                <color key="textColor" red="0.26712718610000002" green="0.97740608449999999" blue="0.85936760899999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejc-Rn-7ty">
-                                <rect key="frame" x="87" y="494" width="200" height="40"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYU-KC-o8n">
-                                <rect key="frame" x="0.0" y="226" width="375" height="216"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYU-KC-o8n">
+                                <rect key="frame" x="20" y="226" width="335" height="216"/>
                             </pickerView>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejc-Rn-7ty">
+                                <rect key="frame" x="97" y="493" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.26712718610000002" green="0.97740608449999999" blue="0.85936760899999998" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="19"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EkW-Fl-HOL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="centerX" secondItem="T7J-0V-ru9" secondAttribute="centerX" id="6KX-Ax-aWI"/>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="leading" secondItem="k2d-by-hnw" secondAttribute="leading" id="FIJ-AZ-2G1"/>
+                            <constraint firstItem="T7J-0V-ru9" firstAttribute="top" secondItem="ejc-Rn-7ty" secondAttribute="bottom" constant="67" id="Pno-Cz-Mpz"/>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="Sg7-wF-y3s"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UbF-Vy-yAS"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V36-tw-Lgi"/>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="top" secondItem="WYU-KC-o8n" secondAttribute="bottom" constant="51" id="Wk3-vX-RAI"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="centerX" secondItem="T7J-0V-ru9" secondAttribute="centerX" id="XTP-p2-dGt"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="centerY" secondItem="WYU-KC-o8n" secondAttribute="centerY" id="YEE-pI-7rB"/>
+                            <constraint firstItem="WYU-KC-o8n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="Yzn-pr-fwK"/>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="top" secondItem="WYU-KC-o8n" secondAttribute="top" id="hqF-Cz-qAl"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="centerX" secondItem="WYU-KC-o8n" secondAttribute="centerX" id="lcN-cU-h1o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="T7J-0V-ru9" secondAttribute="bottom" constant="27" id="ljX-M7-bi5"/>
+                            <constraint firstItem="k2d-by-hnw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="mhu-wh-dba"/>
+                            <constraint firstItem="WYU-KC-o8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nPl-IN-H0f"/>
+                            <constraint firstItem="T7J-0V-ru9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="yZq-kF-jLo"/>
+                            <constraint firstItem="ejc-Rn-7ty" firstAttribute="trailing" secondItem="k2d-by-hnw" secondAttribute="trailing" id="znE-sl-XrU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FIJ-AZ-2G1"/>
+                                <exclude reference="hqF-Cz-qAl"/>
+                                <exclude reference="znE-sl-XrU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="WYU-KC-o8n" id="MdS-s6-7dc"/>
+                        <outlet property="goButton" destination="ejc-Rn-7ty" id="TRh-xa-LbD"/>
+                        <outlet property="resultLabel" destination="T7J-0V-ru9" id="FXv-c7-vRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.5" y="389.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="COA" width="750" height="1334"/>
+    </resources>
 </document>
