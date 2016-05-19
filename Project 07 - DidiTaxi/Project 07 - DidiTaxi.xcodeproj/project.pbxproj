@@ -14,6 +14,8 @@
 		1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */; };
 		1911CAD61CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAD51CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift */; };
 		1911CAE11CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */; };
+		1911CAF71CEDF854000ACEAD /* DIOpenSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */; };
+		1911CAF81CEDF854000ACEAD /* DIOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		1911CADC1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 07 - DidiTaxiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_07___DidiTaxiUITests.swift"; sourceTree = "<group>"; };
 		1911CAE21CEDF08D000ACEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1911CAF21CEDF72A000ACEAD /* Project 07 - DidiTaxi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project 07 - DidiTaxi-Bridging-Header.h"; sourceTree = "<group>"; };
+		1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DIOpenSDK.bundle; sourceTree = "<group>"; };
+		1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1911CAF81CEDF854000ACEAD /* DIOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +103,15 @@
 		1911CABF1CEDF08C000ACEAD /* Project 07 - DidiTaxi */ = {
 			isa = PBXGroup;
 			children = (
+				1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */,
+				1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */,
 				1911CAC01CEDF08C000ACEAD /* AppDelegate.swift */,
 				1911CAC21CEDF08C000ACEAD /* ViewController.swift */,
 				1911CAC41CEDF08C000ACEAD /* Main.storyboard */,
 				1911CAC71CEDF08C000ACEAD /* Assets.xcassets */,
 				1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */,
 				1911CACC1CEDF08C000ACEAD /* Info.plist */,
+				1911CAF21CEDF72A000ACEAD /* Project 07 - DidiTaxi-Bridging-Header.h */,
 			);
 			path = "Project 07 - DidiTaxi";
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */,
+				1911CAF71CEDF854000ACEAD /* DIOpenSDK.bundle in Resources */,
 				1911CAC81CEDF08C000ACEAD /* Assets.xcassets in Resources */,
 				1911CAC61CEDF08C000ACEAD /* Main.storyboard in Resources */,
 			);
@@ -399,10 +409,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project",
+					07,
+					"-",
+					DidiTaxi,
+				);
 				INFOPLIST_FILE = "Project 07 - DidiTaxi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project 07 - DidiTaxi/Project 07 - DidiTaxi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +431,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Project",
+					07,
+					"-",
+					DidiTaxi,
+				);
 				INFOPLIST_FILE = "Project 07 - DidiTaxi/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project 07 - DidiTaxi/Project 07 - DidiTaxi-Bridging-Header.h";
 			};
 			name = Release;
 		};

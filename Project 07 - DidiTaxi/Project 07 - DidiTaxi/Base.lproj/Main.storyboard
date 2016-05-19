@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mAh-di-eLc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_07___DidiTaxi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="didi" translatesAutoresizingMaskIntoConstraints="NO" id="FGj-bF-ZTo">
+                                <rect key="frame" x="63" y="212" width="248" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4e-c8-LfU">
+                                <rect key="frame" x="187" y="526" width="0.0" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNN-uB-wz3">
+                                <rect key="frame" x="127" y="392" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="9KG-DZ-76D"/>
+                                    <constraint firstAttribute="height" constant="50" id="a5m-Pl-mdJ"/>
+                                </constraints>
+                                <state key="normal" title="滴滴出行"/>
+                                <connections>
+                                    <action selector="startBtnDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yiy-JI-Ijm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FGj-bF-ZTo" secondAttribute="trailing" constant="48" id="8La-p5-UjP"/>
+                            <constraint firstItem="FGj-bF-ZTo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="148" id="BFz-nf-3Ib"/>
+                            <constraint firstItem="F4e-c8-LfU" firstAttribute="top" secondItem="uNN-uB-wz3" secondAttribute="bottom" constant="84" id="Qs8-Qa-SC3"/>
+                            <constraint firstItem="uNN-uB-wz3" firstAttribute="top" secondItem="FGj-bF-ZTo" secondAttribute="bottom" constant="52" id="WVb-OY-CHk"/>
+                            <constraint firstItem="uNN-uB-wz3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WWM-wC-wPW"/>
+                            <constraint firstItem="uNN-uB-wz3" firstAttribute="centerX" secondItem="FGj-bF-ZTo" secondAttribute="centerX" id="dpI-ba-AmN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F4e-c8-LfU" secondAttribute="bottom" constant="120" id="fbx-MA-x1z"/>
+                            <constraint firstItem="FGj-bF-ZTo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="h5P-dl-zrL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uNN-uB-wz3" secondAttribute="bottom" constant="225" id="j1M-rW-Rq3"/>
+                            <constraint firstItem="F4e-c8-LfU" firstAttribute="centerX" secondItem="uNN-uB-wz3" secondAttribute="centerX" id="x6U-Jq-Quq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sZA-hb-hdF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tipLabel" destination="F4e-c8-LfU" id="I6t-LE-915"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1100.5" y="333.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pAL-kA-KFW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mAh-di-eLc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2bZ-ec-gua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o4y-VQ-e2Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIR-Nl-9C1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646.5" y="333.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="didi" width="220" height="220"/>
+    </resources>
 </document>

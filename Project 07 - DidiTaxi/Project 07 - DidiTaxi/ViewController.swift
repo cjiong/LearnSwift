@@ -8,11 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DIOpenSDKDelegate {
+    
+    //实现DIOpenSDKDelegate协议
+    func pageClose() {
+        tipLabel.text = "哈哈，用不了是吧，这是要申请授权才能用的😏"
+    }
 
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBAction func startBtnDidTouch(sender: UIButton) {
+        
+        //注册账户和密码
+        DIOpenSDK.registerApp("test", secret: "test")
+        
+        let option = DIOpenSDKRegisterOptions()
+        
+        DIOpenSDK.showDDPage(self, animated: true, params: option, delegate: self)
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     override func didReceiveMemoryWarning() {
