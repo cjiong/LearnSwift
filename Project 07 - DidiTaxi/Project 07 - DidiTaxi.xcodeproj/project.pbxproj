@@ -14,8 +14,8 @@
 		1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */; };
 		1911CAD61CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAD51CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift */; };
 		1911CAE11CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */; };
-		1911CAF71CEDF854000ACEAD /* DIOpenSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */; };
-		1911CAF81CEDF854000ACEAD /* DIOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */; };
+		193BDCDB1CEE0E810098D4CE /* DIOpenSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 193BDCD91CEE0E810098D4CE /* DIOpenSDK.bundle */; };
+		193BDCDC1CEE0E810098D4CE /* DIOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193BDCDA1CEE0E810098D4CE /* DIOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +49,9 @@
 		1911CADC1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 07 - DidiTaxiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_07___DidiTaxiUITests.swift"; sourceTree = "<group>"; };
 		1911CAE21CEDF08D000ACEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1911CAF21CEDF72A000ACEAD /* Project 07 - DidiTaxi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project 07 - DidiTaxi-Bridging-Header.h"; sourceTree = "<group>"; };
-		1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DIOpenSDK.bundle; sourceTree = "<group>"; };
-		1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOpenSDK.framework; sourceTree = "<group>"; };
+		193BDCD41CEE08C80098D4CE /* Project 07 - DidiTaxi-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Project 07 - DidiTaxi-Bridging-Header.h"; sourceTree = "<group>"; };
+		193BDCD91CEE0E810098D4CE /* DIOpenSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DIOpenSDK.bundle; sourceTree = "<group>"; };
+		193BDCDA1CEE0E810098D4CE /* DIOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1911CAF81CEDF854000ACEAD /* DIOpenSDK.framework in Frameworks */,
+				193BDCDC1CEE0E810098D4CE /* DIOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,15 +103,15 @@
 		1911CABF1CEDF08C000ACEAD /* Project 07 - DidiTaxi */ = {
 			isa = PBXGroup;
 			children = (
-				1911CAF51CEDF854000ACEAD /* DIOpenSDK.bundle */,
-				1911CAF61CEDF854000ACEAD /* DIOpenSDK.framework */,
+				193BDCD91CEE0E810098D4CE /* DIOpenSDK.bundle */,
+				193BDCDA1CEE0E810098D4CE /* DIOpenSDK.framework */,
 				1911CAC01CEDF08C000ACEAD /* AppDelegate.swift */,
 				1911CAC21CEDF08C000ACEAD /* ViewController.swift */,
 				1911CAC41CEDF08C000ACEAD /* Main.storyboard */,
 				1911CAC71CEDF08C000ACEAD /* Assets.xcassets */,
 				1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */,
 				1911CACC1CEDF08C000ACEAD /* Info.plist */,
-				1911CAF21CEDF72A000ACEAD /* Project 07 - DidiTaxi-Bridging-Header.h */,
+				193BDCD41CEE08C80098D4CE /* Project 07 - DidiTaxi-Bridging-Header.h */,
 			);
 			path = "Project 07 - DidiTaxi";
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */,
-				1911CAF71CEDF854000ACEAD /* DIOpenSDK.bundle in Resources */,
+				193BDCDB1CEE0E810098D4CE /* DIOpenSDK.bundle in Resources */,
 				1911CAC81CEDF08C000ACEAD /* Assets.xcassets in Resources */,
 				1911CAC61CEDF08C000ACEAD /* Main.storyboard in Resources */,
 			);
@@ -515,6 +515,7 @@
 				1911CAE71CEDF08D000ACEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1911CAE81CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +524,7 @@
 				1911CAEA1CEDF08D000ACEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1911CAEB1CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +533,7 @@
 				1911CAED1CEDF08D000ACEAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
