@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1911CAC11CEDF08C000ACEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAC01CEDF08C000ACEAD /* AppDelegate.swift */; };
+		1911CAC31CEDF08C000ACEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAC21CEDF08C000ACEAD /* ViewController.swift */; };
+		1911CAC61CEDF08C000ACEAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAC41CEDF08C000ACEAD /* Main.storyboard */; };
+		1911CAC81CEDF08C000ACEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAC71CEDF08C000ACEAD /* Assets.xcassets */; };
+		1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */; };
+		1911CAD61CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAD51CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift */; };
+		1911CAE11CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1911CAD21CEDF08D000ACEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1911CAB51CEDF08C000ACEAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1911CABC1CEDF08C000ACEAD;
+			remoteInfo = "Project 07 - DidiTaxi";
+		};
+		1911CADD1CEDF08D000ACEAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1911CAB51CEDF08C000ACEAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1911CABC1CEDF08C000ACEAD;
+			remoteInfo = "Project 07 - DidiTaxi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1911CABD1CEDF08C000ACEAD /* Project 07 - DidiTaxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 07 - DidiTaxi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1911CAC01CEDF08C000ACEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1911CAC21CEDF08C000ACEAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1911CAC51CEDF08C000ACEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1911CAC71CEDF08C000ACEAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1911CACA1CEDF08C000ACEAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1911CACC1CEDF08C000ACEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1911CAD11CEDF08D000ACEAD /* Project 07 - DidiTaxiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 07 - DidiTaxiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1911CAD51CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_07___DidiTaxiTests.swift"; sourceTree = "<group>"; };
+		1911CAD71CEDF08D000ACEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1911CADC1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 07 - DidiTaxiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_07___DidiTaxiUITests.swift"; sourceTree = "<group>"; };
+		1911CAE21CEDF08D000ACEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1911CABA1CEDF08C000ACEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CACE1CEDF08D000ACEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CAD91CEDF08D000ACEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1911CAB41CEDF08C000ACEAD = {
+			isa = PBXGroup;
+			children = (
+				1911CABF1CEDF08C000ACEAD /* Project 07 - DidiTaxi */,
+				1911CAD41CEDF08D000ACEAD /* Project 07 - DidiTaxiTests */,
+				1911CADF1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests */,
+				1911CABE1CEDF08C000ACEAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1911CABE1CEDF08C000ACEAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1911CABD1CEDF08C000ACEAD /* Project 07 - DidiTaxi.app */,
+				1911CAD11CEDF08D000ACEAD /* Project 07 - DidiTaxiTests.xctest */,
+				1911CADC1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1911CABF1CEDF08C000ACEAD /* Project 07 - DidiTaxi */ = {
+			isa = PBXGroup;
+			children = (
+				1911CAC01CEDF08C000ACEAD /* AppDelegate.swift */,
+				1911CAC21CEDF08C000ACEAD /* ViewController.swift */,
+				1911CAC41CEDF08C000ACEAD /* Main.storyboard */,
+				1911CAC71CEDF08C000ACEAD /* Assets.xcassets */,
+				1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */,
+				1911CACC1CEDF08C000ACEAD /* Info.plist */,
+			);
+			path = "Project 07 - DidiTaxi";
+			sourceTree = "<group>";
+		};
+		1911CAD41CEDF08D000ACEAD /* Project 07 - DidiTaxiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1911CAD51CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift */,
+				1911CAD71CEDF08D000ACEAD /* Info.plist */,
+			);
+			path = "Project 07 - DidiTaxiTests";
+			sourceTree = "<group>";
+		};
+		1911CADF1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1911CAE01CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift */,
+				1911CAE21CEDF08D000ACEAD /* Info.plist */,
+			);
+			path = "Project 07 - DidiTaxiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1911CABC1CEDF08C000ACEAD /* Project 07 - DidiTaxi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1911CAE51CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxi" */;
+			buildPhases = (
+				1911CAB91CEDF08C000ACEAD /* Sources */,
+				1911CABA1CEDF08C000ACEAD /* Frameworks */,
+				1911CABB1CEDF08C000ACEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 07 - DidiTaxi";
+			productName = "Project 07 - DidiTaxi";
+			productReference = 1911CABD1CEDF08C000ACEAD /* Project 07 - DidiTaxi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1911CAD01CEDF08D000ACEAD /* Project 07 - DidiTaxiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1911CAE81CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiTests" */;
+			buildPhases = (
+				1911CACD1CEDF08D000ACEAD /* Sources */,
+				1911CACE1CEDF08D000ACEAD /* Frameworks */,
+				1911CACF1CEDF08D000ACEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1911CAD31CEDF08D000ACEAD /* PBXTargetDependency */,
+			);
+			name = "Project 07 - DidiTaxiTests";
+			productName = "Project 07 - DidiTaxiTests";
+			productReference = 1911CAD11CEDF08D000ACEAD /* Project 07 - DidiTaxiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1911CADB1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1911CAEB1CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiUITests" */;
+			buildPhases = (
+				1911CAD81CEDF08D000ACEAD /* Sources */,
+				1911CAD91CEDF08D000ACEAD /* Frameworks */,
+				1911CADA1CEDF08D000ACEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1911CADE1CEDF08D000ACEAD /* PBXTargetDependency */,
+			);
+			name = "Project 07 - DidiTaxiUITests";
+			productName = "Project 07 - DidiTaxiUITests";
+			productReference = 1911CADC1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1911CAB51CEDF08C000ACEAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					1911CABC1CEDF08C000ACEAD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1911CAD01CEDF08D000ACEAD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1911CABC1CEDF08C000ACEAD;
+					};
+					1911CADB1CEDF08D000ACEAD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1911CABC1CEDF08C000ACEAD;
+					};
+				};
+			};
+			buildConfigurationList = 1911CAB81CEDF08C000ACEAD /* Build configuration list for PBXProject "Project 07 - DidiTaxi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1911CAB41CEDF08C000ACEAD;
+			productRefGroup = 1911CABE1CEDF08C000ACEAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1911CABC1CEDF08C000ACEAD /* Project 07 - DidiTaxi */,
+				1911CAD01CEDF08D000ACEAD /* Project 07 - DidiTaxiTests */,
+				1911CADB1CEDF08D000ACEAD /* Project 07 - DidiTaxiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1911CABB1CEDF08C000ACEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1911CACB1CEDF08C000ACEAD /* LaunchScreen.storyboard in Resources */,
+				1911CAC81CEDF08C000ACEAD /* Assets.xcassets in Resources */,
+				1911CAC61CEDF08C000ACEAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CACF1CEDF08D000ACEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CADA1CEDF08D000ACEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1911CAB91CEDF08C000ACEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1911CAC31CEDF08C000ACEAD /* ViewController.swift in Sources */,
+				1911CAC11CEDF08C000ACEAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CACD1CEDF08D000ACEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1911CAD61CEDF08D000ACEAD /* Project_07___DidiTaxiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1911CAD81CEDF08D000ACEAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1911CAE11CEDF08D000ACEAD /* Project_07___DidiTaxiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1911CAD31CEDF08D000ACEAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1911CABC1CEDF08C000ACEAD /* Project 07 - DidiTaxi */;
+			targetProxy = 1911CAD21CEDF08D000ACEAD /* PBXContainerItemProxy */;
+		};
+		1911CADE1CEDF08D000ACEAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1911CABC1CEDF08C000ACEAD /* Project 07 - DidiTaxi */;
+			targetProxy = 1911CADD1CEDF08D000ACEAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1911CAC41CEDF08C000ACEAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1911CAC51CEDF08C000ACEAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1911CAC91CEDF08C000ACEAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1911CACA1CEDF08C000ACEAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1911CAE31CEDF08D000ACEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1911CAE41CEDF08D000ACEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1911CAE61CEDF08D000ACEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 07 - DidiTaxi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1911CAE71CEDF08D000ACEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 07 - DidiTaxi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1911CAE91CEDF08D000ACEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 07 - DidiTaxiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 07 - DidiTaxi.app/Project 07 - DidiTaxi";
+			};
+			name = Debug;
+		};
+		1911CAEA1CEDF08D000ACEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 07 - DidiTaxiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 07 - DidiTaxi.app/Project 07 - DidiTaxi";
+			};
+			name = Release;
+		};
+		1911CAEC1CEDF08D000ACEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 07 - DidiTaxiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 07 - DidiTaxi";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1911CAED1CEDF08D000ACEAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 07 - DidiTaxiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-07---DidiTaxiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 07 - DidiTaxi";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1911CAB81CEDF08C000ACEAD /* Build configuration list for PBXProject "Project 07 - DidiTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1911CAE31CEDF08D000ACEAD /* Debug */,
+				1911CAE41CEDF08D000ACEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1911CAE51CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1911CAE61CEDF08D000ACEAD /* Debug */,
+				1911CAE71CEDF08D000ACEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1911CAE81CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1911CAE91CEDF08D000ACEAD /* Debug */,
+				1911CAEA1CEDF08D000ACEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1911CAEB1CEDF08D000ACEAD /* Build configuration list for PBXNativeTarget "Project 07 - DidiTaxiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1911CAEC1CEDF08D000ACEAD /* Debug */,
+				1911CAED1CEDF08D000ACEAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1911CAB51CEDF08C000ACEAD /* Project object */;
+}
