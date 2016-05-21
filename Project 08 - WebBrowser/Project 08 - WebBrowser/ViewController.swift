@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegate {
         
         //设置代理
         textField1.delegate = self
+        webView1.delegate = self
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
