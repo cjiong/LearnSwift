@@ -15,6 +15,7 @@
 		19AD6FB61CF1E50C00900ECB /* Project_09___MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD6FB51CF1E50C00900ECB /* Project_09___MusicPlayerTests.swift */; };
 		19AD6FC11CF1E50C00900ECB /* Project_09___MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD6FC01CF1E50C00900ECB /* Project_09___MusicPlayerUITests.swift */; };
 		19AD6FCF1CF1E52C00900ECB /* Fun. - All Alone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19AD6FCE1CF1E52C00900ECB /* Fun. - All Alone.mp3 */; };
+		19AD6FD11CF207E700900ECB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD6FD01CF207E700900ECB /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		19AD6FC01CF1E50C00900ECB /* Project_09___MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_09___MusicPlayerUITests.swift"; sourceTree = "<group>"; };
 		19AD6FC21CF1E50C00900ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19AD6FCE1CF1E52C00900ECB /* Fun. - All Alone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fun. - All Alone.mp3"; sourceTree = "<group>"; };
+		19AD6FD01CF207E700900ECB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				19AD6FA01CF1E50B00900ECB /* AppDelegate.swift */,
+				19AD6FD01CF207E700900ECB /* CustomButton.swift */,
 				19AD6FA21CF1E50B00900ECB /* ViewController.swift */,
 				19AD6FA41CF1E50B00900ECB /* Main.storyboard */,
 				19AD6FA71CF1E50B00900ECB /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			files = (
 				19AD6FA31CF1E50B00900ECB /* ViewController.swift in Sources */,
 				19AD6FA11CF1E50B00900ECB /* AppDelegate.swift in Sources */,
+				19AD6FD11CF207E700900ECB /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
