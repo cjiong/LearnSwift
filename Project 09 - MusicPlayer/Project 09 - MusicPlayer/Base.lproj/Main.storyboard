@@ -53,16 +53,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwL-KG-a0a" userLabel="play" customClass="CustomButton" customModule="Project_09___MusicPlayer" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwL-KG-a0a" userLabel="play">
                                 <rect key="frame" x="150" y="491" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="KAK-od-lb2"/>
                                     <constraint firstAttribute="width" constant="75" id="paG-Ax-zpG"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="playMusicButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvq-l0-tsS"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -95,7 +92,7 @@
                         <outlet property="albumImage" destination="JR0-Yo-lrR" id="Iv7-dh-TXo"/>
                         <outlet property="artistLabel" destination="eR3-kU-h16" id="osI-0n-CI9"/>
                         <outlet property="bgImage" destination="rr9-tw-2HS" id="eEx-vP-j1R"/>
-                        <outlet property="playButon" destination="NwL-KG-a0a" id="bog-l2-o8D"/>
+                        <outlet property="playButton" destination="NwL-KG-a0a" id="uq0-MX-shu"/>
                         <outlet property="songLabel" destination="0YO-Z4-BJg" id="3oq-S9-0W2"/>
                     </connections>
                 </viewController>

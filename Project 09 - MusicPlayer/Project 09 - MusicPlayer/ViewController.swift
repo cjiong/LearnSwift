@@ -11,13 +11,15 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var playButon: CustomButton!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var bgImage: UIImageView!
     @IBOutlet weak var songLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var albumImage: UIImageView!
     
     var audioPlayer = AVAudioPlayer()
+    
+    var isPlaying: Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,26 +34,34 @@ class ViewController: UIViewController {
         
         //歌曲信息
         albumImage.image = UIImage(named: "fun")
-        albumImage.layer.cornerRadius = 100
-        
-        songLabel.textColor = UIColor.grayColor()
+    
+        songLabel.textColor = UIColor.whiteColor()
         songLabel.text = "All Alone"
-        artistLabel.textColor = UIColor.grayColor()
+        artistLabel.textColor = UIColor.whiteColor()
         artistLabel.text = "Fun."
         
-        playButon.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+        playButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+        
+        //播放音乐
+        playMusic()
+        
+        //监听按钮点击
+        playButton.addTarget(self, action: "playOrPause", forControlEvents: UIControlEvents.TouchUpInside)
         
     }
 
+  
     //播放音乐
-    @IBAction func playMusicButtonDidTouch(sender: CustomButton) {
+    func playMusic() {
         
-        let song = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Fun. - All Alone", ofType: "mp3")!)
+        let songUrl = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Fun. - All Alone", ofType: "mp3")!)
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            try audioPlayer = AVAudioPlayer(contentsOfURL: song)
+            
+            try audioPlayer = AVAudioPlayer(contentsOfURL: songUrl)
+            
+            //循环播放
+            audioPlayer.numberOfLoops = -1
             
             audioPlayer.prepareToPlay()
             audioPlayer.play()
@@ -59,21 +69,21 @@ class ViewController: UIViewController {
         catch let playError as NSError {
             print(playError)
         }
-        if sender.isPlay {
-            audioPlayer.play()
-        } else {
-            audioPlayer.stop()
-        }
     }
     
-    //点击播放(暂停)按钮的方法
-    func onPlay(button: CustomButton) {
-        if button.isPlay {
-            audioPlayer.play()
-        } else {
+    func playOrPause() {
+
+        if isPlaying {
             audioPlayer.stop()
+            playButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+            isPlaying = false
+        } else {
+            audioPlayer.play()
+            playButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+            isPlaying = true
         }
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
