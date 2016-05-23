@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191713BE1CF340DE0095D085 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713BD1CF340DE0095D085 /* AppDelegate.swift */; };
+		191713C01CF340DE0095D085 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713BF1CF340DE0095D085 /* ViewController.swift */; };
+		191713C31CF340DE0095D085 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191713C11CF340DE0095D085 /* Main.storyboard */; };
+		191713C51CF340DE0095D085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191713C41CF340DE0095D085 /* Assets.xcassets */; };
+		191713C81CF340DE0095D085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191713C61CF340DE0095D085 /* LaunchScreen.storyboard */; };
+		191713D31CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713D21CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift */; };
+		191713DE1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713DD1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		191713CF1CF340DE0095D085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191713B21CF340DE0095D085 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191713B91CF340DE0095D085;
+			remoteInfo = "Project 11 - PlayLocalVideo";
+		};
+		191713DA1CF340DE0095D085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191713B21CF340DE0095D085 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191713B91CF340DE0095D085;
+			remoteInfo = "Project 11 - PlayLocalVideo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191713BA1CF340DE0095D085 /* Project 11 - PlayLocalVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 11 - PlayLocalVideo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191713BD1CF340DE0095D085 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191713BF1CF340DE0095D085 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		191713C21CF340DE0095D085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191713C41CF340DE0095D085 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191713C71CF340DE0095D085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191713C91CF340DE0095D085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191713CE1CF340DE0095D085 /* Project 11 - PlayLocalVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 11 - PlayLocalVideoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191713D21CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_11___PlayLocalVideoTests.swift"; sourceTree = "<group>"; };
+		191713D41CF340DE0095D085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191713D91CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 11 - PlayLocalVideoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191713DD1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_11___PlayLocalVideoUITests.swift"; sourceTree = "<group>"; };
+		191713DF1CF340DE0095D085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191713B71CF340DE0095D085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713CB1CF340DE0095D085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713D61CF340DE0095D085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191713B11CF340DE0095D085 = {
+			isa = PBXGroup;
+			children = (
+				191713BC1CF340DE0095D085 /* Project 11 - PlayLocalVideo */,
+				191713D11CF340DE0095D085 /* Project 11 - PlayLocalVideoTests */,
+				191713DC1CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests */,
+				191713BB1CF340DE0095D085 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191713BB1CF340DE0095D085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191713BA1CF340DE0095D085 /* Project 11 - PlayLocalVideo.app */,
+				191713CE1CF340DE0095D085 /* Project 11 - PlayLocalVideoTests.xctest */,
+				191713D91CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191713BC1CF340DE0095D085 /* Project 11 - PlayLocalVideo */ = {
+			isa = PBXGroup;
+			children = (
+				191713BD1CF340DE0095D085 /* AppDelegate.swift */,
+				191713BF1CF340DE0095D085 /* ViewController.swift */,
+				191713C11CF340DE0095D085 /* Main.storyboard */,
+				191713C41CF340DE0095D085 /* Assets.xcassets */,
+				191713C61CF340DE0095D085 /* LaunchScreen.storyboard */,
+				191713C91CF340DE0095D085 /* Info.plist */,
+			);
+			path = "Project 11 - PlayLocalVideo";
+			sourceTree = "<group>";
+		};
+		191713D11CF340DE0095D085 /* Project 11 - PlayLocalVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				191713D21CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift */,
+				191713D41CF340DE0095D085 /* Info.plist */,
+			);
+			path = "Project 11 - PlayLocalVideoTests";
+			sourceTree = "<group>";
+		};
+		191713DC1CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				191713DD1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift */,
+				191713DF1CF340DE0095D085 /* Info.plist */,
+			);
+			path = "Project 11 - PlayLocalVideoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191713B91CF340DE0095D085 /* Project 11 - PlayLocalVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191713E21CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideo" */;
+			buildPhases = (
+				191713B61CF340DE0095D085 /* Sources */,
+				191713B71CF340DE0095D085 /* Frameworks */,
+				191713B81CF340DE0095D085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 11 - PlayLocalVideo";
+			productName = "Project 11 - PlayLocalVideo";
+			productReference = 191713BA1CF340DE0095D085 /* Project 11 - PlayLocalVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		191713CD1CF340DE0095D085 /* Project 11 - PlayLocalVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191713E51CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoTests" */;
+			buildPhases = (
+				191713CA1CF340DE0095D085 /* Sources */,
+				191713CB1CF340DE0095D085 /* Frameworks */,
+				191713CC1CF340DE0095D085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191713D01CF340DE0095D085 /* PBXTargetDependency */,
+			);
+			name = "Project 11 - PlayLocalVideoTests";
+			productName = "Project 11 - PlayLocalVideoTests";
+			productReference = 191713CE1CF340DE0095D085 /* Project 11 - PlayLocalVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		191713D81CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191713E81CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoUITests" */;
+			buildPhases = (
+				191713D51CF340DE0095D085 /* Sources */,
+				191713D61CF340DE0095D085 /* Frameworks */,
+				191713D71CF340DE0095D085 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191713DB1CF340DE0095D085 /* PBXTargetDependency */,
+			);
+			name = "Project 11 - PlayLocalVideoUITests";
+			productName = "Project 11 - PlayLocalVideoUITests";
+			productReference = 191713D91CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191713B21CF340DE0095D085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					191713B91CF340DE0095D085 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+					};
+					191713CD1CF340DE0095D085 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 191713B91CF340DE0095D085;
+					};
+					191713D81CF340DE0095D085 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 191713B91CF340DE0095D085;
+					};
+				};
+			};
+			buildConfigurationList = 191713B51CF340DE0095D085 /* Build configuration list for PBXProject "Project 11 - PlayLocalVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191713B11CF340DE0095D085;
+			productRefGroup = 191713BB1CF340DE0095D085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191713B91CF340DE0095D085 /* Project 11 - PlayLocalVideo */,
+				191713CD1CF340DE0095D085 /* Project 11 - PlayLocalVideoTests */,
+				191713D81CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191713B81CF340DE0095D085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191713C81CF340DE0095D085 /* LaunchScreen.storyboard in Resources */,
+				191713C51CF340DE0095D085 /* Assets.xcassets in Resources */,
+				191713C31CF340DE0095D085 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713CC1CF340DE0095D085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713D71CF340DE0095D085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191713B61CF340DE0095D085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191713C01CF340DE0095D085 /* ViewController.swift in Sources */,
+				191713BE1CF340DE0095D085 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713CA1CF340DE0095D085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191713D31CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191713D51CF340DE0095D085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191713DE1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		191713D01CF340DE0095D085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191713B91CF340DE0095D085 /* Project 11 - PlayLocalVideo */;
+			targetProxy = 191713CF1CF340DE0095D085 /* PBXContainerItemProxy */;
+		};
+		191713DB1CF340DE0095D085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191713B91CF340DE0095D085 /* Project 11 - PlayLocalVideo */;
+			targetProxy = 191713DA1CF340DE0095D085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		191713C11CF340DE0095D085 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191713C21CF340DE0095D085 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191713C61CF340DE0095D085 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191713C71CF340DE0095D085 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191713E01CF340DE0095D085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191713E11CF340DE0095D085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191713E31CF340DE0095D085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		191713E41CF340DE0095D085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		191713E61CF340DE0095D085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 11 - PlayLocalVideo.app/Project 11 - PlayLocalVideo";
+			};
+			name = Debug;
+		};
+		191713E71CF340DE0095D085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 11 - PlayLocalVideo.app/Project 11 - PlayLocalVideo";
+			};
+			name = Release;
+		};
+		191713E91CF340DE0095D085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 11 - PlayLocalVideo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		191713EA1CF340DE0095D085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 11 - PlayLocalVideoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 11 - PlayLocalVideo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191713B51CF340DE0095D085 /* Build configuration list for PBXProject "Project 11 - PlayLocalVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191713E01CF340DE0095D085 /* Debug */,
+				191713E11CF340DE0095D085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191713E21CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191713E31CF340DE0095D085 /* Debug */,
+				191713E41CF340DE0095D085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191713E51CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191713E61CF340DE0095D085 /* Debug */,
+				191713E71CF340DE0095D085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191713E81CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191713E91CF340DE0095D085 /* Debug */,
+				191713EA1CF340DE0095D085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191713B21CF340DE0095D085 /* Project object */;
+}
