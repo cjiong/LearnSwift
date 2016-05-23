@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		197D217A1CF324660019F4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D21791CF324660019F4A3 /* AppDelegate.swift */; };
+		197D217C1CF324660019F4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D217B1CF324660019F4A3 /* ViewController.swift */; };
+		197D217F1CF324660019F4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D217D1CF324660019F4A3 /* Main.storyboard */; };
+		197D21811CF324660019F4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197D21801CF324660019F4A3 /* Assets.xcassets */; };
+		197D21841CF324660019F4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197D21821CF324660019F4A3 /* LaunchScreen.storyboard */; };
+		197D218F1CF324660019F4A3 /* Project_10___RandomGradientColorMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D218E1CF324660019F4A3 /* Project_10___RandomGradientColorMusicTests.swift */; };
+		197D219A1CF324660019F4A3 /* Project_10___RandomGradientColorMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D21991CF324660019F4A3 /* Project_10___RandomGradientColorMusicUITests.swift */; };
+		197D21A81CF324D50019F4A3 /* Alan Walker - Fade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 197D21A71CF324D50019F4A3 /* Alan Walker - Fade.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		197D218B1CF324660019F4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 197D216E1CF324660019F4A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 197D21751CF324660019F4A3;
+			remoteInfo = "Project 10 - RandomGradientColorMusic";
+		};
+		197D21961CF324660019F4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 197D216E1CF324660019F4A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 197D21751CF324660019F4A3;
+			remoteInfo = "Project 10 - RandomGradientColorMusic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		197D21761CF324660019F4A3 /* Project 10 - RandomGradientColorMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 10 - RandomGradientColorMusic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		197D21791CF324660019F4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		197D217B1CF324660019F4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		197D217E1CF324660019F4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		197D21801CF324660019F4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		197D21831CF324660019F4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		197D21851CF324660019F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197D218A1CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 10 - RandomGradientColorMusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		197D218E1CF324660019F4A3 /* Project_10___RandomGradientColorMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_10___RandomGradientColorMusicTests.swift"; sourceTree = "<group>"; };
+		197D21901CF324660019F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197D21951CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 10 - RandomGradientColorMusicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		197D21991CF324660019F4A3 /* Project_10___RandomGradientColorMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_10___RandomGradientColorMusicUITests.swift"; sourceTree = "<group>"; };
+		197D219B1CF324660019F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		197D21A71CF324D50019F4A3 /* Alan Walker - Fade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Alan Walker - Fade.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		197D21731CF324660019F4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21871CF324660019F4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21921CF324660019F4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		197D216D1CF324660019F4A3 = {
+			isa = PBXGroup;
+			children = (
+				197D21781CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */,
+				197D218D1CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests */,
+				197D21981CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests */,
+				197D21771CF324660019F4A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		197D21771CF324660019F4A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				197D21761CF324660019F4A3 /* Project 10 - RandomGradientColorMusic.app */,
+				197D218A1CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests.xctest */,
+				197D21951CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		197D21781CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */ = {
+			isa = PBXGroup;
+			children = (
+				197D21791CF324660019F4A3 /* AppDelegate.swift */,
+				197D217B1CF324660019F4A3 /* ViewController.swift */,
+				197D217D1CF324660019F4A3 /* Main.storyboard */,
+				197D21801CF324660019F4A3 /* Assets.xcassets */,
+				197D21A71CF324D50019F4A3 /* Alan Walker - Fade.mp3 */,
+				197D21821CF324660019F4A3 /* LaunchScreen.storyboard */,
+				197D21851CF324660019F4A3 /* Info.plist */,
+			);
+			path = "Project 10 - RandomGradientColorMusic";
+			sourceTree = "<group>";
+		};
+		197D218D1CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				197D218E1CF324660019F4A3 /* Project_10___RandomGradientColorMusicTests.swift */,
+				197D21901CF324660019F4A3 /* Info.plist */,
+			);
+			path = "Project 10 - RandomGradientColorMusicTests";
+			sourceTree = "<group>";
+		};
+		197D21981CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				197D21991CF324660019F4A3 /* Project_10___RandomGradientColorMusicUITests.swift */,
+				197D219B1CF324660019F4A3 /* Info.plist */,
+			);
+			path = "Project 10 - RandomGradientColorMusicUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		197D21751CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197D219E1CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusic" */;
+			buildPhases = (
+				197D21721CF324660019F4A3 /* Sources */,
+				197D21731CF324660019F4A3 /* Frameworks */,
+				197D21741CF324660019F4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 10 - RandomGradientColorMusic";
+			productName = "Project 10 - RandomGradientColorMusic";
+			productReference = 197D21761CF324660019F4A3 /* Project 10 - RandomGradientColorMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		197D21891CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197D21A11CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusicTests" */;
+			buildPhases = (
+				197D21861CF324660019F4A3 /* Sources */,
+				197D21871CF324660019F4A3 /* Frameworks */,
+				197D21881CF324660019F4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				197D218C1CF324660019F4A3 /* PBXTargetDependency */,
+			);
+			name = "Project 10 - RandomGradientColorMusicTests";
+			productName = "Project 10 - RandomGradientColorMusicTests";
+			productReference = 197D218A1CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		197D21941CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197D21A41CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusicUITests" */;
+			buildPhases = (
+				197D21911CF324660019F4A3 /* Sources */,
+				197D21921CF324660019F4A3 /* Frameworks */,
+				197D21931CF324660019F4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				197D21971CF324660019F4A3 /* PBXTargetDependency */,
+			);
+			name = "Project 10 - RandomGradientColorMusicUITests";
+			productName = "Project 10 - RandomGradientColorMusicUITests";
+			productReference = 197D21951CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		197D216E1CF324660019F4A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					197D21751CF324660019F4A3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					197D21891CF324660019F4A3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 197D21751CF324660019F4A3;
+					};
+					197D21941CF324660019F4A3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 197D21751CF324660019F4A3;
+					};
+				};
+			};
+			buildConfigurationList = 197D21711CF324660019F4A3 /* Build configuration list for PBXProject "Project 10 - RandomGradientColorMusic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 197D216D1CF324660019F4A3;
+			productRefGroup = 197D21771CF324660019F4A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				197D21751CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */,
+				197D21891CF324660019F4A3 /* Project 10 - RandomGradientColorMusicTests */,
+				197D21941CF324660019F4A3 /* Project 10 - RandomGradientColorMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		197D21741CF324660019F4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197D21841CF324660019F4A3 /* LaunchScreen.storyboard in Resources */,
+				197D21811CF324660019F4A3 /* Assets.xcassets in Resources */,
+				197D217F1CF324660019F4A3 /* Main.storyboard in Resources */,
+				197D21A81CF324D50019F4A3 /* Alan Walker - Fade.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21881CF324660019F4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21931CF324660019F4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		197D21721CF324660019F4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197D217C1CF324660019F4A3 /* ViewController.swift in Sources */,
+				197D217A1CF324660019F4A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21861CF324660019F4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197D218F1CF324660019F4A3 /* Project_10___RandomGradientColorMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		197D21911CF324660019F4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				197D219A1CF324660019F4A3 /* Project_10___RandomGradientColorMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		197D218C1CF324660019F4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 197D21751CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */;
+			targetProxy = 197D218B1CF324660019F4A3 /* PBXContainerItemProxy */;
+		};
+		197D21971CF324660019F4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 197D21751CF324660019F4A3 /* Project 10 - RandomGradientColorMusic */;
+			targetProxy = 197D21961CF324660019F4A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		197D217D1CF324660019F4A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				197D217E1CF324660019F4A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		197D21821CF324660019F4A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				197D21831CF324660019F4A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		197D219C1CF324660019F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		197D219D1CF324660019F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		197D219F1CF324660019F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		197D21A01CF324660019F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		197D21A21CF324660019F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 10 - RandomGradientColorMusic.app/Project 10 - RandomGradientColorMusic";
+			};
+			name = Debug;
+		};
+		197D21A31CF324660019F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 10 - RandomGradientColorMusic.app/Project 10 - RandomGradientColorMusic";
+			};
+			name = Release;
+		};
+		197D21A51CF324660019F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 10 - RandomGradientColorMusic";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		197D21A61CF324660019F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 10 - RandomGradientColorMusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-10---RandomGradientColorMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 10 - RandomGradientColorMusic";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		197D21711CF324660019F4A3 /* Build configuration list for PBXProject "Project 10 - RandomGradientColorMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197D219C1CF324660019F4A3 /* Debug */,
+				197D219D1CF324660019F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		197D219E1CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197D219F1CF324660019F4A3 /* Debug */,
+				197D21A01CF324660019F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		197D21A11CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197D21A21CF324660019F4A3 /* Debug */,
+				197D21A31CF324660019F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		197D21A41CF324660019F4A3 /* Build configuration list for PBXNativeTarget "Project 10 - RandomGradientColorMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197D21A51CF324660019F4A3 /* Debug */,
+				197D21A61CF324660019F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 197D216E1CF324660019F4A3 /* Project object */;
+}
