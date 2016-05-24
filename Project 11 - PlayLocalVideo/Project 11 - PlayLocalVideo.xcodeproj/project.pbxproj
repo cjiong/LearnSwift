@@ -14,6 +14,8 @@
 		191713C81CF340DE0095D085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191713C61CF340DE0095D085 /* LaunchScreen.storyboard */; };
 		191713D31CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713D21CF340DE0095D085 /* Project_11___PlayLocalVideoTests.swift */; };
 		191713DE1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191713DD1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift */; };
+		19DEDE131CF46D7600ECBE9C /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEDE121CF46D7600ECBE9C /* VideoCell.swift */; };
+		19DEDE171CF480E000ECBE9C /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19DEDE161CF480E000ECBE9C /* 1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		191713D91CF340DE0095D085 /* Project 11 - PlayLocalVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 11 - PlayLocalVideoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		191713DD1CF340DE0095D085 /* Project_11___PlayLocalVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_11___PlayLocalVideoUITests.swift"; sourceTree = "<group>"; };
 		191713DF1CF340DE0095D085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19DEDE121CF46D7600ECBE9C /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		19DEDE161CF480E000ECBE9C /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 			children = (
 				191713BD1CF340DE0095D085 /* AppDelegate.swift */,
 				191713BF1CF340DE0095D085 /* ViewController.swift */,
+				19DEDE121CF46D7600ECBE9C /* VideoCell.swift */,
 				191713C11CF340DE0095D085 /* Main.storyboard */,
 				191713C41CF340DE0095D085 /* Assets.xcassets */,
+				19DEDE161CF480E000ECBE9C /* 1.mp4 */,
 				191713C61CF340DE0095D085 /* LaunchScreen.storyboard */,
 				191713C91CF340DE0095D085 /* Info.plist */,
 			);
@@ -193,7 +199,6 @@
 				TargetAttributes = {
 					191713B91CF340DE0095D085 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 55TJDVV762;
 					};
 					191713CD1CF340DE0095D085 = {
 						CreatedOnToolsVersion = 7.2;
@@ -233,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				191713C81CF340DE0095D085 /* LaunchScreen.storyboard in Resources */,
+				19DEDE171CF480E000ECBE9C /* 1.mp4 in Resources */,
 				191713C51CF340DE0095D085 /* Assets.xcassets in Resources */,
 				191713C31CF340DE0095D085 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +267,7 @@
 			files = (
 				191713C01CF340DE0095D085 /* ViewController.swift in Sources */,
 				191713BE1CF340DE0095D085 /* AppDelegate.swift in Sources */,
+				19DEDE131CF46D7600ECBE9C /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 11 - PlayLocalVideo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideo";
@@ -413,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 11 - PlayLocalVideo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-11---PlayLocalVideo";
@@ -487,6 +496,7 @@
 				191713E41CF340DE0095D085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191713E51CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				191713E71CF340DE0095D085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		191713E81CF340DE0095D085 /* Build configuration list for PBXNativeTarget "Project 11 - PlayLocalVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				191713EA1CF340DE0095D085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
