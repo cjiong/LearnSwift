@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19B6E8781CF5E8F60099ECA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6E8771CF5E8F60099ECA7 /* AppDelegate.swift */; };
+		19B6E87A1CF5E8F60099ECA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6E8791CF5E8F60099ECA7 /* ViewController.swift */; };
+		19B6E87D1CF5E8F60099ECA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6E87B1CF5E8F60099ECA7 /* Main.storyboard */; };
+		19B6E87F1CF5E8F60099ECA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B6E87E1CF5E8F60099ECA7 /* Assets.xcassets */; };
+		19B6E8821CF5E8F60099ECA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B6E8801CF5E8F60099ECA7 /* LaunchScreen.storyboard */; };
+		19B6E88D1CF5E8F60099ECA7 /* Project_12___ChangeImageSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6E88C1CF5E8F60099ECA7 /* Project_12___ChangeImageSizeTests.swift */; };
+		19B6E8981CF5E8F60099ECA7 /* Project_12___ChangeImageSizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6E8971CF5E8F60099ECA7 /* Project_12___ChangeImageSizeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B6E8891CF5E8F60099ECA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B6E86C1CF5E8F60099ECA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B6E8731CF5E8F60099ECA7;
+			remoteInfo = "Project 12 - ChangeImageSize";
+		};
+		19B6E8941CF5E8F60099ECA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B6E86C1CF5E8F60099ECA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B6E8731CF5E8F60099ECA7;
+			remoteInfo = "Project 12 - ChangeImageSize";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B6E8741CF5E8F60099ECA7 /* Project 12 - ChangeImageSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 12 - ChangeImageSize.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B6E8771CF5E8F60099ECA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19B6E8791CF5E8F60099ECA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19B6E87C1CF5E8F60099ECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19B6E87E1CF5E8F60099ECA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19B6E8811CF5E8F60099ECA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19B6E8831CF5E8F60099ECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B6E8881CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 12 - ChangeImageSizeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B6E88C1CF5E8F60099ECA7 /* Project_12___ChangeImageSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_12___ChangeImageSizeTests.swift"; sourceTree = "<group>"; };
+		19B6E88E1CF5E8F60099ECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B6E8931CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 12 - ChangeImageSizeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B6E8971CF5E8F60099ECA7 /* Project_12___ChangeImageSizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_12___ChangeImageSizeUITests.swift"; sourceTree = "<group>"; };
+		19B6E8991CF5E8F60099ECA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B6E8711CF5E8F60099ECA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E8851CF5E8F60099ECA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E8901CF5E8F60099ECA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B6E86B1CF5E8F60099ECA7 = {
+			isa = PBXGroup;
+			children = (
+				19B6E8761CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */,
+				19B6E88B1CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests */,
+				19B6E8961CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests */,
+				19B6E8751CF5E8F60099ECA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19B6E8751CF5E8F60099ECA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B6E8741CF5E8F60099ECA7 /* Project 12 - ChangeImageSize.app */,
+				19B6E8881CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests.xctest */,
+				19B6E8931CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B6E8761CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */ = {
+			isa = PBXGroup;
+			children = (
+				19B6E8771CF5E8F60099ECA7 /* AppDelegate.swift */,
+				19B6E8791CF5E8F60099ECA7 /* ViewController.swift */,
+				19B6E87B1CF5E8F60099ECA7 /* Main.storyboard */,
+				19B6E87E1CF5E8F60099ECA7 /* Assets.xcassets */,
+				19B6E8801CF5E8F60099ECA7 /* LaunchScreen.storyboard */,
+				19B6E8831CF5E8F60099ECA7 /* Info.plist */,
+			);
+			path = "Project 12 - ChangeImageSize";
+			sourceTree = "<group>";
+		};
+		19B6E88B1CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				19B6E88C1CF5E8F60099ECA7 /* Project_12___ChangeImageSizeTests.swift */,
+				19B6E88E1CF5E8F60099ECA7 /* Info.plist */,
+			);
+			path = "Project 12 - ChangeImageSizeTests";
+			sourceTree = "<group>";
+		};
+		19B6E8961CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19B6E8971CF5E8F60099ECA7 /* Project_12___ChangeImageSizeUITests.swift */,
+				19B6E8991CF5E8F60099ECA7 /* Info.plist */,
+			);
+			path = "Project 12 - ChangeImageSizeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B6E8731CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B6E89C1CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSize" */;
+			buildPhases = (
+				19B6E8701CF5E8F60099ECA7 /* Sources */,
+				19B6E8711CF5E8F60099ECA7 /* Frameworks */,
+				19B6E8721CF5E8F60099ECA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 12 - ChangeImageSize";
+			productName = "Project 12 - ChangeImageSize";
+			productReference = 19B6E8741CF5E8F60099ECA7 /* Project 12 - ChangeImageSize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19B6E8871CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B6E89F1CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSizeTests" */;
+			buildPhases = (
+				19B6E8841CF5E8F60099ECA7 /* Sources */,
+				19B6E8851CF5E8F60099ECA7 /* Frameworks */,
+				19B6E8861CF5E8F60099ECA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B6E88A1CF5E8F60099ECA7 /* PBXTargetDependency */,
+			);
+			name = "Project 12 - ChangeImageSizeTests";
+			productName = "Project 12 - ChangeImageSizeTests";
+			productReference = 19B6E8881CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19B6E8921CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B6E8A21CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSizeUITests" */;
+			buildPhases = (
+				19B6E88F1CF5E8F60099ECA7 /* Sources */,
+				19B6E8901CF5E8F60099ECA7 /* Frameworks */,
+				19B6E8911CF5E8F60099ECA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B6E8951CF5E8F60099ECA7 /* PBXTargetDependency */,
+			);
+			name = "Project 12 - ChangeImageSizeUITests";
+			productName = "Project 12 - ChangeImageSizeUITests";
+			productReference = 19B6E8931CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B6E86C1CF5E8F60099ECA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19B6E8731CF5E8F60099ECA7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+					};
+					19B6E8871CF5E8F60099ECA7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19B6E8731CF5E8F60099ECA7;
+					};
+					19B6E8921CF5E8F60099ECA7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19B6E8731CF5E8F60099ECA7;
+					};
+				};
+			};
+			buildConfigurationList = 19B6E86F1CF5E8F60099ECA7 /* Build configuration list for PBXProject "Project 12 - ChangeImageSize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19B6E86B1CF5E8F60099ECA7;
+			productRefGroup = 19B6E8751CF5E8F60099ECA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B6E8731CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */,
+				19B6E8871CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeTests */,
+				19B6E8921CF5E8F60099ECA7 /* Project 12 - ChangeImageSizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B6E8721CF5E8F60099ECA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6E8821CF5E8F60099ECA7 /* LaunchScreen.storyboard in Resources */,
+				19B6E87F1CF5E8F60099ECA7 /* Assets.xcassets in Resources */,
+				19B6E87D1CF5E8F60099ECA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E8861CF5E8F60099ECA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E8911CF5E8F60099ECA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B6E8701CF5E8F60099ECA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6E87A1CF5E8F60099ECA7 /* ViewController.swift in Sources */,
+				19B6E8781CF5E8F60099ECA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E8841CF5E8F60099ECA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6E88D1CF5E8F60099ECA7 /* Project_12___ChangeImageSizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B6E88F1CF5E8F60099ECA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B6E8981CF5E8F60099ECA7 /* Project_12___ChangeImageSizeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B6E88A1CF5E8F60099ECA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B6E8731CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */;
+			targetProxy = 19B6E8891CF5E8F60099ECA7 /* PBXContainerItemProxy */;
+		};
+		19B6E8951CF5E8F60099ECA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B6E8731CF5E8F60099ECA7 /* Project 12 - ChangeImageSize */;
+			targetProxy = 19B6E8941CF5E8F60099ECA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19B6E87B1CF5E8F60099ECA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B6E87C1CF5E8F60099ECA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19B6E8801CF5E8F60099ECA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B6E8811CF5E8F60099ECA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B6E89A1CF5E8F60099ECA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19B6E89B1CF5E8F60099ECA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B6E89D1CF5E8F60099ECA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 12 - ChangeImageSize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19B6E89E1CF5E8F60099ECA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 12 - ChangeImageSize/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSize";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19B6E8A01CF5E8F60099ECA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 12 - ChangeImageSizeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSizeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 12 - ChangeImageSize.app/Project 12 - ChangeImageSize";
+			};
+			name = Debug;
+		};
+		19B6E8A11CF5E8F60099ECA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 12 - ChangeImageSizeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSizeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 12 - ChangeImageSize.app/Project 12 - ChangeImageSize";
+			};
+			name = Release;
+		};
+		19B6E8A31CF5E8F60099ECA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 12 - ChangeImageSizeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSizeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 12 - ChangeImageSize";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19B6E8A41CF5E8F60099ECA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 12 - ChangeImageSizeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-12---ChangeImageSizeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 12 - ChangeImageSize";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B6E86F1CF5E8F60099ECA7 /* Build configuration list for PBXProject "Project 12 - ChangeImageSize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6E89A1CF5E8F60099ECA7 /* Debug */,
+				19B6E89B1CF5E8F60099ECA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B6E89C1CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6E89D1CF5E8F60099ECA7 /* Debug */,
+				19B6E89E1CF5E8F60099ECA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B6E89F1CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6E8A01CF5E8F60099ECA7 /* Debug */,
+				19B6E8A11CF5E8F60099ECA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B6E8A21CF5E8F60099ECA7 /* Build configuration list for PBXNativeTarget "Project 12 - ChangeImageSizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B6E8A31CF5E8F60099ECA7 /* Debug */,
+				19B6E8A41CF5E8F60099ECA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19B6E86C1CF5E8F60099ECA7 /* Project object */;
+}
