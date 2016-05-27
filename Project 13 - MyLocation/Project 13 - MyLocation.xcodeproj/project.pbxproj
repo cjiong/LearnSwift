@@ -14,6 +14,7 @@
 		19119F231CF60968000368A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19119F211CF60968000368A4 /* LaunchScreen.storyboard */; };
 		19119F2E1CF60968000368A4 /* Project_13___MyLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19119F2D1CF60968000368A4 /* Project_13___MyLocationTests.swift */; };
 		19119F391CF60968000368A4 /* Project_13___MyLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19119F381CF60968000368A4 /* Project_13___MyLocationUITests.swift */; };
+		19B8D9371CF74D51002F7C74 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B8D9361CF74D51002F7C74 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		19119F341CF60968000368A4 /* Project 13 - MyLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 13 - MyLocationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19119F381CF60968000368A4 /* Project_13___MyLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_13___MyLocationUITests.swift"; sourceTree = "<group>"; };
 		19119F3A1CF60968000368A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B8D9361CF74D51002F7C74 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B8D9371CF74D51002F7C74 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		19119F0C1CF60968000368A4 = {
 			isa = PBXGroup;
 			children = (
+				19B8D9361CF74D51002F7C74 /* CoreLocation.framework */,
 				19119F171CF60968000368A4 /* Project 13 - MyLocation */,
 				19119F2C1CF60968000368A4 /* Project 13 - MyLocationTests */,
 				19119F371CF60968000368A4 /* Project 13 - MyLocationUITests */,
@@ -193,7 +197,6 @@
 				TargetAttributes = {
 					19119F141CF60968000368A4 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 55TJDVV762;
 					};
 					19119F281CF60968000368A4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -402,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 13 - MyLocation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-13---MyLocation";
@@ -413,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 13 - MyLocation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-13---MyLocation";
@@ -487,6 +492,7 @@
 				19119F3F1CF60968000368A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19119F401CF60968000368A4 /* Build configuration list for PBXNativeTarget "Project 13 - MyLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				19119F421CF60968000368A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19119F431CF60968000368A4 /* Build configuration list for PBXNativeTarget "Project 13 - MyLocationUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				19119F451CF60968000368A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

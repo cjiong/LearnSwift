@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_13___MyLocation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="Rvw-Ax-RVx" userLabel="BackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="Rkm-A7-Gha"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-1X-t86" userLabel="LocationLabel">
+                                <rect key="frame" x="28" y="55" width="319" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="rcm-g8-D9Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-G9-fxN">
+                                <rect key="frame" x="56" y="558" width="263" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Y1R-Tg-rXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Show My Location" backgroundImage="My Location">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" red="0.32259285450000003" green="0.97834616900000004" blue="0.88476306199999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMyLocationButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xyl-we-2BX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UwP-G9-fxN" secondAttribute="bottom" constant="30" id="BUu-UK-h7C"/>
+                            <constraint firstItem="Rvw-Ax-RVx" firstAttribute="centerX" secondItem="kgW-1X-t86" secondAttribute="centerX" id="NMX-P5-DTW"/>
+                            <constraint firstItem="kgW-1X-t86" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="fGL-ca-EUa"/>
+                            <constraint firstItem="kgW-1X-t86" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="hSn-ac-f8G"/>
+                            <constraint firstAttribute="trailing" secondItem="Rvw-Ax-RVx" secondAttribute="trailing" id="jMs-IH-68I"/>
+                            <constraint firstItem="UwP-G9-fxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="qPN-KY-4pk"/>
+                            <constraint firstItem="Rvw-Ax-RVx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qfm-Q0-kp2"/>
+                            <constraint firstItem="UwP-G9-fxN" firstAttribute="centerX" secondItem="kgW-1X-t86" secondAttribute="centerX" id="qpV-eW-OAD"/>
+                            <constraint firstItem="Rvw-Ax-RVx" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yA5-yY-P0p"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="locationLabel" destination="kgW-1X-t86" id="3KA-j5-zGD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="389.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="My Location" width="326" height="78"/>
+        <image name="Star" width="750" height="1334"/>
+    </resources>
 </document>
