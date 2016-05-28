@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191A08E21CF961310090B9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A08E11CF961310090B9D8 /* AppDelegate.swift */; };
+		191A08E41CF961310090B9D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A08E31CF961310090B9D8 /* ViewController.swift */; };
+		191A08E71CF961310090B9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A08E51CF961310090B9D8 /* Main.storyboard */; };
+		191A08E91CF961310090B9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191A08E81CF961310090B9D8 /* Assets.xcassets */; };
+		191A08EC1CF961310090B9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A08EA1CF961310090B9D8 /* LaunchScreen.storyboard */; };
+		191A08F71CF961310090B9D8 /* Project_14___FilterGaussianBlurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A08F61CF961310090B9D8 /* Project_14___FilterGaussianBlurTests.swift */; };
+		191A09021CF961310090B9D8 /* Project_14___FilterGaussianBlurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A09011CF961310090B9D8 /* Project_14___FilterGaussianBlurUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		191A08F31CF961310090B9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191A08D61CF961310090B9D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191A08DD1CF961310090B9D8;
+			remoteInfo = "Project 14 - FilterGaussianBlur";
+		};
+		191A08FE1CF961310090B9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191A08D61CF961310090B9D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191A08DD1CF961310090B9D8;
+			remoteInfo = "Project 14 - FilterGaussianBlur";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191A08DE1CF961310090B9D8 /* Project 14 - FilterGaussianBlur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 14 - FilterGaussianBlur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A08E11CF961310090B9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191A08E31CF961310090B9D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		191A08E61CF961310090B9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191A08E81CF961310090B9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191A08EB1CF961310090B9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191A08ED1CF961310090B9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191A08F21CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 14 - FilterGaussianBlurTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A08F61CF961310090B9D8 /* Project_14___FilterGaussianBlurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_14___FilterGaussianBlurTests.swift"; sourceTree = "<group>"; };
+		191A08F81CF961310090B9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191A08FD1CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 14 - FilterGaussianBlurUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A09011CF961310090B9D8 /* Project_14___FilterGaussianBlurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_14___FilterGaussianBlurUITests.swift"; sourceTree = "<group>"; };
+		191A09031CF961310090B9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191A08DB1CF961310090B9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08EF1CF961310090B9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08FA1CF961310090B9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191A08D51CF961310090B9D8 = {
+			isa = PBXGroup;
+			children = (
+				191A08E01CF961310090B9D8 /* Project 14 - FilterGaussianBlur */,
+				191A08F51CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests */,
+				191A09001CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests */,
+				191A08DF1CF961310090B9D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191A08DF1CF961310090B9D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191A08DE1CF961310090B9D8 /* Project 14 - FilterGaussianBlur.app */,
+				191A08F21CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests.xctest */,
+				191A08FD1CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191A08E01CF961310090B9D8 /* Project 14 - FilterGaussianBlur */ = {
+			isa = PBXGroup;
+			children = (
+				191A08E11CF961310090B9D8 /* AppDelegate.swift */,
+				191A08E31CF961310090B9D8 /* ViewController.swift */,
+				191A08E51CF961310090B9D8 /* Main.storyboard */,
+				191A08E81CF961310090B9D8 /* Assets.xcassets */,
+				191A08EA1CF961310090B9D8 /* LaunchScreen.storyboard */,
+				191A08ED1CF961310090B9D8 /* Info.plist */,
+			);
+			path = "Project 14 - FilterGaussianBlur";
+			sourceTree = "<group>";
+		};
+		191A08F51CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests */ = {
+			isa = PBXGroup;
+			children = (
+				191A08F61CF961310090B9D8 /* Project_14___FilterGaussianBlurTests.swift */,
+				191A08F81CF961310090B9D8 /* Info.plist */,
+			);
+			path = "Project 14 - FilterGaussianBlurTests";
+			sourceTree = "<group>";
+		};
+		191A09001CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests */ = {
+			isa = PBXGroup;
+			children = (
+				191A09011CF961310090B9D8 /* Project_14___FilterGaussianBlurUITests.swift */,
+				191A09031CF961310090B9D8 /* Info.plist */,
+			);
+			path = "Project 14 - FilterGaussianBlurUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191A08DD1CF961310090B9D8 /* Project 14 - FilterGaussianBlur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191A09061CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlur" */;
+			buildPhases = (
+				191A08DA1CF961310090B9D8 /* Sources */,
+				191A08DB1CF961310090B9D8 /* Frameworks */,
+				191A08DC1CF961310090B9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 14 - FilterGaussianBlur";
+			productName = "Project 14 - FilterGaussianBlur";
+			productReference = 191A08DE1CF961310090B9D8 /* Project 14 - FilterGaussianBlur.app */;
+			productType = "com.apple.product-type.application";
+		};
+		191A08F11CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191A09091CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlurTests" */;
+			buildPhases = (
+				191A08EE1CF961310090B9D8 /* Sources */,
+				191A08EF1CF961310090B9D8 /* Frameworks */,
+				191A08F01CF961310090B9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191A08F41CF961310090B9D8 /* PBXTargetDependency */,
+			);
+			name = "Project 14 - FilterGaussianBlurTests";
+			productName = "Project 14 - FilterGaussianBlurTests";
+			productReference = 191A08F21CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		191A08FC1CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191A090C1CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlurUITests" */;
+			buildPhases = (
+				191A08F91CF961310090B9D8 /* Sources */,
+				191A08FA1CF961310090B9D8 /* Frameworks */,
+				191A08FB1CF961310090B9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191A08FF1CF961310090B9D8 /* PBXTargetDependency */,
+			);
+			name = "Project 14 - FilterGaussianBlurUITests";
+			productName = "Project 14 - FilterGaussianBlurUITests";
+			productReference = 191A08FD1CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191A08D61CF961310090B9D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					191A08DD1CF961310090B9D8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					191A08F11CF961310090B9D8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 191A08DD1CF961310090B9D8;
+					};
+					191A08FC1CF961310090B9D8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 191A08DD1CF961310090B9D8;
+					};
+				};
+			};
+			buildConfigurationList = 191A08D91CF961310090B9D8 /* Build configuration list for PBXProject "Project 14 - FilterGaussianBlur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191A08D51CF961310090B9D8;
+			productRefGroup = 191A08DF1CF961310090B9D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191A08DD1CF961310090B9D8 /* Project 14 - FilterGaussianBlur */,
+				191A08F11CF961310090B9D8 /* Project 14 - FilterGaussianBlurTests */,
+				191A08FC1CF961310090B9D8 /* Project 14 - FilterGaussianBlurUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191A08DC1CF961310090B9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A08EC1CF961310090B9D8 /* LaunchScreen.storyboard in Resources */,
+				191A08E91CF961310090B9D8 /* Assets.xcassets in Resources */,
+				191A08E71CF961310090B9D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08F01CF961310090B9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08FB1CF961310090B9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191A08DA1CF961310090B9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A08E41CF961310090B9D8 /* ViewController.swift in Sources */,
+				191A08E21CF961310090B9D8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08EE1CF961310090B9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A08F71CF961310090B9D8 /* Project_14___FilterGaussianBlurTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191A08F91CF961310090B9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A09021CF961310090B9D8 /* Project_14___FilterGaussianBlurUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		191A08F41CF961310090B9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191A08DD1CF961310090B9D8 /* Project 14 - FilterGaussianBlur */;
+			targetProxy = 191A08F31CF961310090B9D8 /* PBXContainerItemProxy */;
+		};
+		191A08FF1CF961310090B9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191A08DD1CF961310090B9D8 /* Project 14 - FilterGaussianBlur */;
+			targetProxy = 191A08FE1CF961310090B9D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		191A08E51CF961310090B9D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A08E61CF961310090B9D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191A08EA1CF961310090B9D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A08EB1CF961310090B9D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191A09041CF961310090B9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191A09051CF961310090B9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191A09071CF961310090B9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlur/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlur";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		191A09081CF961310090B9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlur/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlur";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		191A090A1CF961310090B9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlurTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlurTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 14 - FilterGaussianBlur.app/Project 14 - FilterGaussianBlur";
+			};
+			name = Debug;
+		};
+		191A090B1CF961310090B9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlurTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlurTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 14 - FilterGaussianBlur.app/Project 14 - FilterGaussianBlur";
+			};
+			name = Release;
+		};
+		191A090D1CF961310090B9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlurUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlurUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 14 - FilterGaussianBlur";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		191A090E1CF961310090B9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 14 - FilterGaussianBlurUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-14---FilterGaussianBlurUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 14 - FilterGaussianBlur";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191A08D91CF961310090B9D8 /* Build configuration list for PBXProject "Project 14 - FilterGaussianBlur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A09041CF961310090B9D8 /* Debug */,
+				191A09051CF961310090B9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191A09061CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A09071CF961310090B9D8 /* Debug */,
+				191A09081CF961310090B9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191A09091CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlurTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A090A1CF961310090B9D8 /* Debug */,
+				191A090B1CF961310090B9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		191A090C1CF961310090B9D8 /* Build configuration list for PBXNativeTarget "Project 14 - FilterGaussianBlurUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A090D1CF961310090B9D8 /* Debug */,
+				191A090E1CF961310090B9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191A08D61CF961310090B9D8 /* Project object */;
+}
