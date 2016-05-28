@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_15___VideoBackground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSv-LX-ciH">
+                                <rect key="frame" x="21" y="540" width="333" height="45"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="scy-xE-PqF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT9-RO-NLX">
+                                <rect key="frame" x="21" y="593" width="333" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.18431372549019609" green="0.77647058823529413" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify" translatesAutoresizingMaskIntoConstraints="NO" id="P7e-5V-qAi">
+                                <rect key="frame" x="68" y="55" width="239" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="tCR-j0-ILK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NSv-LX-ciH" firstAttribute="trailing" secondItem="bT9-RO-NLX" secondAttribute="trailing" id="B7i-bR-HDK"/>
+                            <constraint firstItem="NSv-LX-ciH" firstAttribute="leading" secondItem="bT9-RO-NLX" secondAttribute="leading" id="F96-fR-b21"/>
+                            <constraint firstItem="P7e-5V-qAi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="R0p-Vz-dNQ"/>
+                            <constraint firstItem="NSv-LX-ciH" firstAttribute="centerX" secondItem="P7e-5V-qAi" secondAttribute="centerX" id="SSw-Tv-nE3"/>
+                            <constraint firstItem="bT9-RO-NLX" firstAttribute="top" secondItem="NSv-LX-ciH" secondAttribute="bottom" constant="8" symbolic="YES" id="U9O-YB-QZ6"/>
+                            <constraint firstItem="NSv-LX-ciH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="WRW-bC-wTK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bT9-RO-NLX" secondAttribute="bottom" constant="29" id="aFf-ev-l9r"/>
+                            <constraint firstItem="P7e-5V-qAi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="jOi-gx-rjK"/>
+                            <constraint firstAttribute="bottom" secondItem="NSv-LX-ciH" secondAttribute="bottom" constant="82" id="xV4-vJ-TZQ"/>
+                            <constraint firstItem="NSv-LX-ciH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yHt-So-O9u"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="loginButton" destination="NSv-LX-ciH" id="sJZ-ml-oyl"/>
+                        <outlet property="signupButton" destination="bT9-RO-NLX" id="4uB-8y-xzF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="388.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Spotify" width="218" height="66"/>
+    </resources>
+</document>
