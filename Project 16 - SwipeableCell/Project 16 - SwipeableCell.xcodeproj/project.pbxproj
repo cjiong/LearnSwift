@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19FFE75B1CFC970A00C5E159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */; };
+		19FFE75D1CFC970A00C5E159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE75C1CFC970A00C5E159 /* ViewController.swift */; };
+		19FFE7601CFC970A00C5E159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FFE75E1CFC970A00C5E159 /* Main.storyboard */; };
+		19FFE7621CFC970A00C5E159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FFE7611CFC970A00C5E159 /* Assets.xcassets */; };
+		19FFE7651CFC970A00C5E159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FFE7631CFC970A00C5E159 /* LaunchScreen.storyboard */; };
+		19FFE7701CFC970A00C5E159 /* Project_16___SwipeableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE76F1CFC970A00C5E159 /* Project_16___SwipeableCellTests.swift */; };
+		19FFE77B1CFC970A00C5E159 /* Project_16___SwipeableCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE77A1CFC970A00C5E159 /* Project_16___SwipeableCellUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19FFE76C1CFC970A00C5E159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19FFE74F1CFC970A00C5E159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FFE7561CFC970A00C5E159;
+			remoteInfo = "Project 16 - SwipeableCell";
+		};
+		19FFE7771CFC970A00C5E159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19FFE74F1CFC970A00C5E159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FFE7561CFC970A00C5E159;
+			remoteInfo = "Project 16 - SwipeableCell";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19FFE7571CFC970A00C5E159 /* Project 16 - SwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 16 - SwipeableCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19FFE75C1CFC970A00C5E159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19FFE75F1CFC970A00C5E159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19FFE7611CFC970A00C5E159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19FFE7641CFC970A00C5E159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19FFE7661CFC970A00C5E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FFE76B1CFC970A00C5E159 /* Project 16 - SwipeableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 16 - SwipeableCellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FFE76F1CFC970A00C5E159 /* Project_16___SwipeableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_16___SwipeableCellTests.swift"; sourceTree = "<group>"; };
+		19FFE7711CFC970A00C5E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FFE7761CFC970A00C5E159 /* Project 16 - SwipeableCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 16 - SwipeableCellUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FFE77A1CFC970A00C5E159 /* Project_16___SwipeableCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_16___SwipeableCellUITests.swift"; sourceTree = "<group>"; };
+		19FFE77C1CFC970A00C5E159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19FFE7541CFC970A00C5E159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7681CFC970A00C5E159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7731CFC970A00C5E159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19FFE74E1CFC970A00C5E159 = {
+			isa = PBXGroup;
+			children = (
+				19FFE7591CFC970A00C5E159 /* Project 16 - SwipeableCell */,
+				19FFE76E1CFC970A00C5E159 /* Project 16 - SwipeableCellTests */,
+				19FFE7791CFC970A00C5E159 /* Project 16 - SwipeableCellUITests */,
+				19FFE7581CFC970A00C5E159 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19FFE7581CFC970A00C5E159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19FFE7571CFC970A00C5E159 /* Project 16 - SwipeableCell.app */,
+				19FFE76B1CFC970A00C5E159 /* Project 16 - SwipeableCellTests.xctest */,
+				19FFE7761CFC970A00C5E159 /* Project 16 - SwipeableCellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19FFE7591CFC970A00C5E159 /* Project 16 - SwipeableCell */ = {
+			isa = PBXGroup;
+			children = (
+				19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */,
+				19FFE75C1CFC970A00C5E159 /* ViewController.swift */,
+				19FFE75E1CFC970A00C5E159 /* Main.storyboard */,
+				19FFE7611CFC970A00C5E159 /* Assets.xcassets */,
+				19FFE7631CFC970A00C5E159 /* LaunchScreen.storyboard */,
+				19FFE7661CFC970A00C5E159 /* Info.plist */,
+			);
+			path = "Project 16 - SwipeableCell";
+			sourceTree = "<group>";
+		};
+		19FFE76E1CFC970A00C5E159 /* Project 16 - SwipeableCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				19FFE76F1CFC970A00C5E159 /* Project_16___SwipeableCellTests.swift */,
+				19FFE7711CFC970A00C5E159 /* Info.plist */,
+			);
+			path = "Project 16 - SwipeableCellTests";
+			sourceTree = "<group>";
+		};
+		19FFE7791CFC970A00C5E159 /* Project 16 - SwipeableCellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19FFE77A1CFC970A00C5E159 /* Project_16___SwipeableCellUITests.swift */,
+				19FFE77C1CFC970A00C5E159 /* Info.plist */,
+			);
+			path = "Project 16 - SwipeableCellUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19FFE7561CFC970A00C5E159 /* Project 16 - SwipeableCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FFE77F1CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCell" */;
+			buildPhases = (
+				19FFE7531CFC970A00C5E159 /* Sources */,
+				19FFE7541CFC970A00C5E159 /* Frameworks */,
+				19FFE7551CFC970A00C5E159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 16 - SwipeableCell";
+			productName = "Project 16 - SwipeableCell";
+			productReference = 19FFE7571CFC970A00C5E159 /* Project 16 - SwipeableCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19FFE76A1CFC970A00C5E159 /* Project 16 - SwipeableCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FFE7821CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellTests" */;
+			buildPhases = (
+				19FFE7671CFC970A00C5E159 /* Sources */,
+				19FFE7681CFC970A00C5E159 /* Frameworks */,
+				19FFE7691CFC970A00C5E159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19FFE76D1CFC970A00C5E159 /* PBXTargetDependency */,
+			);
+			name = "Project 16 - SwipeableCellTests";
+			productName = "Project 16 - SwipeableCellTests";
+			productReference = 19FFE76B1CFC970A00C5E159 /* Project 16 - SwipeableCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19FFE7751CFC970A00C5E159 /* Project 16 - SwipeableCellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FFE7851CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellUITests" */;
+			buildPhases = (
+				19FFE7721CFC970A00C5E159 /* Sources */,
+				19FFE7731CFC970A00C5E159 /* Frameworks */,
+				19FFE7741CFC970A00C5E159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19FFE7781CFC970A00C5E159 /* PBXTargetDependency */,
+			);
+			name = "Project 16 - SwipeableCellUITests";
+			productName = "Project 16 - SwipeableCellUITests";
+			productReference = 19FFE7761CFC970A00C5E159 /* Project 16 - SwipeableCellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19FFE74F1CFC970A00C5E159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19FFE7561CFC970A00C5E159 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19FFE76A1CFC970A00C5E159 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19FFE7561CFC970A00C5E159;
+					};
+					19FFE7751CFC970A00C5E159 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19FFE7561CFC970A00C5E159;
+					};
+				};
+			};
+			buildConfigurationList = 19FFE7521CFC970A00C5E159 /* Build configuration list for PBXProject "Project 16 - SwipeableCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19FFE74E1CFC970A00C5E159;
+			productRefGroup = 19FFE7581CFC970A00C5E159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19FFE7561CFC970A00C5E159 /* Project 16 - SwipeableCell */,
+				19FFE76A1CFC970A00C5E159 /* Project 16 - SwipeableCellTests */,
+				19FFE7751CFC970A00C5E159 /* Project 16 - SwipeableCellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19FFE7551CFC970A00C5E159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FFE7651CFC970A00C5E159 /* LaunchScreen.storyboard in Resources */,
+				19FFE7621CFC970A00C5E159 /* Assets.xcassets in Resources */,
+				19FFE7601CFC970A00C5E159 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7691CFC970A00C5E159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7741CFC970A00C5E159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19FFE7531CFC970A00C5E159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FFE75D1CFC970A00C5E159 /* ViewController.swift in Sources */,
+				19FFE75B1CFC970A00C5E159 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7671CFC970A00C5E159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FFE7701CFC970A00C5E159 /* Project_16___SwipeableCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FFE7721CFC970A00C5E159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FFE77B1CFC970A00C5E159 /* Project_16___SwipeableCellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19FFE76D1CFC970A00C5E159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19FFE7561CFC970A00C5E159 /* Project 16 - SwipeableCell */;
+			targetProxy = 19FFE76C1CFC970A00C5E159 /* PBXContainerItemProxy */;
+		};
+		19FFE7781CFC970A00C5E159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19FFE7561CFC970A00C5E159 /* Project 16 - SwipeableCell */;
+			targetProxy = 19FFE7771CFC970A00C5E159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19FFE75E1CFC970A00C5E159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FFE75F1CFC970A00C5E159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19FFE7631CFC970A00C5E159 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FFE7641CFC970A00C5E159 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19FFE77D1CFC970A00C5E159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19FFE77E1CFC970A00C5E159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19FFE7801CFC970A00C5E159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 16 - SwipeableCell/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19FFE7811CFC970A00C5E159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 16 - SwipeableCell/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19FFE7831CFC970A00C5E159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 16 - SwipeableCellTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 16 - SwipeableCell.app/Project 16 - SwipeableCell";
+			};
+			name = Debug;
+		};
+		19FFE7841CFC970A00C5E159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 16 - SwipeableCellTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 16 - SwipeableCell.app/Project 16 - SwipeableCell";
+			};
+			name = Release;
+		};
+		19FFE7861CFC970A00C5E159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 16 - SwipeableCellUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 16 - SwipeableCell";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19FFE7871CFC970A00C5E159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 16 - SwipeableCellUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-16---SwipeableCellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 16 - SwipeableCell";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19FFE7521CFC970A00C5E159 /* Build configuration list for PBXProject "Project 16 - SwipeableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FFE77D1CFC970A00C5E159 /* Debug */,
+				19FFE77E1CFC970A00C5E159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19FFE77F1CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FFE7801CFC970A00C5E159 /* Debug */,
+				19FFE7811CFC970A00C5E159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19FFE7821CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FFE7831CFC970A00C5E159 /* Debug */,
+				19FFE7841CFC970A00C5E159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19FFE7851CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FFE7861CFC970A00C5E159 /* Debug */,
+				19FFE7871CFC970A00C5E159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19FFE74F1CFC970A00C5E159 /* Project object */;
+}
