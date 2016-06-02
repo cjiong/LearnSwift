@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19E4A5121D00876A008EC5D6 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E4A5111D00876A008EC5D6 /* PlayerCell.swift */; };
 		19FFE75B1CFC970A00C5E159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */; };
 		19FFE75D1CFC970A00C5E159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFE75C1CFC970A00C5E159 /* ViewController.swift */; };
 		19FFE7601CFC970A00C5E159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FFE75E1CFC970A00C5E159 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E4A5111D00876A008EC5D6 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		19FFE7571CFC970A00C5E159 /* Project 16 - SwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 16 - SwipeableCell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FFE75C1CFC970A00C5E159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				19FFE75A1CFC970A00C5E159 /* AppDelegate.swift */,
 				19FFE75C1CFC970A00C5E159 /* ViewController.swift */,
+				19E4A5111D00876A008EC5D6 /* PlayerCell.swift */,
 				19FFE75E1CFC970A00C5E159 /* Main.storyboard */,
 				19FFE7611CFC970A00C5E159 /* Assets.xcassets */,
 				19FFE7631CFC970A00C5E159 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FFE75D1CFC970A00C5E159 /* ViewController.swift in Sources */,
+				19E4A5121D00876A008EC5D6 /* PlayerCell.swift in Sources */,
 				19FFE75B1CFC970A00C5E159 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				19FFE7811CFC970A00C5E159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FFE7821CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				19FFE7841CFC970A00C5E159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FFE7851CFC970A00C5E159 /* Build configuration list for PBXNativeTarget "Project 16 - SwipeableCellUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				19FFE7871CFC970A00C5E159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
