@@ -9,7 +9,7 @@
 import UIKit
 
 struct player {
-    let image: UIImage
+    let image: String
     let name: String
 }
 
@@ -19,6 +19,12 @@ class PlayerCell: UITableViewCell {
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var playerImage: UIImageView!
    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
     
 }
