@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19C64F641D032B6900E46D31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F631D032B6900E46D31 /* AppDelegate.swift */; };
+		19C64F661D032B6900E46D31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F651D032B6900E46D31 /* ViewController.swift */; };
+		19C64F691D032B6900E46D31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C64F671D032B6900E46D31 /* Main.storyboard */; };
+		19C64F6B1D032B6900E46D31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C64F6A1D032B6900E46D31 /* Assets.xcassets */; };
+		19C64F6E1D032B6900E46D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C64F6C1D032B6900E46D31 /* LaunchScreen.storyboard */; };
+		19C64F791D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F781D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift */; };
+		19C64F841D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F831D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19C64F751D032B6A00E46D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C64F581D032B6900E46D31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C64F5F1D032B6900E46D31;
+			remoteInfo = "Project 18 - OpenDocument";
+		};
+		19C64F801D032B6A00E46D31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19C64F581D032B6900E46D31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19C64F5F1D032B6900E46D31;
+			remoteInfo = "Project 18 - OpenDocument";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19C64F601D032B6900E46D31 /* Project 18 - OpenDocument.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 18 - OpenDocument.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C64F631D032B6900E46D31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19C64F651D032B6900E46D31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19C64F681D032B6900E46D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19C64F6A1D032B6900E46D31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19C64F6D1D032B6900E46D31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19C64F6F1D032B6900E46D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C64F741D032B6A00E46D31 /* Project 18 - OpenDocumentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 18 - OpenDocumentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C64F781D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_18___OpenDocumentTests.swift"; sourceTree = "<group>"; };
+		19C64F7A1D032B6A00E46D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C64F7F1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 18 - OpenDocumentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C64F831D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_18___OpenDocumentUITests.swift"; sourceTree = "<group>"; };
+		19C64F851D032B6A00E46D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19C64F5D1D032B6900E46D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F711D032B6A00E46D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F7C1D032B6A00E46D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C64F571D032B6900E46D31 = {
+			isa = PBXGroup;
+			children = (
+				19C64F621D032B6900E46D31 /* Project 18 - OpenDocument */,
+				19C64F771D032B6A00E46D31 /* Project 18 - OpenDocumentTests */,
+				19C64F821D032B6A00E46D31 /* Project 18 - OpenDocumentUITests */,
+				19C64F611D032B6900E46D31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19C64F611D032B6900E46D31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19C64F601D032B6900E46D31 /* Project 18 - OpenDocument.app */,
+				19C64F741D032B6A00E46D31 /* Project 18 - OpenDocumentTests.xctest */,
+				19C64F7F1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C64F621D032B6900E46D31 /* Project 18 - OpenDocument */ = {
+			isa = PBXGroup;
+			children = (
+				19C64F631D032B6900E46D31 /* AppDelegate.swift */,
+				19C64F651D032B6900E46D31 /* ViewController.swift */,
+				19C64F671D032B6900E46D31 /* Main.storyboard */,
+				19C64F6A1D032B6900E46D31 /* Assets.xcassets */,
+				19C64F6C1D032B6900E46D31 /* LaunchScreen.storyboard */,
+				19C64F6F1D032B6900E46D31 /* Info.plist */,
+			);
+			path = "Project 18 - OpenDocument";
+			sourceTree = "<group>";
+		};
+		19C64F771D032B6A00E46D31 /* Project 18 - OpenDocumentTests */ = {
+			isa = PBXGroup;
+			children = (
+				19C64F781D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift */,
+				19C64F7A1D032B6A00E46D31 /* Info.plist */,
+			);
+			path = "Project 18 - OpenDocumentTests";
+			sourceTree = "<group>";
+		};
+		19C64F821D032B6A00E46D31 /* Project 18 - OpenDocumentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19C64F831D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift */,
+				19C64F851D032B6A00E46D31 /* Info.plist */,
+			);
+			path = "Project 18 - OpenDocumentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19C64F5F1D032B6900E46D31 /* Project 18 - OpenDocument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C64F881D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocument" */;
+			buildPhases = (
+				19C64F5C1D032B6900E46D31 /* Sources */,
+				19C64F5D1D032B6900E46D31 /* Frameworks */,
+				19C64F5E1D032B6900E46D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 18 - OpenDocument";
+			productName = "Project 18 - OpenDocument";
+			productReference = 19C64F601D032B6900E46D31 /* Project 18 - OpenDocument.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19C64F731D032B6A00E46D31 /* Project 18 - OpenDocumentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C64F8B1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentTests" */;
+			buildPhases = (
+				19C64F701D032B6A00E46D31 /* Sources */,
+				19C64F711D032B6A00E46D31 /* Frameworks */,
+				19C64F721D032B6A00E46D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C64F761D032B6A00E46D31 /* PBXTargetDependency */,
+			);
+			name = "Project 18 - OpenDocumentTests";
+			productName = "Project 18 - OpenDocumentTests";
+			productReference = 19C64F741D032B6A00E46D31 /* Project 18 - OpenDocumentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19C64F7E1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C64F8E1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentUITests" */;
+			buildPhases = (
+				19C64F7B1D032B6A00E46D31 /* Sources */,
+				19C64F7C1D032B6A00E46D31 /* Frameworks */,
+				19C64F7D1D032B6A00E46D31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19C64F811D032B6A00E46D31 /* PBXTargetDependency */,
+			);
+			name = "Project 18 - OpenDocumentUITests";
+			productName = "Project 18 - OpenDocumentUITests";
+			productReference = 19C64F7F1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19C64F581D032B6900E46D31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19C64F5F1D032B6900E46D31 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+					};
+					19C64F731D032B6A00E46D31 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19C64F5F1D032B6900E46D31;
+					};
+					19C64F7E1D032B6A00E46D31 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19C64F5F1D032B6900E46D31;
+					};
+				};
+			};
+			buildConfigurationList = 19C64F5B1D032B6900E46D31 /* Build configuration list for PBXProject "Project 18 - OpenDocument" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19C64F571D032B6900E46D31;
+			productRefGroup = 19C64F611D032B6900E46D31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19C64F5F1D032B6900E46D31 /* Project 18 - OpenDocument */,
+				19C64F731D032B6A00E46D31 /* Project 18 - OpenDocumentTests */,
+				19C64F7E1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19C64F5E1D032B6900E46D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C64F6E1D032B6900E46D31 /* LaunchScreen.storyboard in Resources */,
+				19C64F6B1D032B6900E46D31 /* Assets.xcassets in Resources */,
+				19C64F691D032B6900E46D31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F721D032B6A00E46D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F7D1D032B6A00E46D31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C64F5C1D032B6900E46D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C64F661D032B6900E46D31 /* ViewController.swift in Sources */,
+				19C64F641D032B6900E46D31 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F701D032B6A00E46D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C64F791D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19C64F7B1D032B6A00E46D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C64F841D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19C64F761D032B6A00E46D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C64F5F1D032B6900E46D31 /* Project 18 - OpenDocument */;
+			targetProxy = 19C64F751D032B6A00E46D31 /* PBXContainerItemProxy */;
+		};
+		19C64F811D032B6A00E46D31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19C64F5F1D032B6900E46D31 /* Project 18 - OpenDocument */;
+			targetProxy = 19C64F801D032B6A00E46D31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19C64F671D032B6900E46D31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C64F681D032B6900E46D31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19C64F6C1D032B6900E46D31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C64F6D1D032B6900E46D31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19C64F861D032B6A00E46D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19C64F871D032B6A00E46D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19C64F891D032B6A00E46D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 18 - OpenDocument/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocument";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19C64F8A1D032B6A00E46D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 18 - OpenDocument/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocument";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19C64F8C1D032B6A00E46D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 18 - OpenDocumentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocumentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 18 - OpenDocument.app/Project 18 - OpenDocument";
+			};
+			name = Debug;
+		};
+		19C64F8D1D032B6A00E46D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 18 - OpenDocumentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocumentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 18 - OpenDocument.app/Project 18 - OpenDocument";
+			};
+			name = Release;
+		};
+		19C64F8F1D032B6A00E46D31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 18 - OpenDocumentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocumentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 18 - OpenDocument";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19C64F901D032B6A00E46D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 18 - OpenDocumentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-18---OpenDocumentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 18 - OpenDocument";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C64F5B1D032B6900E46D31 /* Build configuration list for PBXProject "Project 18 - OpenDocument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C64F861D032B6A00E46D31 /* Debug */,
+				19C64F871D032B6A00E46D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C64F881D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C64F891D032B6A00E46D31 /* Debug */,
+				19C64F8A1D032B6A00E46D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19C64F8B1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C64F8C1D032B6A00E46D31 /* Debug */,
+				19C64F8D1D032B6A00E46D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19C64F8E1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C64F8F1D032B6A00E46D31 /* Debug */,
+				19C64F901D032B6A00E46D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19C64F581D032B6900E46D31 /* Project object */;
+}
