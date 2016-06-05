@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19F275541D0454BE00A0047A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F275531D0454BE00A0047A /* AppDelegate.swift */; };
+		19F275561D0454BE00A0047A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F275551D0454BE00A0047A /* ViewController.swift */; };
+		19F275591D0454BE00A0047A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F275571D0454BE00A0047A /* Main.storyboard */; };
+		19F2755B1D0454BE00A0047A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F2755A1D0454BE00A0047A /* Assets.xcassets */; };
+		19F2755E1D0454BE00A0047A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F2755C1D0454BE00A0047A /* LaunchScreen.storyboard */; };
+		19F275691D0454BE00A0047A /* Project_19___SetDateAndTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F275681D0454BE00A0047A /* Project_19___SetDateAndTimeTests.swift */; };
+		19F275741D0454BE00A0047A /* Project_19___SetDateAndTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F275731D0454BE00A0047A /* Project_19___SetDateAndTimeUITests.swift */; };
+		19F275821D04575400A0047A /* SetDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F275811D04575400A0047A /* SetDateController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19F275651D0454BE00A0047A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19F275481D0454BE00A0047A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F2754F1D0454BE00A0047A;
+			remoteInfo = "Project 19 - SetDateAndTime";
+		};
+		19F275701D0454BE00A0047A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19F275481D0454BE00A0047A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F2754F1D0454BE00A0047A;
+			remoteInfo = "Project 19 - SetDateAndTime";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19F275501D0454BE00A0047A /* Project 19 - SetDateAndTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 19 - SetDateAndTime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F275531D0454BE00A0047A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19F275551D0454BE00A0047A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19F275581D0454BE00A0047A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19F2755A1D0454BE00A0047A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F2755D1D0454BE00A0047A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19F2755F1D0454BE00A0047A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F275641D0454BE00A0047A /* Project 19 - SetDateAndTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 19 - SetDateAndTimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F275681D0454BE00A0047A /* Project_19___SetDateAndTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_19___SetDateAndTimeTests.swift"; sourceTree = "<group>"; };
+		19F2756A1D0454BE00A0047A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F2756F1D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 19 - SetDateAndTimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F275731D0454BE00A0047A /* Project_19___SetDateAndTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_19___SetDateAndTimeUITests.swift"; sourceTree = "<group>"; };
+		19F275751D0454BE00A0047A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F275811D04575400A0047A /* SetDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDateController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19F2754D1D0454BE00A0047A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F275611D0454BE00A0047A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F2756C1D0454BE00A0047A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19F275471D0454BE00A0047A = {
+			isa = PBXGroup;
+			children = (
+				19F275521D0454BE00A0047A /* Project 19 - SetDateAndTime */,
+				19F275671D0454BE00A0047A /* Project 19 - SetDateAndTimeTests */,
+				19F275721D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests */,
+				19F275511D0454BE00A0047A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19F275511D0454BE00A0047A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19F275501D0454BE00A0047A /* Project 19 - SetDateAndTime.app */,
+				19F275641D0454BE00A0047A /* Project 19 - SetDateAndTimeTests.xctest */,
+				19F2756F1D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19F275521D0454BE00A0047A /* Project 19 - SetDateAndTime */ = {
+			isa = PBXGroup;
+			children = (
+				19F275531D0454BE00A0047A /* AppDelegate.swift */,
+				19F275551D0454BE00A0047A /* ViewController.swift */,
+				19F275811D04575400A0047A /* SetDateController.swift */,
+				19F275571D0454BE00A0047A /* Main.storyboard */,
+				19F2755A1D0454BE00A0047A /* Assets.xcassets */,
+				19F2755C1D0454BE00A0047A /* LaunchScreen.storyboard */,
+				19F2755F1D0454BE00A0047A /* Info.plist */,
+			);
+			path = "Project 19 - SetDateAndTime";
+			sourceTree = "<group>";
+		};
+		19F275671D0454BE00A0047A /* Project 19 - SetDateAndTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				19F275681D0454BE00A0047A /* Project_19___SetDateAndTimeTests.swift */,
+				19F2756A1D0454BE00A0047A /* Info.plist */,
+			);
+			path = "Project 19 - SetDateAndTimeTests";
+			sourceTree = "<group>";
+		};
+		19F275721D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19F275731D0454BE00A0047A /* Project_19___SetDateAndTimeUITests.swift */,
+				19F275751D0454BE00A0047A /* Info.plist */,
+			);
+			path = "Project 19 - SetDateAndTimeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19F2754F1D0454BE00A0047A /* Project 19 - SetDateAndTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F275781D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTime" */;
+			buildPhases = (
+				19F2754C1D0454BE00A0047A /* Sources */,
+				19F2754D1D0454BE00A0047A /* Frameworks */,
+				19F2754E1D0454BE00A0047A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 19 - SetDateAndTime";
+			productName = "Project 19 - SetDateAndTime";
+			productReference = 19F275501D0454BE00A0047A /* Project 19 - SetDateAndTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19F275631D0454BE00A0047A /* Project 19 - SetDateAndTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F2757B1D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTimeTests" */;
+			buildPhases = (
+				19F275601D0454BE00A0047A /* Sources */,
+				19F275611D0454BE00A0047A /* Frameworks */,
+				19F275621D0454BE00A0047A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F275661D0454BE00A0047A /* PBXTargetDependency */,
+			);
+			name = "Project 19 - SetDateAndTimeTests";
+			productName = "Project 19 - SetDateAndTimeTests";
+			productReference = 19F275641D0454BE00A0047A /* Project 19 - SetDateAndTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19F2756E1D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F2757E1D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTimeUITests" */;
+			buildPhases = (
+				19F2756B1D0454BE00A0047A /* Sources */,
+				19F2756C1D0454BE00A0047A /* Frameworks */,
+				19F2756D1D0454BE00A0047A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F275711D0454BE00A0047A /* PBXTargetDependency */,
+			);
+			name = "Project 19 - SetDateAndTimeUITests";
+			productName = "Project 19 - SetDateAndTimeUITests";
+			productReference = 19F2756F1D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19F275481D0454BE00A0047A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19F2754F1D0454BE00A0047A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+					};
+					19F275631D0454BE00A0047A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19F2754F1D0454BE00A0047A;
+					};
+					19F2756E1D0454BE00A0047A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19F2754F1D0454BE00A0047A;
+					};
+				};
+			};
+			buildConfigurationList = 19F2754B1D0454BE00A0047A /* Build configuration list for PBXProject "Project 19 - SetDateAndTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19F275471D0454BE00A0047A;
+			productRefGroup = 19F275511D0454BE00A0047A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19F2754F1D0454BE00A0047A /* Project 19 - SetDateAndTime */,
+				19F275631D0454BE00A0047A /* Project 19 - SetDateAndTimeTests */,
+				19F2756E1D0454BE00A0047A /* Project 19 - SetDateAndTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19F2754E1D0454BE00A0047A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F2755E1D0454BE00A0047A /* LaunchScreen.storyboard in Resources */,
+				19F2755B1D0454BE00A0047A /* Assets.xcassets in Resources */,
+				19F275591D0454BE00A0047A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F275621D0454BE00A0047A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F2756D1D0454BE00A0047A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19F2754C1D0454BE00A0047A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F275561D0454BE00A0047A /* ViewController.swift in Sources */,
+				19F275821D04575400A0047A /* SetDateController.swift in Sources */,
+				19F275541D0454BE00A0047A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F275601D0454BE00A0047A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F275691D0454BE00A0047A /* Project_19___SetDateAndTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F2756B1D0454BE00A0047A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F275741D0454BE00A0047A /* Project_19___SetDateAndTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19F275661D0454BE00A0047A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F2754F1D0454BE00A0047A /* Project 19 - SetDateAndTime */;
+			targetProxy = 19F275651D0454BE00A0047A /* PBXContainerItemProxy */;
+		};
+		19F275711D0454BE00A0047A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F2754F1D0454BE00A0047A /* Project 19 - SetDateAndTime */;
+			targetProxy = 19F275701D0454BE00A0047A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19F275571D0454BE00A0047A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F275581D0454BE00A0047A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19F2755C1D0454BE00A0047A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F2755D1D0454BE00A0047A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19F275761D0454BE00A0047A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19F275771D0454BE00A0047A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19F275791D0454BE00A0047A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 19 - SetDateAndTime/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19F2757A1D0454BE00A0047A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 19 - SetDateAndTime/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTime";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19F2757C1D0454BE00A0047A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 19 - SetDateAndTimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 19 - SetDateAndTime.app/Project 19 - SetDateAndTime";
+			};
+			name = Debug;
+		};
+		19F2757D1D0454BE00A0047A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 19 - SetDateAndTimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 19 - SetDateAndTime.app/Project 19 - SetDateAndTime";
+			};
+			name = Release;
+		};
+		19F2757F1D0454BE00A0047A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 19 - SetDateAndTimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 19 - SetDateAndTime";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19F275801D0454BE00A0047A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 19 - SetDateAndTimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-19---SetDateAndTimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 19 - SetDateAndTime";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F2754B1D0454BE00A0047A /* Build configuration list for PBXProject "Project 19 - SetDateAndTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F275761D0454BE00A0047A /* Debug */,
+				19F275771D0454BE00A0047A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F275781D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F275791D0454BE00A0047A /* Debug */,
+				19F2757A1D0454BE00A0047A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19F2757B1D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F2757C1D0454BE00A0047A /* Debug */,
+				19F2757D1D0454BE00A0047A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19F2757E1D0454BE00A0047A /* Build configuration list for PBXNativeTarget "Project 19 - SetDateAndTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F2757F1D0454BE00A0047A /* Debug */,
+				19F275801D0454BE00A0047A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19F275481D0454BE00A0047A /* Project object */;
+}
