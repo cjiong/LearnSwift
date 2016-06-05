@@ -14,6 +14,7 @@
 		19C64F6E1D032B6900E46D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C64F6C1D032B6900E46D31 /* LaunchScreen.storyboard */; };
 		19C64F791D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F781D032B6A00E46D31 /* Project_18___OpenDocumentTests.swift */; };
 		19C64F841D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C64F831D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift */; };
+		19F275461D04212500A0047A /* Travel.docx in Resources */ = {isa = PBXBuildFile; fileRef = 19F275451D04212500A0047A /* Travel.docx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		19C64F7F1D032B6A00E46D31 /* Project 18 - OpenDocumentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 18 - OpenDocumentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C64F831D032B6A00E46D31 /* Project_18___OpenDocumentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_18___OpenDocumentUITests.swift"; sourceTree = "<group>"; };
 		19C64F851D032B6A00E46D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F275451D04212500A0047A /* Travel.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Travel.docx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				19C64F671D032B6900E46D31 /* Main.storyboard */,
 				19C64F6A1D032B6900E46D31 /* Assets.xcassets */,
 				19C64F6C1D032B6900E46D31 /* LaunchScreen.storyboard */,
+				19F275451D04212500A0047A /* Travel.docx */,
 				19C64F6F1D032B6900E46D31 /* Info.plist */,
 			);
 			path = "Project 18 - OpenDocument";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19C64F6E1D032B6900E46D31 /* LaunchScreen.storyboard in Resources */,
+				19F275461D04212500A0047A /* Travel.docx in Resources */,
 				19C64F6B1D032B6900E46D31 /* Assets.xcassets in Resources */,
 				19C64F691D032B6900E46D31 /* Main.storyboard in Resources */,
 			);
@@ -487,6 +491,7 @@
 				19C64F8A1D032B6A00E46D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19C64F8B1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				19C64F8D1D032B6A00E46D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19C64F8E1D032B6A00E46D31 /* Build configuration list for PBXNativeTarget "Project 18 - OpenDocumentUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				19C64F901D032B6A00E46D31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
