@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var date = ""
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        print(date)
+        dateLabel.text = date
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let navigationVC = segue.destinationViewController as! UINavigationController
+        let setDateVC = navigationVC.viewControllers.first as! SetDateController
+        
+        //MARK: 传值
+        setDateVC.newDate = ({ string in self.date = string })
+        
+    }
+    
 }
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-9B-Zsw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-9B-Zsw">
                                 <rect key="frame" x="135" y="408" width="105" height="30"/>
                                 <state key="normal" title="设置日期和时间"/>
+                                <connections>
+                                    <segue destination="jbi-7T-2r1" kind="show" id="hY4-S6-6gn"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1K-KQ-Z48">
+                                <rect key="frame" x="0.0" y="266" width="375" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="RXB-zS-my5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a1K-KQ-Z48" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Es-jB-awf"/>
+                            <constraint firstAttribute="trailing" secondItem="a1K-KQ-Z48" secondAttribute="trailing" id="FDu-fq-Xne"/>
+                            <constraint firstItem="qG4-9B-Zsw" firstAttribute="top" secondItem="a1K-KQ-Z48" secondAttribute="bottom" constant="89" id="FYL-GX-oM7"/>
+                            <constraint firstItem="a1K-KQ-Z48" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="246" id="uHO-wr-11s"/>
+                            <constraint firstItem="a1K-KQ-Z48" firstAttribute="centerX" secondItem="qG4-9B-Zsw" secondAttribute="centerX" id="yFt-RM-V8X"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="a1K-KQ-Z48" id="RKb-qv-RwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,26 +82,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-Qk-n5d">
-                                <rect key="frame" x="0.0" y="84" width="375" height="216"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Irz-Qk-n5d">
+                                <rect key="frame" x="0.0" y="153" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="486824141.109864">
                                     <!--2016-06-05 12:55:41 +0000-->
                                 </date>
                             </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-Rq-RJq">
-                                <rect key="frame" x="0.0" y="301" width="375" height="216"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-Fg-C20" userLabel="Current Time Label">
+                                <rect key="frame" x="-4" y="79" width="383" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="8XZ-GU-Oa3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AfJ-Rq-RJq" userLabel="Time Picker">
+                                <rect key="frame" x="0.0" y="391" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="486824145.16196001">
                                     <!--2016-06-05 12:55:45 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AfJ-Rq-RJq" firstAttribute="trailing" secondItem="Irz-Qk-n5d" secondAttribute="trailing" id="L4z-4Z-OPc"/>
+                            <constraint firstItem="Z6M-Fg-C20" firstAttribute="leading" secondItem="Csh-hx-pLM" secondAttribute="leadingMargin" constant="-20" id="TOk-Zq-KuX"/>
+                            <constraint firstItem="Irz-Qk-n5d" firstAttribute="top" secondItem="Z6M-Fg-C20" secondAttribute="bottom" constant="15" id="bxH-iV-pv0"/>
+                            <constraint firstItem="Irz-Qk-n5d" firstAttribute="leading" secondItem="Csh-hx-pLM" secondAttribute="leading" id="cDU-r9-fld"/>
+                            <constraint firstItem="Z6M-Fg-C20" firstAttribute="top" secondItem="suB-Xk-bJY" secondAttribute="bottom" constant="15" id="cyZ-Ch-E5l"/>
+                            <constraint firstItem="AfJ-Rq-RJq" firstAttribute="top" secondItem="Irz-Qk-n5d" secondAttribute="bottom" constant="22" id="dJi-QT-0Cp"/>
+                            <constraint firstItem="AfJ-Rq-RJq" firstAttribute="leading" secondItem="Irz-Qk-n5d" secondAttribute="leading" id="f82-pz-rdt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z6M-Fg-C20" secondAttribute="trailing" constant="-20" id="okJ-zY-sas"/>
+                            <constraint firstItem="Irz-Qk-n5d" firstAttribute="centerX" secondItem="Z6M-Fg-C20" secondAttribute="centerX" id="y7P-38-A9T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="设置时间日期" id="W94-dS-PrE">
-                        <barButtonItem key="leftBarButtonItem" title="返回" id="8wi-o5-M1i"/>
-                        <barButtonItem key="rightBarButtonItem" title="完成" id="4H1-x4-w8f"/>
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="8wi-o5-M1i">
+                            <connections>
+                                <action selector="backButtonDidTouch:" destination="qfb-hV-eoC" id="sdH-L1-Lja"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="完成" id="4H1-x4-w8f">
+                            <connections>
+                                <action selector="doneButtonDidTouch:" destination="qfb-hV-eoC" id="5DA-pP-wQp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="Z6M-Fg-C20" id="zoS-RH-Znn"/>
+                        <outlet property="datePicker" destination="Irz-Qk-n5d" id="4gi-xA-Smi"/>
+                        <outlet property="timePicker" destination="AfJ-Rq-RJq" id="ehv-Np-8dJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKb-4r-Qca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
