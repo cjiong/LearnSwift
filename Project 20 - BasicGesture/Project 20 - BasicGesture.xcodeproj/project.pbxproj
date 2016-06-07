@@ -14,6 +14,9 @@
 		19009A451D059A65008831E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19009A431D059A65008831E0 /* LaunchScreen.storyboard */; };
 		19009A501D059A65008831E0 /* Project_20___BasicGestureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19009A4F1D059A65008831E0 /* Project_20___BasicGestureTests.swift */; };
 		19009A5B1D059A65008831E0 /* Project_20___BasicGestureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19009A5A1D059A65008831E0 /* Project_20___BasicGestureUITests.swift */; };
+		19009A6B1D059D67008831E0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19009A6A1D059D67008831E0 /* TopViewController.swift */; };
+		19009A6D1D059DA6008831E0 /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19009A6C1D059DA6008831E0 /* MiddleViewController.swift */; };
+		19009A6F1D059DB5008831E0 /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19009A6E1D059DB5008831E0 /* BottomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		19009A561D059A65008831E0 /* Project 20 - BasicGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 20 - BasicGestureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19009A5A1D059A65008831E0 /* Project_20___BasicGestureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_20___BasicGestureUITests.swift"; sourceTree = "<group>"; };
 		19009A5C1D059A65008831E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19009A6A1D059D67008831E0 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		19009A6C1D059DA6008831E0 /* MiddleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
+		19009A6E1D059DB5008831E0 /* BottomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				19009A3A1D059A65008831E0 /* AppDelegate.swift */,
 				19009A3C1D059A65008831E0 /* ViewController.swift */,
+				19009A6A1D059D67008831E0 /* TopViewController.swift */,
+				19009A6C1D059DA6008831E0 /* MiddleViewController.swift */,
+				19009A6E1D059DB5008831E0 /* BottomViewController.swift */,
 				19009A3E1D059A65008831E0 /* Main.storyboard */,
 				19009A411D059A65008831E0 /* Assets.xcassets */,
 				19009A431D059A65008831E0 /* LaunchScreen.storyboard */,
@@ -258,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19009A6B1D059D67008831E0 /* TopViewController.swift in Sources */,
 				19009A3D1D059A65008831E0 /* ViewController.swift in Sources */,
+				19009A6F1D059DB5008831E0 /* BottomViewController.swift in Sources */,
 				19009A3B1D059A65008831E0 /* AppDelegate.swift in Sources */,
+				19009A6D1D059DA6008831E0 /* MiddleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				19009A611D059A65008831E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19009A621D059A65008831E0 /* Build configuration list for PBXNativeTarget "Project 20 - BasicGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				19009A641D059A65008831E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19009A651D059A65008831E0 /* Build configuration list for PBXNativeTarget "Project 20 - BasicGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				19009A671D059A65008831E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
