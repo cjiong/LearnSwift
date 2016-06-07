@@ -14,6 +14,7 @@
 		19A771841D05D52C00FA0CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A771821D05D52C00FA0CA4 /* LaunchScreen.storyboard */; };
 		19A7718F1D05D52C00FA0CA4 /* Project_21___HeaderTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A7718E1D05D52C00FA0CA4 /* Project_21___HeaderTableViewTests.swift */; };
 		19A7719A1D05D52C00FA0CA4 /* Project_21___HeaderTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A771991D05D52C00FA0CA4 /* Project_21___HeaderTableViewUITests.swift */; };
+		19C5671D1D06CF190037E5B9 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C5671C1D06CF190037E5B9 /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		19A771951D05D52C00FA0CA4 /* Project 21 - HeaderTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 21 - HeaderTableViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A771991D05D52C00FA0CA4 /* Project_21___HeaderTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_21___HeaderTableViewUITests.swift"; sourceTree = "<group>"; };
 		19A7719B1D05D52C00FA0CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19C5671C1D06CF190037E5B9 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				19A771791D05D52C00FA0CA4 /* AppDelegate.swift */,
 				19A7717B1D05D52C00FA0CA4 /* ViewController.swift */,
+				19C5671C1D06CF190037E5B9 /* HeaderCell.swift */,
 				19A7717D1D05D52C00FA0CA4 /* Main.storyboard */,
 				19A771801D05D52C00FA0CA4 /* Assets.xcassets */,
 				19A771821D05D52C00FA0CA4 /* LaunchScreen.storyboard */,
@@ -193,7 +196,6 @@
 				TargetAttributes = {
 					19A771751D05D52C00FA0CA4 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 55TJDVV762;
 					};
 					19A771891D05D52C00FA0CA4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -260,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A7717C1D05D52C00FA0CA4 /* ViewController.swift in Sources */,
+				19C5671D1D06CF190037E5B9 /* HeaderCell.swift in Sources */,
 				19A7717A1D05D52C00FA0CA4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 21 - HeaderTableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-21---HeaderTableView";
@@ -413,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 21 - HeaderTableView/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-21---HeaderTableView";
@@ -487,6 +492,7 @@
 				19A771A01D05D52C00FA0CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A771A11D05D52C00FA0CA4 /* Build configuration list for PBXNativeTarget "Project 21 - HeaderTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				19A771A31D05D52C00FA0CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19A771A41D05D52C00FA0CA4 /* Build configuration list for PBXNativeTarget "Project 21 - HeaderTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				19A771A61D05D52C00FA0CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
