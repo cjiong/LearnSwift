@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xk6-u6-XVR">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Super Car-->
         <scene sceneID="Gvn-A4-OcZ">
             <objects>
-                <tableViewController id="XAV-Qq-E3H" sceneMemberID="viewController">
+                <tableViewController id="XAV-Qq-E3H" userLabel="Super Car" customClass="ViewController" customModule="Project_22___CollapsibleTableSection" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dGb-AD-8l8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kZ3-96-klL" userLabel="Header Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="header" id="kZ3-96-klL" userLabel="Header Cell" customClass="CollapsibleHeader" customModule="Project_22___CollapsibleTableSection" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kZ3-96-klL" id="Q3C-pg-t3i">
@@ -28,20 +28,26 @@
                                                 <constraint firstAttribute="height" constant="30" id="M5w-1Z-CQL"/>
                                                 <constraint firstAttribute="width" constant="30" id="xut-7d-JKD"/>
                                             </constraints>
+                                            <state key="normal" title="&gt;">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="unfoldButtonDidTouch:" destination="XAV-Qq-E3H" eventType="touchUpInside" id="ScJ-GY-hQC"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wu-a8-dZJ">
-                                            <rect key="frame" x="55" y="7" width="216" height="29"/>
+                                            <rect key="frame" x="38" y="7" width="233" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="bYn-Cv-omb"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="4wu-a8-dZJ" firstAttribute="leading" secondItem="WoH-U8-VkO" secondAttribute="trailing" constant="17" id="3xa-Vf-ekD"/>
+                                        <constraint firstItem="4wu-a8-dZJ" firstAttribute="leading" secondItem="WoH-U8-VkO" secondAttribute="trailing" id="3xa-Vf-ekD"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="4wu-a8-dZJ" secondAttribute="trailing" constant="96" id="6Jo-ak-AdA"/>
                                         <constraint firstItem="WoH-U8-VkO" firstAttribute="leading" secondItem="Q3C-pg-t3i" secondAttribute="leadingMargin" id="8cM-Qw-Qfq"/>
                                         <constraint firstItem="WoH-U8-VkO" firstAttribute="top" secondItem="4wu-a8-dZJ" secondAttribute="top" id="BaJ-t0-cRj"/>
@@ -58,8 +64,12 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="brandLabel" destination="4wu-a8-dZJ" id="Vtu-ee-rWe"/>
+                                    <outlet property="unfoldButton" destination="WoH-U8-VkO" id="pus-OP-MMV"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CeR-eO-zB9" userLabel="Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="CeR-eO-zB9" userLabel="Cell">
                                 <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CeR-eO-zB9" id="icN-Lu-1hu">

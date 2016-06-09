@@ -14,6 +14,7 @@
 		1903C8E21D070FD500CD0CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1903C8E01D070FD500CD0CF9 /* LaunchScreen.storyboard */; };
 		1903C8ED1D070FD500CD0CF9 /* Project_22___CollapsibleTableSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1903C8EC1D070FD500CD0CF9 /* Project_22___CollapsibleTableSectionTests.swift */; };
 		1903C8F81D070FD500CD0CF9 /* Project_22___CollapsibleTableSectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1903C8F71D070FD500CD0CF9 /* Project_22___CollapsibleTableSectionUITests.swift */; };
+		199A959C1D0937E2009C8B26 /* CollapsibleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A959B1D0937E2009C8B26 /* CollapsibleHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1903C8F31D070FD500CD0CF9 /* Project 22 - CollapsibleTableSectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 22 - CollapsibleTableSectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1903C8F71D070FD500CD0CF9 /* Project_22___CollapsibleTableSectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_22___CollapsibleTableSectionUITests.swift"; sourceTree = "<group>"; };
 		1903C8F91D070FD500CD0CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199A959B1D0937E2009C8B26 /* CollapsibleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1903C8D71D070FD500CD0CF9 /* AppDelegate.swift */,
 				1903C8D91D070FD500CD0CF9 /* ViewController.swift */,
+				199A959B1D0937E2009C8B26 /* CollapsibleHeader.swift */,
 				1903C8DB1D070FD500CD0CF9 /* Main.storyboard */,
 				1903C8DE1D070FD500CD0CF9 /* Assets.xcassets */,
 				1903C8E01D070FD500CD0CF9 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199A959C1D0937E2009C8B26 /* CollapsibleHeader.swift in Sources */,
 				1903C8DA1D070FD500CD0CF9 /* ViewController.swift in Sources */,
 				1903C8D81D070FD500CD0CF9 /* AppDelegate.swift in Sources */,
 			);
@@ -490,6 +494,7 @@
 				1903C8FE1D070FD500CD0CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1903C8FF1D070FD500CD0CF9 /* Build configuration list for PBXNativeTarget "Project 22 - CollapsibleTableSectionTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				1903C9011D070FD500CD0CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1903C9021D070FD500CD0CF9 /* Build configuration list for PBXNativeTarget "Project 22 - CollapsibleTableSectionUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				1903C9041D070FD500CD0CF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
