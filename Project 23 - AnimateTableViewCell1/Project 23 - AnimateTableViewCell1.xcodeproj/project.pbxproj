@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		199A95AA1D0956D1009C8B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95A91D0956D1009C8B26 /* AppDelegate.swift */; };
+		199A95AC1D0956D1009C8B26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95AB1D0956D1009C8B26 /* ViewController.swift */; };
+		199A95AF1D0956D1009C8B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199A95AD1D0956D1009C8B26 /* Main.storyboard */; };
+		199A95B11D0956D1009C8B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199A95B01D0956D1009C8B26 /* Assets.xcassets */; };
+		199A95B41D0956D1009C8B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199A95B21D0956D1009C8B26 /* LaunchScreen.storyboard */; };
+		199A95BF1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95BE1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift */; };
+		199A95CA1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95C91D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		199A95BB1D0956D1009C8B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 199A959E1D0956D1009C8B26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 199A95A51D0956D1009C8B26;
+			remoteInfo = "Project 23 - AnimateTableViewCell1";
+		};
+		199A95C61D0956D1009C8B26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 199A959E1D0956D1009C8B26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 199A95A51D0956D1009C8B26;
+			remoteInfo = "Project 23 - AnimateTableViewCell1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		199A95A61D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 23 - AnimateTableViewCell1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		199A95A91D0956D1009C8B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		199A95AB1D0956D1009C8B26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		199A95AE1D0956D1009C8B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		199A95B01D0956D1009C8B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		199A95B31D0956D1009C8B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		199A95B51D0956D1009C8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199A95BA1D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 23 - AnimateTableViewCell1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		199A95BE1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_23___AnimateTableViewCell1Tests.swift"; sourceTree = "<group>"; };
+		199A95C01D0956D1009C8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199A95C51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 23 - AnimateTableViewCell1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		199A95C91D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_23___AnimateTableViewCell1UITests.swift"; sourceTree = "<group>"; };
+		199A95CB1D0956D1009C8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		199A95A31D0956D1009C8B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95B71D0956D1009C8B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95C21D0956D1009C8B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		199A959D1D0956D1009C8B26 = {
+			isa = PBXGroup;
+			children = (
+				199A95A81D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */,
+				199A95BD1D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests */,
+				199A95C81D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests */,
+				199A95A71D0956D1009C8B26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		199A95A71D0956D1009C8B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				199A95A61D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1.app */,
+				199A95BA1D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests.xctest */,
+				199A95C51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		199A95A81D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */ = {
+			isa = PBXGroup;
+			children = (
+				199A95A91D0956D1009C8B26 /* AppDelegate.swift */,
+				199A95AB1D0956D1009C8B26 /* ViewController.swift */,
+				199A95AD1D0956D1009C8B26 /* Main.storyboard */,
+				199A95B01D0956D1009C8B26 /* Assets.xcassets */,
+				199A95B21D0956D1009C8B26 /* LaunchScreen.storyboard */,
+				199A95B51D0956D1009C8B26 /* Info.plist */,
+			);
+			path = "Project 23 - AnimateTableViewCell1";
+			sourceTree = "<group>";
+		};
+		199A95BD1D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				199A95BE1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift */,
+				199A95C01D0956D1009C8B26 /* Info.plist */,
+			);
+			path = "Project 23 - AnimateTableViewCell1Tests";
+			sourceTree = "<group>";
+		};
+		199A95C81D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				199A95C91D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift */,
+				199A95CB1D0956D1009C8B26 /* Info.plist */,
+			);
+			path = "Project 23 - AnimateTableViewCell1UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		199A95A51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 199A95CE1D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1" */;
+			buildPhases = (
+				199A95A21D0956D1009C8B26 /* Sources */,
+				199A95A31D0956D1009C8B26 /* Frameworks */,
+				199A95A41D0956D1009C8B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 23 - AnimateTableViewCell1";
+			productName = "Project 23 - AnimateTableViewCell1";
+			productReference = 199A95A61D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		199A95B91D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 199A95D11D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1Tests" */;
+			buildPhases = (
+				199A95B61D0956D1009C8B26 /* Sources */,
+				199A95B71D0956D1009C8B26 /* Frameworks */,
+				199A95B81D0956D1009C8B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				199A95BC1D0956D1009C8B26 /* PBXTargetDependency */,
+			);
+			name = "Project 23 - AnimateTableViewCell1Tests";
+			productName = "Project 23 - AnimateTableViewCell1Tests";
+			productReference = 199A95BA1D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		199A95C41D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 199A95D41D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1UITests" */;
+			buildPhases = (
+				199A95C11D0956D1009C8B26 /* Sources */,
+				199A95C21D0956D1009C8B26 /* Frameworks */,
+				199A95C31D0956D1009C8B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				199A95C71D0956D1009C8B26 /* PBXTargetDependency */,
+			);
+			name = "Project 23 - AnimateTableViewCell1UITests";
+			productName = "Project 23 - AnimateTableViewCell1UITests";
+			productReference = 199A95C51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		199A959E1D0956D1009C8B26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					199A95A51D0956D1009C8B26 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					199A95B91D0956D1009C8B26 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 199A95A51D0956D1009C8B26;
+					};
+					199A95C41D0956D1009C8B26 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 199A95A51D0956D1009C8B26;
+					};
+				};
+			};
+			buildConfigurationList = 199A95A11D0956D1009C8B26 /* Build configuration list for PBXProject "Project 23 - AnimateTableViewCell1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 199A959D1D0956D1009C8B26;
+			productRefGroup = 199A95A71D0956D1009C8B26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				199A95A51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */,
+				199A95B91D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1Tests */,
+				199A95C41D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		199A95A41D0956D1009C8B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199A95B41D0956D1009C8B26 /* LaunchScreen.storyboard in Resources */,
+				199A95B11D0956D1009C8B26 /* Assets.xcassets in Resources */,
+				199A95AF1D0956D1009C8B26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95B81D0956D1009C8B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95C31D0956D1009C8B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		199A95A21D0956D1009C8B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199A95AC1D0956D1009C8B26 /* ViewController.swift in Sources */,
+				199A95AA1D0956D1009C8B26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95B61D0956D1009C8B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199A95BF1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199A95C11D0956D1009C8B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199A95CA1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		199A95BC1D0956D1009C8B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 199A95A51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */;
+			targetProxy = 199A95BB1D0956D1009C8B26 /* PBXContainerItemProxy */;
+		};
+		199A95C71D0956D1009C8B26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 199A95A51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1 */;
+			targetProxy = 199A95C61D0956D1009C8B26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		199A95AD1D0956D1009C8B26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199A95AE1D0956D1009C8B26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		199A95B21D0956D1009C8B26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				199A95B31D0956D1009C8B26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		199A95CC1D0956D1009C8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		199A95CD1D0956D1009C8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		199A95CF1D0956D1009C8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		199A95D01D0956D1009C8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		199A95D21D0956D1009C8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 23 - AnimateTableViewCell1.app/Project 23 - AnimateTableViewCell1";
+			};
+			name = Debug;
+		};
+		199A95D31D0956D1009C8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 23 - AnimateTableViewCell1.app/Project 23 - AnimateTableViewCell1";
+			};
+			name = Release;
+		};
+		199A95D51D0956D1009C8B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 23 - AnimateTableViewCell1";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		199A95D61D0956D1009C8B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 23 - AnimateTableViewCell1UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-23---AnimateTableViewCell1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 23 - AnimateTableViewCell1";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		199A95A11D0956D1009C8B26 /* Build configuration list for PBXProject "Project 23 - AnimateTableViewCell1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199A95CC1D0956D1009C8B26 /* Debug */,
+				199A95CD1D0956D1009C8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		199A95CE1D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199A95CF1D0956D1009C8B26 /* Debug */,
+				199A95D01D0956D1009C8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		199A95D11D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199A95D21D0956D1009C8B26 /* Debug */,
+				199A95D31D0956D1009C8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		199A95D41D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199A95D51D0956D1009C8B26 /* Debug */,
+				199A95D61D0956D1009C8B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 199A959E1D0956D1009C8B26 /* Project object */;
+}
