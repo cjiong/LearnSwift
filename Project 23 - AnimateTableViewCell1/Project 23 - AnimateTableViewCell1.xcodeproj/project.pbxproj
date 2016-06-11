@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		199A95AA1D0956D1009C8B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95A91D0956D1009C8B26 /* AppDelegate.swift */; };
-		199A95AC1D0956D1009C8B26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95AB1D0956D1009C8B26 /* ViewController.swift */; };
 		199A95AF1D0956D1009C8B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199A95AD1D0956D1009C8B26 /* Main.storyboard */; };
 		199A95B11D0956D1009C8B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 199A95B01D0956D1009C8B26 /* Assets.xcassets */; };
 		199A95B41D0956D1009C8B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199A95B21D0956D1009C8B26 /* LaunchScreen.storyboard */; };
 		199A95BF1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95BE1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1Tests.swift */; };
 		199A95CA1D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199A95C91D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift */; };
+		199BE8981D0C445A00B4EA4F /* AnimateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199BE8971D0C445A00B4EA4F /* AnimateTableViewController.swift */; };
+		199BE89A1D0C44C800B4EA4F /* AnimateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199BE8991D0C44C800B4EA4F /* AnimateTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		199A95A61D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 23 - AnimateTableViewCell1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A95A91D0956D1009C8B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		199A95AB1D0956D1009C8B26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		199A95AE1D0956D1009C8B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		199A95B01D0956D1009C8B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		199A95B31D0956D1009C8B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		199A95C51D0956D1009C8B26 /* Project 23 - AnimateTableViewCell1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 23 - AnimateTableViewCell1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		199A95C91D0956D1009C8B26 /* Project_23___AnimateTableViewCell1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_23___AnimateTableViewCell1UITests.swift"; sourceTree = "<group>"; };
 		199A95CB1D0956D1009C8B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		199BE8971D0C445A00B4EA4F /* AnimateTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateTableViewController.swift; sourceTree = "<group>"; };
+		199BE8991D0C44C800B4EA4F /* AnimateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				199A95A91D0956D1009C8B26 /* AppDelegate.swift */,
-				199A95AB1D0956D1009C8B26 /* ViewController.swift */,
 				199A95AD1D0956D1009C8B26 /* Main.storyboard */,
+				199BE8991D0C44C800B4EA4F /* AnimateTableViewCell.swift */,
+				199BE8971D0C445A00B4EA4F /* AnimateTableViewController.swift */,
 				199A95B01D0956D1009C8B26 /* Assets.xcassets */,
 				199A95B21D0956D1009C8B26 /* LaunchScreen.storyboard */,
 				199A95B51D0956D1009C8B26 /* Info.plist */,
@@ -258,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199A95AC1D0956D1009C8B26 /* ViewController.swift in Sources */,
+				199BE8981D0C445A00B4EA4F /* AnimateTableViewController.swift in Sources */,
 				199A95AA1D0956D1009C8B26 /* AppDelegate.swift in Sources */,
+				199BE89A1D0C44C800B4EA4F /* AnimateTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +492,7 @@
 				199A95D01D0956D1009C8B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		199A95D11D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				199A95D31D0956D1009C8B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		199A95D41D0956D1009C8B26 /* Build configuration list for PBXNativeTarget "Project 23 - AnimateTableViewCell1UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				199A95D61D0956D1009C8B26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
