@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1993CE591D0C5790008B9D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1993CE581D0C5790008B9D71 /* AppDelegate.swift */; };
+		1993CE5B1D0C5790008B9D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1993CE5A1D0C5790008B9D71 /* ViewController.swift */; };
+		1993CE5E1D0C5790008B9D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1993CE5C1D0C5790008B9D71 /* Main.storyboard */; };
+		1993CE601D0C5790008B9D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1993CE5F1D0C5790008B9D71 /* Assets.xcassets */; };
+		1993CE631D0C5790008B9D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1993CE611D0C5790008B9D71 /* LaunchScreen.storyboard */; };
+		1993CE6E1D0C5790008B9D71 /* Project_24___AnimateTableViewCell2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1993CE6D1D0C5790008B9D71 /* Project_24___AnimateTableViewCell2Tests.swift */; };
+		1993CE791D0C5790008B9D71 /* Project_24___AnimateTableViewCell2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1993CE781D0C5790008B9D71 /* Project_24___AnimateTableViewCell2UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1993CE6A1D0C5790008B9D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1993CE4D1D0C5790008B9D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1993CE541D0C5790008B9D71;
+			remoteInfo = "Project 24 - AnimateTableViewCell2";
+		};
+		1993CE751D0C5790008B9D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1993CE4D1D0C5790008B9D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1993CE541D0C5790008B9D71;
+			remoteInfo = "Project 24 - AnimateTableViewCell2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1993CE551D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 24 - AnimateTableViewCell2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1993CE581D0C5790008B9D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1993CE5A1D0C5790008B9D71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1993CE5D1D0C5790008B9D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1993CE5F1D0C5790008B9D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1993CE621D0C5790008B9D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1993CE641D0C5790008B9D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1993CE691D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 24 - AnimateTableViewCell2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1993CE6D1D0C5790008B9D71 /* Project_24___AnimateTableViewCell2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_24___AnimateTableViewCell2Tests.swift"; sourceTree = "<group>"; };
+		1993CE6F1D0C5790008B9D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1993CE741D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 24 - AnimateTableViewCell2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1993CE781D0C5790008B9D71 /* Project_24___AnimateTableViewCell2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_24___AnimateTableViewCell2UITests.swift"; sourceTree = "<group>"; };
+		1993CE7A1D0C5790008B9D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1993CE521D0C5790008B9D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE661D0C5790008B9D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE711D0C5790008B9D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1993CE4C1D0C5790008B9D71 = {
+			isa = PBXGroup;
+			children = (
+				1993CE571D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */,
+				1993CE6C1D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests */,
+				1993CE771D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests */,
+				1993CE561D0C5790008B9D71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1993CE561D0C5790008B9D71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1993CE551D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2.app */,
+				1993CE691D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests.xctest */,
+				1993CE741D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1993CE571D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */ = {
+			isa = PBXGroup;
+			children = (
+				1993CE581D0C5790008B9D71 /* AppDelegate.swift */,
+				1993CE5A1D0C5790008B9D71 /* ViewController.swift */,
+				1993CE5C1D0C5790008B9D71 /* Main.storyboard */,
+				1993CE5F1D0C5790008B9D71 /* Assets.xcassets */,
+				1993CE611D0C5790008B9D71 /* LaunchScreen.storyboard */,
+				1993CE641D0C5790008B9D71 /* Info.plist */,
+			);
+			path = "Project 24 - AnimateTableViewCell2";
+			sourceTree = "<group>";
+		};
+		1993CE6C1D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1993CE6D1D0C5790008B9D71 /* Project_24___AnimateTableViewCell2Tests.swift */,
+				1993CE6F1D0C5790008B9D71 /* Info.plist */,
+			);
+			path = "Project 24 - AnimateTableViewCell2Tests";
+			sourceTree = "<group>";
+		};
+		1993CE771D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1993CE781D0C5790008B9D71 /* Project_24___AnimateTableViewCell2UITests.swift */,
+				1993CE7A1D0C5790008B9D71 /* Info.plist */,
+			);
+			path = "Project 24 - AnimateTableViewCell2UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1993CE541D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1993CE7D1D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2" */;
+			buildPhases = (
+				1993CE511D0C5790008B9D71 /* Sources */,
+				1993CE521D0C5790008B9D71 /* Frameworks */,
+				1993CE531D0C5790008B9D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 24 - AnimateTableViewCell2";
+			productName = "Project 24 - AnimateTableViewCell2";
+			productReference = 1993CE551D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1993CE681D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1993CE801D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2Tests" */;
+			buildPhases = (
+				1993CE651D0C5790008B9D71 /* Sources */,
+				1993CE661D0C5790008B9D71 /* Frameworks */,
+				1993CE671D0C5790008B9D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1993CE6B1D0C5790008B9D71 /* PBXTargetDependency */,
+			);
+			name = "Project 24 - AnimateTableViewCell2Tests";
+			productName = "Project 24 - AnimateTableViewCell2Tests";
+			productReference = 1993CE691D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1993CE731D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1993CE831D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2UITests" */;
+			buildPhases = (
+				1993CE701D0C5790008B9D71 /* Sources */,
+				1993CE711D0C5790008B9D71 /* Frameworks */,
+				1993CE721D0C5790008B9D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1993CE761D0C5790008B9D71 /* PBXTargetDependency */,
+			);
+			name = "Project 24 - AnimateTableViewCell2UITests";
+			productName = "Project 24 - AnimateTableViewCell2UITests";
+			productReference = 1993CE741D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1993CE4D1D0C5790008B9D71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					1993CE541D0C5790008B9D71 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1993CE681D0C5790008B9D71 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 1993CE541D0C5790008B9D71;
+					};
+					1993CE731D0C5790008B9D71 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 1993CE541D0C5790008B9D71;
+					};
+				};
+			};
+			buildConfigurationList = 1993CE501D0C5790008B9D71 /* Build configuration list for PBXProject "Project 24 - AnimateTableViewCell2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1993CE4C1D0C5790008B9D71;
+			productRefGroup = 1993CE561D0C5790008B9D71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1993CE541D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */,
+				1993CE681D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2Tests */,
+				1993CE731D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1993CE531D0C5790008B9D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1993CE631D0C5790008B9D71 /* LaunchScreen.storyboard in Resources */,
+				1993CE601D0C5790008B9D71 /* Assets.xcassets in Resources */,
+				1993CE5E1D0C5790008B9D71 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE671D0C5790008B9D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE721D0C5790008B9D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1993CE511D0C5790008B9D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1993CE5B1D0C5790008B9D71 /* ViewController.swift in Sources */,
+				1993CE591D0C5790008B9D71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE651D0C5790008B9D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1993CE6E1D0C5790008B9D71 /* Project_24___AnimateTableViewCell2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1993CE701D0C5790008B9D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1993CE791D0C5790008B9D71 /* Project_24___AnimateTableViewCell2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1993CE6B1D0C5790008B9D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1993CE541D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */;
+			targetProxy = 1993CE6A1D0C5790008B9D71 /* PBXContainerItemProxy */;
+		};
+		1993CE761D0C5790008B9D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1993CE541D0C5790008B9D71 /* Project 24 - AnimateTableViewCell2 */;
+			targetProxy = 1993CE751D0C5790008B9D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1993CE5C1D0C5790008B9D71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1993CE5D1D0C5790008B9D71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1993CE611D0C5790008B9D71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1993CE621D0C5790008B9D71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1993CE7B1D0C5790008B9D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1993CE7C1D0C5790008B9D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1993CE7E1D0C5790008B9D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1993CE7F1D0C5790008B9D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1993CE811D0C5790008B9D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 24 - AnimateTableViewCell2.app/Project 24 - AnimateTableViewCell2";
+			};
+			name = Debug;
+		};
+		1993CE821D0C5790008B9D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 24 - AnimateTableViewCell2.app/Project 24 - AnimateTableViewCell2";
+			};
+			name = Release;
+		};
+		1993CE841D0C5790008B9D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 24 - AnimateTableViewCell2";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1993CE851D0C5790008B9D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 24 - AnimateTableViewCell2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-24---AnimateTableViewCell2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 24 - AnimateTableViewCell2";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1993CE501D0C5790008B9D71 /* Build configuration list for PBXProject "Project 24 - AnimateTableViewCell2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1993CE7B1D0C5790008B9D71 /* Debug */,
+				1993CE7C1D0C5790008B9D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1993CE7D1D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1993CE7E1D0C5790008B9D71 /* Debug */,
+				1993CE7F1D0C5790008B9D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1993CE801D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1993CE811D0C5790008B9D71 /* Debug */,
+				1993CE821D0C5790008B9D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1993CE831D0C5790008B9D71 /* Build configuration list for PBXNativeTarget "Project 24 - AnimateTableViewCell2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1993CE841D0C5790008B9D71 /* Debug */,
+				1993CE851D0C5790008B9D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1993CE4D1D0C5790008B9D71 /* Project object */;
+}
