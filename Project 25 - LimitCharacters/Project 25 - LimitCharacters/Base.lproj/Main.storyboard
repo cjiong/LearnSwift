@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.69999999999999996" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,15 +24,18 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-hA-blG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-hA-blG">
                                 <rect key="frame" x="-4" y="50" width="379" height="229"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="229" id="17f-dM-Bvq"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="83w-rL-tcr"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYy-xc-XXy">
                                 <rect key="frame" x="20" y="20" width="30" height="30"/>
@@ -49,16 +52,17 @@
                                             <constraint firstAttribute="width" constant="77" id="54R-1p-SPZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6t-gV-i45">
-                                        <rect key="frame" x="14" y="9" width="60" height="30"/>
+                                    <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6t-gV-i45">
+                                        <rect key="frame" x="14" y="9" width="77" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="rbx-fS-O4s"/>
+                                            <constraint firstAttribute="width" constant="77" id="XjV-CD-B3q"/>
                                         </constraints>
                                         <state key="normal" title="显示位置">
-                                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -66,10 +70,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="yRq-Ac-2QV" firstAttribute="trailing" secondItem="npK-UO-vid" secondAttribute="trailingMargin" id="0kp-YK-SXd"/>
-                                    <constraint firstItem="a6t-gV-i45" firstAttribute="top" secondItem="npK-UO-vid" secondAttribute="top" constant="9" id="C4m-Eq-Tcc"/>
-                                    <constraint firstItem="a6t-gV-i45" firstAttribute="leading" secondItem="npK-UO-vid" secondAttribute="leading" constant="14" id="Ht6-Xf-NaI"/>
-                                    <constraint firstItem="yRq-Ac-2QV" firstAttribute="bottom" secondItem="a6t-gV-i45" secondAttribute="bottom" id="Ibl-JK-SOK"/>
+                                    <constraint firstItem="a6t-gV-i45" firstAttribute="bottom" secondItem="yRq-Ac-2QV" secondAttribute="bottom" id="IrY-Yi-9Rp"/>
+                                    <constraint firstItem="a6t-gV-i45" firstAttribute="top" secondItem="npK-UO-vid" secondAttribute="top" constant="9" id="LQG-9l-Cri"/>
                                     <constraint firstItem="yRq-Ac-2QV" firstAttribute="centerY" secondItem="npK-UO-vid" secondAttribute="centerY" id="PIn-iz-lxH"/>
+                                    <constraint firstItem="a6t-gV-i45" firstAttribute="leading" secondItem="npK-UO-vid" secondAttribute="leading" constant="14" id="rjy-vM-Pad"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -89,6 +93,12 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomView" destination="npK-UO-vid" id="VCH-gw-8lJ"/>
+                        <outlet property="countLabel" destination="yRq-Ac-2QV" id="nY4-en-kAg"/>
+                        <outlet property="locationButton" destination="a6t-gV-i45" id="78y-1h-PfQ"/>
+                        <outlet property="textView" destination="6MX-hA-blG" id="gfD-sD-j1M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
