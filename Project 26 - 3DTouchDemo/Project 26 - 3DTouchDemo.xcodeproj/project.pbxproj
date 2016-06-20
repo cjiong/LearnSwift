@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A73CFB1D18372000B4E46F /* SceneryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A73CFA1D18372000B4E46F /* SceneryViewController.swift */; };
+		19A73CFD1D18373600B4E46F /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A73CFC1D18373600B4E46F /* CarViewController.swift */; };
+		19A73CFF1D18374200B4E46F /* CartoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A73CFE1D18374200B4E46F /* CartoonViewController.swift */; };
 		19B7A95A1D14274B00F62CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7A9591D14274B00F62CCC /* AppDelegate.swift */; };
 		19B7A95C1D14274B00F62CCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7A95B1D14274B00F62CCC /* ViewController.swift */; };
 		19B7A95F1D14274B00F62CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B7A95D1D14274B00F62CCC /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19A73CFA1D18372000B4E46F /* SceneryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneryViewController.swift; sourceTree = "<group>"; };
+		19A73CFC1D18373600B4E46F /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		19A73CFE1D18374200B4E46F /* CartoonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartoonViewController.swift; sourceTree = "<group>"; };
 		19B7A9561D14274B00F62CCC /* Project 26 - 3DTouchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 26 - 3DTouchDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B7A9591D14274B00F62CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19B7A95B1D14274B00F62CCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +105,9 @@
 			children = (
 				19B7A9591D14274B00F62CCC /* AppDelegate.swift */,
 				19B7A95B1D14274B00F62CCC /* ViewController.swift */,
+				19A73CFA1D18372000B4E46F /* SceneryViewController.swift */,
+				19A73CFC1D18373600B4E46F /* CarViewController.swift */,
+				19A73CFE1D18374200B4E46F /* CartoonViewController.swift */,
 				19B7A95D1D14274B00F62CCC /* Main.storyboard */,
 				19B7A9601D14274B00F62CCC /* Assets.xcassets */,
 				19B7A9621D14274B00F62CCC /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A73CFB1D18372000B4E46F /* SceneryViewController.swift in Sources */,
+				19A73CFF1D18374200B4E46F /* CartoonViewController.swift in Sources */,
 				19B7A95C1D14274B00F62CCC /* ViewController.swift in Sources */,
 				19B7A95A1D14274B00F62CCC /* AppDelegate.swift in Sources */,
+				19A73CFD1D18373600B4E46F /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +499,7 @@
 				19B7A9801D14274B00F62CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B7A9811D14274B00F62CCC /* Build configuration list for PBXNativeTarget "Project 26 - 3DTouchDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				19B7A9831D14274B00F62CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B7A9841D14274B00F62CCC /* Build configuration list for PBXNativeTarget "Project 26 - 3DTouchDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				19B7A9861D14274B00F62CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
