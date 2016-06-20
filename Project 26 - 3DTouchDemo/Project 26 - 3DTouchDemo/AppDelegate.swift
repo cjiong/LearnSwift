@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
  
-    var launchedShortCutItem: UIApplicationShortcutItem?
+    var launchedShortcutItem: UIApplicationShortcutItem?
     
     func handleShortCutItem(shortcutItem: UIApplicationShortcutItem) -> Bool {
         
@@ -83,17 +83,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(application: UIApplication) {
-        guard let shortcut = launchedShortCutItem else { return }
+        guard let shortcut = launchedShortcutItem else { return }
         
         handleShortCutItem(shortcut)
-        launchedShortCutItem = nil
+        launchedShortcutItem = nil
         
     }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsShortcutItemKey] as? UIApplicationShortcutItem {
-            launchedShortCutItem = shortcutItem
+            launchedShortcutItem = shortcutItem
         }
         
         return true
