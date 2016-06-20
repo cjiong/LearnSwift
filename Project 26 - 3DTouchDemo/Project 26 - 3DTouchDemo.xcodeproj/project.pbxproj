@@ -202,7 +202,6 @@
 				TargetAttributes = {
 					19B7A9551D14274B00F62CCC = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 55TJDVV762;
 					};
 					19B7A9691D14274B00F62CCC = {
 						CreatedOnToolsVersion = 7.2;
@@ -414,7 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 26 - 3DTouchDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-26---3DTouchDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,7 +426,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 26 - 3DTouchDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-26---3DTouchDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

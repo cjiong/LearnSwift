@@ -43,5 +43,47 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>scenery@1x</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Scenery</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).First</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>firstShorcutKey1</key>
+				<string>firstShortcutKeyValue1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>car@1x</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Car</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Second</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>secondShortcutKey1</key>
+				<string>secondShortcutValue1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>cartoon@1x</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Cartoon</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Third</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>thirdShortcutValue1</key>
+				<string>thirdShortcutValue1</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>

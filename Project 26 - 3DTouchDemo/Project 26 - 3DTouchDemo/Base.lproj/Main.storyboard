@@ -26,7 +26,7 @@
         <!--Scenery View Controller-->
         <scene sceneID="fdZ-gd-Vvm">
             <objects>
-                <viewController id="GRz-Hp-fj8" userLabel="Scenery View Controller" customClass="SceneryViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SceneryVC" id="GRz-Hp-fj8" userLabel="Scenery View Controller" customClass="SceneryViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9OH-3c-CgQ"/>
                         <viewControllerLayoutGuide type="bottom" id="WTx-Ts-0XM"/>
@@ -50,7 +50,7 @@
         <!--Car View Controller-->
         <scene sceneID="Y83-0w-nsT">
             <objects>
-                <viewController id="aAi-AE-0nV" userLabel="Car View Controller" customClass="CarViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarVC" id="aAi-AE-0nV" userLabel="Car View Controller" customClass="CarViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D4v-jZ-5ZZ"/>
                         <viewControllerLayoutGuide type="bottom" id="k87-tj-DsX"/>
@@ -74,7 +74,7 @@
         <!--Cartoon View Controller-->
         <scene sceneID="937-Ff-fZK">
             <objects>
-                <viewController id="ijT-nC-tDr" userLabel="Cartoon View Controller" customClass="CartoonViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartoonVC" id="ijT-nC-tDr" userLabel="Cartoon View Controller" customClass="CartoonViewController" customModule="Project_26___3DTouchDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uiY-yP-3ka"/>
                         <viewControllerLayoutGuide type="bottom" id="dBR-K7-fC7"/>
