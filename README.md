@@ -15,6 +15,22 @@ Project 01 - [StopWatch](https://github.com/cjiong/LearnSwift/tree/master/Projec
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2001%20-%20StopWatch/Stopwatch.gif)
 
+Project 02 - [CustomFonts](https://github.com/cjiong/LearnSwift/tree/master/Project%2002%20-%20CustomFonts)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2002%20-%20CustomFonts/CustomFont.gif)
+
+Project 03 - []()
+
+![]()
+
+Project 03 - []()
+
+![]()
+
+Project 03 - []()
+
+![]()
+
 ## Learning Resource
 ## Contact Me
 ## 
