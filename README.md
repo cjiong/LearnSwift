@@ -39,37 +39,102 @@ Project 07 - [DidiTaxi](https://github.com/cjiong/LearnSwift/tree/master/Project
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2007%20-%20DidiTaxi/DidiTaxi.gif)
 
-Project 08 - [WebBrowser](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20WebBrowser)
+Project 08 - [WebBrowser](https://github.com/cjiong/LearnSwift/tree/master/Project%2008%20-%20WebBrowser)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20WebBrowser/WebBrowser.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2008%20-%20WebBrowser/WebBrowser.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 09 - [MusicPlayer](https://github.com/cjiong/LearnSwift/tree/master/Project%2009%20-%20MusicPlayer)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2009%20-%20MusicPlayer/MusicPlayer.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 10 - [RandomGradientColorMusic](https://github.com/cjiong/LearnSwift/tree/master/Project%2010%20-%20RandomGradientColorMusic)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20Calculator/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2010%20-%20RandomGradientColorMusic/RandomGradientColorMusic.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 11 - [PlayLocalVideo](https://github.com/cjiong/LearnSwift/tree/master/Project%2011%20-%20PlayLocalVideo)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20Calculator/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2011%20-%20PlayLocalVideo/PlayLocalVideo.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 12 - [ChangeImageSize](https://github.com/cjiong/LearnSwift/tree/master/Project%2012%20-%20ChangeImageSize)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20Calculator/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2012%20-%20ChangeImageSize/ChangeImageSize.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 13 - [MyLocation](https://github.com/cjiong/LearnSwift/tree/master/Project%2013%20-%20MyLocation)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20Calculator/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2013%20-%20MyLocation/MyLocation.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 14 - [FilterGaussianBlur](https://github.com/cjiong/LearnSwift/tree/master/Project%2014%20-%20FilterGaussianBlur)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20Calculator/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2014%20-%20FilterGaussianBlur/FilterGaussianBlur.gif)
 
-Project 06 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2005%20-%20)
+Project 15 - [VideoBackground](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20VideoBackground)
 
-![](https://github.com/cjiong/LearnSwift/blob/master/Project%2005%20-%20/.gif)
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2015%20-%20VideoBackground/VideoBackground.gif)
+
+Project 16 - [SwipeableCell](https://github.com/cjiong/LearnSwift/tree/master/Project%2016%20-%20SwipeableCell)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2016%20-%20SwipeableCell/SwipeableCell.gif)
+
+Project 17 - [FaceDetect](https://github.com/cjiong/LearnSwift/tree/master/Project%2017%20-%20FaceDetect)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2017%20-%20FaceDetect/FaceDetect.gif)
+
+Project 18 - [OpenDocument](https://github.com/cjiong/LearnSwift/tree/master/Project%2018%20-%20OpenDocument)
+
+<img src="https://github.com/cjiong/LearnSwift/blob/master/Project%2018%20-%20OpenDocument/OpenDocument.png" width = "375" height = "667" />
+
+Project 19 - [SetDateAndTime](https://github.com/cjiong/LearnSwift/tree/master/Project%2019%20-%20SetDateAndTime)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2019%20-%20SetDateAndTime/SetDateAndTime.gif)
+
+Project 20 - [BasicGesture](https://github.com/cjiong/LearnSwift/tree/master/Project%2020%20-%20BasicGesture)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2020%20-%20BasicGesture/BasicGesture.gif)
+
+Project 21 - [HeaderTableView](https://github.com/cjiong/LearnSwift/tree/master/Project%2021%20-%20HeaderTableView)
+
+<img src="https://github.com/cjiong/LearnSwift/blob/master/Project%2021%20-%20HeaderTableView/HeaderTableView.png" width = "375" height = "667" />
+
+Project 22 - [CollapsibleTableSection](https://github.com/cjiong/LearnSwift/tree/master/Project%2022%20-%20CollapsibleTableSection)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2022%20-%20CollapsibleTableSection/CollapsibleTableSection.gif)
+
+Project 23 - [AnimateTableViewCell1](https://github.com/cjiong/LearnSwift/tree/master/Project%2023%20-%20AnimateTableViewCell1)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2023%20-%20AnimateTableViewCell1/AnimateTableViewCell1.gif)
+
+Project 24 - [AnimateTableViewCell2](https://github.com/cjiong/LearnSwift/tree/master/Project%2024%20-%20AnimateTableViewCell2)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2024%20-%20AnimateTableViewCell2/AnimateTableViewCell2.gif)
+
+Project 25 - [LimitCharacters](https://github.com/cjiong/LearnSwift/tree/master/Project%2025%20-%20LimitCharacters)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2025%20-%20LimitCharacters/LimitCharacters.gif)
+
+Project 26 - [3DTouchDemo](https://github.com/cjiong/LearnSwift/tree/master/Project%2026%20-%203DTouchDemo)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2026%20-%203DTouchDemo/3DTouchDemo.gif)
+
+Project 27 - [TableViewIndex](https://github.com/cjiong/LearnSwift/tree/master/Project%2027%20-%20TableViewIndex)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2027%20-%20TableViewIndex/TableViewIndex.gif)
+
+<!--Project 28 - [GenerateQRCode](https://github.com/cjiong/LearnSwift/tree/master/Project%2028%20-%20GenerateQRCode)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2028%20-%20GenerateQRCode/GenerateQRCode.gif)-->
+
+<!--Project 29 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2015%20-%20/.gif)-->
+
+<!--Project 30 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2015%20-%20/.gif)-->
+
+<!--Project 31 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2031%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2031%20-%20/.gif)-->
+
 
 ## Learning Resource
 ## Contact Me
