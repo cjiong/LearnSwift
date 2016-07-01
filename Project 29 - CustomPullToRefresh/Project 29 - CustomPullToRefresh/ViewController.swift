@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Project 28 - GenerateQRCode
+//  Project 29 - CustomPullToRefresh
 //
-//  Created by 陈炯 on 16/6/22.
+//  Created by 陈炯 on 16/7/1.
 //  Copyright © 2016年 Jiong. All rights reserved.
 //
 
