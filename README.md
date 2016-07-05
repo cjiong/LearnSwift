@@ -119,9 +119,9 @@ Project 27 - [TableViewIndex](https://github.com/cjiong/LearnSwift/tree/master/P
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2027%20-%20TableViewIndex/TableViewIndex.gif)
 
-<!--Project 28 - [GenerateQRCode](https://github.com/cjiong/LearnSwift/tree/master/Project%2028%20-%20GenerateQRCode)-->
+Project 28 - [GenerateQRCode](https://github.com/cjiong/LearnSwift/tree/master/Project%2028%20-%20GenerateQRCode)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2028%20-%20GenerateQRCode/GenerateQRCode.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2028%20-%20GenerateQRCode/GenerateQRCode.gif)
 
 <!--Project 29 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20)-->
 
