@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19E1916D1D2D5F94002B7BD0 /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19E1916C1D2D5F94002B7BD0 /* RefreshContents.xib */; };
 		19F1CBA01D26AEB00074E097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1CB9F1D26AEB00074E097 /* AppDelegate.swift */; };
 		19F1CBA21D26AEB00074E097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F1CBA11D26AEB00074E097 /* ViewController.swift */; };
 		19F1CBA51D26AEB00074E097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F1CBA31D26AEB00074E097 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19E1916C1D2D5F94002B7BD0 /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
 		19F1CB9C1D26AEB00074E097 /* Project 29 - CustomPullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 29 - CustomPullToRefresh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F1CB9F1D26AEB00074E097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F1CBA11D26AEB00074E097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				19F1CB9F1D26AEB00074E097 /* AppDelegate.swift */,
 				19F1CBA11D26AEB00074E097 /* ViewController.swift */,
 				19F1CBA31D26AEB00074E097 /* Main.storyboard */,
+				19E1916C1D2D5F94002B7BD0 /* RefreshContents.xib */,
 				19F1CBA61D26AEB00074E097 /* Assets.xcassets */,
 				19F1CBA81D26AEB00074E097 /* LaunchScreen.storyboard */,
 				19F1CBAB1D26AEB00074E097 /* Info.plist */,
@@ -193,7 +196,6 @@
 				TargetAttributes = {
 					19F1CB9B1D26AEB00074E097 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 55TJDVV762;
 					};
 					19F1CBAF1D26AEB00074E097 = {
 						CreatedOnToolsVersion = 7.2;
@@ -233,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F1CBAA1D26AEB00074E097 /* LaunchScreen.storyboard in Resources */,
+				19E1916D1D2D5F94002B7BD0 /* RefreshContents.xib in Resources */,
 				19F1CBA71D26AEB00074E097 /* Assets.xcassets in Resources */,
 				19F1CBA51D26AEB00074E097 /* Main.storyboard in Resources */,
 			);
@@ -402,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 29 - CustomPullToRefresh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-29---CustomPullToRefresh";
@@ -413,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Project 29 - CustomPullToRefresh/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-29---CustomPullToRefresh";
@@ -487,6 +492,7 @@
 				19F1CBC61D26AEB00074E097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19F1CBC71D26AEB00074E097 /* Build configuration list for PBXNativeTarget "Project 29 - CustomPullToRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				19F1CBC91D26AEB00074E097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19F1CBCA1D26AEB00074E097 /* Build configuration list for PBXNativeTarget "Project 29 - CustomPullToRefreshUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				19F1CBCC1D26AEB00074E097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
