@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19EC3CAF1D30026700D0A792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CAE1D30026700D0A792 /* AppDelegate.swift */; };
+		19EC3CB11D30026700D0A792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CB01D30026700D0A792 /* ViewController.swift */; };
+		19EC3CB41D30026700D0A792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EC3CB21D30026700D0A792 /* Main.storyboard */; };
+		19EC3CB61D30026700D0A792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EC3CB51D30026700D0A792 /* Assets.xcassets */; };
+		19EC3CB91D30026700D0A792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EC3CB71D30026700D0A792 /* LaunchScreen.storyboard */; };
+		19EC3CC41D30026700D0A792 /* Project_30___PopoverMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CC31D30026700D0A792 /* Project_30___PopoverMenuTests.swift */; };
+		19EC3CCF1D30026700D0A792 /* Project_30___PopoverMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CCE1D30026700D0A792 /* Project_30___PopoverMenuUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19EC3CC01D30026700D0A792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19EC3CA31D30026700D0A792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19EC3CAA1D30026700D0A792;
+			remoteInfo = "Project 30 - PopoverMenu";
+		};
+		19EC3CCB1D30026700D0A792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19EC3CA31D30026700D0A792 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19EC3CAA1D30026700D0A792;
+			remoteInfo = "Project 30 - PopoverMenu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19EC3CAB1D30026700D0A792 /* Project 30 - PopoverMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 30 - PopoverMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EC3CAE1D30026700D0A792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19EC3CB01D30026700D0A792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19EC3CB31D30026700D0A792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19EC3CB51D30026700D0A792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19EC3CB81D30026700D0A792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19EC3CBA1D30026700D0A792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EC3CBF1D30026700D0A792 /* Project 30 - PopoverMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 30 - PopoverMenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EC3CC31D30026700D0A792 /* Project_30___PopoverMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_30___PopoverMenuTests.swift"; sourceTree = "<group>"; };
+		19EC3CC51D30026700D0A792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EC3CCA1D30026700D0A792 /* Project 30 - PopoverMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 30 - PopoverMenuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EC3CCE1D30026700D0A792 /* Project_30___PopoverMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_30___PopoverMenuUITests.swift"; sourceTree = "<group>"; };
+		19EC3CD01D30026700D0A792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19EC3CA81D30026700D0A792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CBC1D30026700D0A792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CC71D30026700D0A792 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19EC3CA21D30026700D0A792 = {
+			isa = PBXGroup;
+			children = (
+				19EC3CAD1D30026700D0A792 /* Project 30 - PopoverMenu */,
+				19EC3CC21D30026700D0A792 /* Project 30 - PopoverMenuTests */,
+				19EC3CCD1D30026700D0A792 /* Project 30 - PopoverMenuUITests */,
+				19EC3CAC1D30026700D0A792 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19EC3CAC1D30026700D0A792 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19EC3CAB1D30026700D0A792 /* Project 30 - PopoverMenu.app */,
+				19EC3CBF1D30026700D0A792 /* Project 30 - PopoverMenuTests.xctest */,
+				19EC3CCA1D30026700D0A792 /* Project 30 - PopoverMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19EC3CAD1D30026700D0A792 /* Project 30 - PopoverMenu */ = {
+			isa = PBXGroup;
+			children = (
+				19EC3CAE1D30026700D0A792 /* AppDelegate.swift */,
+				19EC3CB01D30026700D0A792 /* ViewController.swift */,
+				19EC3CB21D30026700D0A792 /* Main.storyboard */,
+				19EC3CB51D30026700D0A792 /* Assets.xcassets */,
+				19EC3CB71D30026700D0A792 /* LaunchScreen.storyboard */,
+				19EC3CBA1D30026700D0A792 /* Info.plist */,
+			);
+			path = "Project 30 - PopoverMenu";
+			sourceTree = "<group>";
+		};
+		19EC3CC21D30026700D0A792 /* Project 30 - PopoverMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				19EC3CC31D30026700D0A792 /* Project_30___PopoverMenuTests.swift */,
+				19EC3CC51D30026700D0A792 /* Info.plist */,
+			);
+			path = "Project 30 - PopoverMenuTests";
+			sourceTree = "<group>";
+		};
+		19EC3CCD1D30026700D0A792 /* Project 30 - PopoverMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19EC3CCE1D30026700D0A792 /* Project_30___PopoverMenuUITests.swift */,
+				19EC3CD01D30026700D0A792 /* Info.plist */,
+			);
+			path = "Project 30 - PopoverMenuUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19EC3CAA1D30026700D0A792 /* Project 30 - PopoverMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EC3CD31D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenu" */;
+			buildPhases = (
+				19EC3CA71D30026700D0A792 /* Sources */,
+				19EC3CA81D30026700D0A792 /* Frameworks */,
+				19EC3CA91D30026700D0A792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 30 - PopoverMenu";
+			productName = "Project 30 - PopoverMenu";
+			productReference = 19EC3CAB1D30026700D0A792 /* Project 30 - PopoverMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19EC3CBE1D30026700D0A792 /* Project 30 - PopoverMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EC3CD61D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuTests" */;
+			buildPhases = (
+				19EC3CBB1D30026700D0A792 /* Sources */,
+				19EC3CBC1D30026700D0A792 /* Frameworks */,
+				19EC3CBD1D30026700D0A792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19EC3CC11D30026700D0A792 /* PBXTargetDependency */,
+			);
+			name = "Project 30 - PopoverMenuTests";
+			productName = "Project 30 - PopoverMenuTests";
+			productReference = 19EC3CBF1D30026700D0A792 /* Project 30 - PopoverMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19EC3CC91D30026700D0A792 /* Project 30 - PopoverMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EC3CD91D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuUITests" */;
+			buildPhases = (
+				19EC3CC61D30026700D0A792 /* Sources */,
+				19EC3CC71D30026700D0A792 /* Frameworks */,
+				19EC3CC81D30026700D0A792 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19EC3CCC1D30026700D0A792 /* PBXTargetDependency */,
+			);
+			name = "Project 30 - PopoverMenuUITests";
+			productName = "Project 30 - PopoverMenuUITests";
+			productReference = 19EC3CCA1D30026700D0A792 /* Project 30 - PopoverMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19EC3CA31D30026700D0A792 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19EC3CAA1D30026700D0A792 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19EC3CBE1D30026700D0A792 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19EC3CAA1D30026700D0A792;
+					};
+					19EC3CC91D30026700D0A792 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19EC3CAA1D30026700D0A792;
+					};
+				};
+			};
+			buildConfigurationList = 19EC3CA61D30026700D0A792 /* Build configuration list for PBXProject "Project 30 - PopoverMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19EC3CA21D30026700D0A792;
+			productRefGroup = 19EC3CAC1D30026700D0A792 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19EC3CAA1D30026700D0A792 /* Project 30 - PopoverMenu */,
+				19EC3CBE1D30026700D0A792 /* Project 30 - PopoverMenuTests */,
+				19EC3CC91D30026700D0A792 /* Project 30 - PopoverMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19EC3CA91D30026700D0A792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EC3CB91D30026700D0A792 /* LaunchScreen.storyboard in Resources */,
+				19EC3CB61D30026700D0A792 /* Assets.xcassets in Resources */,
+				19EC3CB41D30026700D0A792 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CBD1D30026700D0A792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CC81D30026700D0A792 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19EC3CA71D30026700D0A792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EC3CB11D30026700D0A792 /* ViewController.swift in Sources */,
+				19EC3CAF1D30026700D0A792 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CBB1D30026700D0A792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EC3CC41D30026700D0A792 /* Project_30___PopoverMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19EC3CC61D30026700D0A792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EC3CCF1D30026700D0A792 /* Project_30___PopoverMenuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19EC3CC11D30026700D0A792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19EC3CAA1D30026700D0A792 /* Project 30 - PopoverMenu */;
+			targetProxy = 19EC3CC01D30026700D0A792 /* PBXContainerItemProxy */;
+		};
+		19EC3CCC1D30026700D0A792 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19EC3CAA1D30026700D0A792 /* Project 30 - PopoverMenu */;
+			targetProxy = 19EC3CCB1D30026700D0A792 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19EC3CB21D30026700D0A792 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EC3CB31D30026700D0A792 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19EC3CB71D30026700D0A792 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EC3CB81D30026700D0A792 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19EC3CD11D30026700D0A792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19EC3CD21D30026700D0A792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19EC3CD41D30026700D0A792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 30 - PopoverMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19EC3CD51D30026700D0A792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 30 - PopoverMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19EC3CD71D30026700D0A792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 30 - PopoverMenuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 30 - PopoverMenu.app/Project 30 - PopoverMenu";
+			};
+			name = Debug;
+		};
+		19EC3CD81D30026700D0A792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 30 - PopoverMenuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 30 - PopoverMenu.app/Project 30 - PopoverMenu";
+			};
+			name = Release;
+		};
+		19EC3CDA1D30026700D0A792 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 30 - PopoverMenuUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 30 - PopoverMenu";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19EC3CDB1D30026700D0A792 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 30 - PopoverMenuUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-30---PopoverMenuUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 30 - PopoverMenu";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19EC3CA61D30026700D0A792 /* Build configuration list for PBXProject "Project 30 - PopoverMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EC3CD11D30026700D0A792 /* Debug */,
+				19EC3CD21D30026700D0A792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19EC3CD31D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EC3CD41D30026700D0A792 /* Debug */,
+				19EC3CD51D30026700D0A792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19EC3CD61D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EC3CD71D30026700D0A792 /* Debug */,
+				19EC3CD81D30026700D0A792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19EC3CD91D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EC3CDA1D30026700D0A792 /* Debug */,
+				19EC3CDB1D30026700D0A792 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19EC3CA31D30026700D0A792 /* Project object */;
+}
