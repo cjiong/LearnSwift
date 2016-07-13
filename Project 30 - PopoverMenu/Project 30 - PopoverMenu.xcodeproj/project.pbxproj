@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190AB6841D3297D40083714C /* PopoverMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB6831D3297D40083714C /* PopoverMenuViewController.swift */; };
+		190AB6861D32993E0083714C /* PopoverMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190AB6851D32993E0083714C /* PopoverMenuTableViewCell.swift */; };
 		19EC3CAF1D30026700D0A792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CAE1D30026700D0A792 /* AppDelegate.swift */; };
 		19EC3CB11D30026700D0A792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EC3CB01D30026700D0A792 /* ViewController.swift */; };
 		19EC3CB41D30026700D0A792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EC3CB21D30026700D0A792 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190AB6831D3297D40083714C /* PopoverMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverMenuViewController.swift; sourceTree = "<group>"; };
+		190AB6851D32993E0083714C /* PopoverMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverMenuTableViewCell.swift; sourceTree = "<group>"; };
 		19EC3CAB1D30026700D0A792 /* Project 30 - PopoverMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 30 - PopoverMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EC3CAE1D30026700D0A792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19EC3CB01D30026700D0A792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				19EC3CAE1D30026700D0A792 /* AppDelegate.swift */,
 				19EC3CB01D30026700D0A792 /* ViewController.swift */,
 				19EC3CB21D30026700D0A792 /* Main.storyboard */,
+				190AB6851D32993E0083714C /* PopoverMenuTableViewCell.swift */,
+				190AB6831D3297D40083714C /* PopoverMenuViewController.swift */,
 				19EC3CB51D30026700D0A792 /* Assets.xcassets */,
 				19EC3CB71D30026700D0A792 /* LaunchScreen.storyboard */,
 				19EC3CBA1D30026700D0A792 /* Info.plist */,
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190AB6861D32993E0083714C /* PopoverMenuTableViewCell.swift in Sources */,
 				19EC3CB11D30026700D0A792 /* ViewController.swift in Sources */,
 				19EC3CAF1D30026700D0A792 /* AppDelegate.swift in Sources */,
+				190AB6841D3297D40083714C /* PopoverMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +496,7 @@
 				19EC3CD51D30026700D0A792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19EC3CD61D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				19EC3CD81D30026700D0A792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19EC3CD91D30026700D0A792 /* Build configuration list for PBXNativeTarget "Project 30 - PopoverMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				19EC3CDB1D30026700D0A792 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

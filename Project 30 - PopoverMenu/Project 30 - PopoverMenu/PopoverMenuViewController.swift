@@ -8,28 +8,42 @@
 
 import UIKit
 
-class PopoverMenuViewController: UIViewController {
+class PopoverMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    var data: [MenuItem] = [
+                             MenuItem(picture: "1", name: "发起群聊"),
+                             MenuItem(picture: "2", name: "添加朋友"),
+                             MenuItem(picture: "3", name: "扫一扫"),
+                             MenuItem(picture: "4", name: "收付款")
+                           ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! PopoverMenuTableViewCell
+        
+        cell.menuImage.image = UIImage(named: data[indexPath.row].picture)
+        cell.menuName.setTitle(data[indexPath.row].name, forState: UIControlState.Normal)
+        
+        return cell
+    }
+    
+    
+    
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
