@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19FE707C1D389B2600BCF5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE707B1D389B2600BCF5EF /* AppDelegate.swift */; };
+		19FE707E1D389B2600BCF5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE707D1D389B2600BCF5EF /* ViewController.swift */; };
+		19FE70811D389B2600BCF5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE707F1D389B2600BCF5EF /* Main.storyboard */; };
+		19FE70831D389B2600BCF5EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FE70821D389B2600BCF5EF /* Assets.xcassets */; };
+		19FE70861D389B2600BCF5EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE70841D389B2600BCF5EF /* LaunchScreen.storyboard */; };
+		19FE70911D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE70901D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumTests.swift */; };
+		19FE709C1D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE709B1D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19FE708D1D389B2700BCF5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19FE70701D389B2600BCF5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FE70771D389B2600BCF5EF;
+			remoteInfo = "Project 38 - SavePhotoToCustomUlbum";
+		};
+		19FE70981D389B2700BCF5EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19FE70701D389B2600BCF5EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FE70771D389B2600BCF5EF;
+			remoteInfo = "Project 38 - SavePhotoToCustomUlbum";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19FE70781D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 38 - SavePhotoToCustomUlbum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FE707B1D389B2600BCF5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19FE707D1D389B2600BCF5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19FE70801D389B2600BCF5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19FE70821D389B2600BCF5EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19FE70851D389B2600BCF5EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19FE70871D389B2600BCF5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FE708C1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 38 - SavePhotoToCustomUlbumTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FE70901D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_38___SavePhotoToCustomUlbumTests.swift"; sourceTree = "<group>"; };
+		19FE70921D389B2700BCF5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FE70971D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 38 - SavePhotoToCustomUlbumUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19FE709B1D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_38___SavePhotoToCustomUlbumUITests.swift"; sourceTree = "<group>"; };
+		19FE709D1D389B2700BCF5EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19FE70751D389B2600BCF5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE70891D389B2700BCF5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE70941D389B2700BCF5EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19FE706F1D389B2600BCF5EF = {
+			isa = PBXGroup;
+			children = (
+				19FE707A1D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */,
+				19FE708F1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests */,
+				19FE709A1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests */,
+				19FE70791D389B2600BCF5EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19FE70791D389B2600BCF5EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19FE70781D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum.app */,
+				19FE708C1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests.xctest */,
+				19FE70971D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19FE707A1D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */ = {
+			isa = PBXGroup;
+			children = (
+				19FE707B1D389B2600BCF5EF /* AppDelegate.swift */,
+				19FE707D1D389B2600BCF5EF /* ViewController.swift */,
+				19FE707F1D389B2600BCF5EF /* Main.storyboard */,
+				19FE70821D389B2600BCF5EF /* Assets.xcassets */,
+				19FE70841D389B2600BCF5EF /* LaunchScreen.storyboard */,
+				19FE70871D389B2600BCF5EF /* Info.plist */,
+			);
+			path = "Project 38 - SavePhotoToCustomUlbum";
+			sourceTree = "<group>";
+		};
+		19FE708F1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests */ = {
+			isa = PBXGroup;
+			children = (
+				19FE70901D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumTests.swift */,
+				19FE70921D389B2700BCF5EF /* Info.plist */,
+			);
+			path = "Project 38 - SavePhotoToCustomUlbumTests";
+			sourceTree = "<group>";
+		};
+		19FE709A1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19FE709B1D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumUITests.swift */,
+				19FE709D1D389B2700BCF5EF /* Info.plist */,
+			);
+			path = "Project 38 - SavePhotoToCustomUlbumUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19FE70771D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FE70A01D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbum" */;
+			buildPhases = (
+				19FE70741D389B2600BCF5EF /* Sources */,
+				19FE70751D389B2600BCF5EF /* Frameworks */,
+				19FE70761D389B2600BCF5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 38 - SavePhotoToCustomUlbum";
+			productName = "Project 38 - SavePhotoToCustomUlbum";
+			productReference = 19FE70781D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19FE708B1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FE70A31D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumTests" */;
+			buildPhases = (
+				19FE70881D389B2700BCF5EF /* Sources */,
+				19FE70891D389B2700BCF5EF /* Frameworks */,
+				19FE708A1D389B2700BCF5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19FE708E1D389B2700BCF5EF /* PBXTargetDependency */,
+			);
+			name = "Project 38 - SavePhotoToCustomUlbumTests";
+			productName = "Project 38 - SavePhotoToCustomUlbumTests";
+			productReference = 19FE708C1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19FE70961D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FE70A61D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumUITests" */;
+			buildPhases = (
+				19FE70931D389B2700BCF5EF /* Sources */,
+				19FE70941D389B2700BCF5EF /* Frameworks */,
+				19FE70951D389B2700BCF5EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19FE70991D389B2700BCF5EF /* PBXTargetDependency */,
+			);
+			name = "Project 38 - SavePhotoToCustomUlbumUITests";
+			productName = "Project 38 - SavePhotoToCustomUlbumUITests";
+			productReference = 19FE70971D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19FE70701D389B2600BCF5EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19FE70771D389B2600BCF5EF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19FE708B1D389B2700BCF5EF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19FE70771D389B2600BCF5EF;
+					};
+					19FE70961D389B2700BCF5EF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19FE70771D389B2600BCF5EF;
+					};
+				};
+			};
+			buildConfigurationList = 19FE70731D389B2600BCF5EF /* Build configuration list for PBXProject "Project 38 - SavePhotoToCustomUlbum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19FE706F1D389B2600BCF5EF;
+			productRefGroup = 19FE70791D389B2600BCF5EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19FE70771D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */,
+				19FE708B1D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumTests */,
+				19FE70961D389B2700BCF5EF /* Project 38 - SavePhotoToCustomUlbumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19FE70761D389B2600BCF5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE70861D389B2600BCF5EF /* LaunchScreen.storyboard in Resources */,
+				19FE70831D389B2600BCF5EF /* Assets.xcassets in Resources */,
+				19FE70811D389B2600BCF5EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE708A1D389B2700BCF5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE70951D389B2700BCF5EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19FE70741D389B2600BCF5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE707E1D389B2600BCF5EF /* ViewController.swift in Sources */,
+				19FE707C1D389B2600BCF5EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE70881D389B2700BCF5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE70911D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19FE70931D389B2700BCF5EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FE709C1D389B2700BCF5EF /* Project_38___SavePhotoToCustomUlbumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19FE708E1D389B2700BCF5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19FE70771D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */;
+			targetProxy = 19FE708D1D389B2700BCF5EF /* PBXContainerItemProxy */;
+		};
+		19FE70991D389B2700BCF5EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19FE70771D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum */;
+			targetProxy = 19FE70981D389B2700BCF5EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19FE707F1D389B2600BCF5EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FE70801D389B2600BCF5EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19FE70841D389B2600BCF5EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19FE70851D389B2600BCF5EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19FE709E1D389B2700BCF5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19FE709F1D389B2700BCF5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19FE70A11D389B2700BCF5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19FE70A21D389B2700BCF5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbum/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19FE70A41D389B2700BCF5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 38 - SavePhotoToCustomUlbum.app/Project 38 - SavePhotoToCustomUlbum";
+			};
+			name = Debug;
+		};
+		19FE70A51D389B2700BCF5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbumTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 38 - SavePhotoToCustomUlbum.app/Project 38 - SavePhotoToCustomUlbum";
+			};
+			name = Release;
+		};
+		19FE70A71D389B2700BCF5EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 38 - SavePhotoToCustomUlbum";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19FE70A81D389B2700BCF5EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 38 - SavePhotoToCustomUlbumUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-38---SavePhotoToCustomUlbumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 38 - SavePhotoToCustomUlbum";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19FE70731D389B2600BCF5EF /* Build configuration list for PBXProject "Project 38 - SavePhotoToCustomUlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE709E1D389B2700BCF5EF /* Debug */,
+				19FE709F1D389B2700BCF5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19FE70A01D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE70A11D389B2700BCF5EF /* Debug */,
+				19FE70A21D389B2700BCF5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19FE70A31D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE70A41D389B2700BCF5EF /* Debug */,
+				19FE70A51D389B2700BCF5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19FE70A61D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19FE70A71D389B2700BCF5EF /* Debug */,
+				19FE70A81D389B2700BCF5EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19FE70701D389B2600BCF5EF /* Project object */;
+}
