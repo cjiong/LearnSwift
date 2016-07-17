@@ -1,25 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_32___CircleProgressView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8C-1E-45I" customClass="ProgressView" customModule="Project_32___CircleProgressView" customModuleProvider="target">
+                                <rect key="frame" x="37" y="61" width="300" height="437"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h50-kS-W5F">
+                                        <rect key="frame" x="100" y="169" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="2AA-l9-jhP"/>
+                                            <constraint firstAttribute="height" constant="100" id="bu3-oT-fkI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="h50-kS-W5F" firstAttribute="centerY" secondItem="s8C-1E-45I" secondAttribute="centerY" id="3SJ-Uz-hxZ"/>
+                                    <constraint firstItem="h50-kS-W5F" firstAttribute="centerX" secondItem="s8C-1E-45I" secondAttribute="centerX" id="KcR-Cg-iQV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suO-jF-dty">
+                                <rect key="frame" x="225" y="511" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.13597879684729208" blue="0.085429990116397625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qvt-uk-uid"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="—">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qvt-uk-uid"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="minusProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMh-dy-dta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ0-Wj-Q1w">
+                                <rect key="frame" x="90" y="511" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.18216370182839203" green="0.74070371692814285" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4dU-rG-Q3V"/>
+                                    <constraint firstAttribute="height" constant="60" id="EdL-3F-Rzb"/>
+                                    <constraint firstAttribute="width" constant="60" id="Utx-Wu-BdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Utx-Wu-BdV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="addProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8I-uk-wVE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lQ0-Wj-Q1w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="7hO-bW-2sT"/>
+                            <constraint firstItem="lQ0-Wj-Q1w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="174" id="EOF-Kv-ati"/>
+                            <constraint firstItem="s8C-1E-45I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N0M-bw-6pM"/>
+                            <constraint firstItem="lQ0-Wj-Q1w" firstAttribute="top" secondItem="suO-jF-dty" secondAttribute="top" id="NJC-Qw-aVd"/>
+                            <constraint firstItem="lQ0-Wj-Q1w" firstAttribute="top" secondItem="s8C-1E-45I" secondAttribute="bottom" constant="13" id="PfJ-Ij-O4z"/>
+                            <constraint firstItem="suO-jF-dty" firstAttribute="leading" secondItem="lQ0-Wj-Q1w" secondAttribute="trailing" constant="75" id="Ufd-v8-SVw"/>
+                            <constraint firstItem="s8C-1E-45I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="bvX-zy-drk"/>
+                            <constraint firstItem="s8C-1E-45I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="c8T-Et-c5N"/>
+                            <constraint firstItem="suO-jF-dty" firstAttribute="bottom" secondItem="lQ0-Wj-Q1w" secondAttribute="bottom" id="iSz-qH-Svr"/>
+                            <constraint firstItem="s8C-1E-45I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="iby-rW-Wsd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lQ0-Wj-Q1w" secondAttribute="bottom" constant="96" id="q4Y-Z7-An2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s8C-1E-45I" secondAttribute="bottom" constant="185" id="qBr-ET-6uM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="suO-jF-dty" secondAttribute="trailing" constant="74" id="vbP-az-FeW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="c8T-Et-c5N"/>
+                                <exclude reference="EOF-Kv-ati"/>
+                                <exclude reference="qBr-ET-6uM"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addButton" destination="lQ0-Wj-Q1w" id="eSd-Iw-1il"/>
+                        <outlet property="minusButton" destination="suO-jF-dty" id="T4T-ya-CG3"/>
+                        <outlet property="progerssView" destination="s8C-1E-45I" id="XgW-DZ-6dR"/>
+                        <outlet property="progressLabel" destination="h50-kS-W5F" id="NaW-i6-WuK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="306" y="389"/>
         </scene>
     </scenes>
 </document>
