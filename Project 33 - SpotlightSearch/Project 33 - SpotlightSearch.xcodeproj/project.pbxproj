@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1909CED11D3BAE66006E4D61 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1909CED01D3BAE66006E4D61 /* CoreSpotlight.framework */; };
 		19440BF21D36797100519ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19440BF11D36797100519ED8 /* AppDelegate.swift */; };
 		19440BF41D36797100519ED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19440BF31D36797100519ED8 /* ViewController.swift */; };
 		19440BF71D36797100519ED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19440BF51D36797100519ED8 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		19440BFC1D36797100519ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19440BFA1D36797100519ED8 /* LaunchScreen.storyboard */; };
 		19440C071D36797100519ED8 /* Project_33___SpotlightSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19440C061D36797100519ED8 /* Project_33___SpotlightSearchTests.swift */; };
 		19440C121D36797100519ED8 /* Project_33___SpotlightSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19440C111D36797100519ED8 /* Project_33___SpotlightSearchUITests.swift */; };
+		19B4F8851D3E27B9003D3D02 /* SceneryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F8841D3E27B9003D3D02 /* SceneryCell.swift */; };
+		19DB96791D3E742D0093F51A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DB96781D3E742D0093F51A /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1909CED01D3BAE66006E4D61 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 		19440BEE1D36797100519ED8 /* Project 33 - SpotlightSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 33 - SpotlightSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19440BF11D36797100519ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19440BF31D36797100519ED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		19440C0D1D36797100519ED8 /* Project 33 - SpotlightSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 33 - SpotlightSearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19440C111D36797100519ED8 /* Project_33___SpotlightSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_33___SpotlightSearchUITests.swift"; sourceTree = "<group>"; };
 		19440C131D36797100519ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B4F8841D3E27B9003D3D02 /* SceneryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneryCell.swift; sourceTree = "<group>"; };
+		19DB96781D3E742D0093F51A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DB96791D3E742D0093F51A /* MobileCoreServices.framework in Frameworks */,
+				1909CED11D3BAE66006E4D61 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +85,8 @@
 		19440BE51D36797100519ED8 = {
 			isa = PBXGroup;
 			children = (
+				1909CED01D3BAE66006E4D61 /* CoreSpotlight.framework */,
+				19DB96781D3E742D0093F51A /* MobileCoreServices.framework */,
 				19440BF01D36797100519ED8 /* Project 33 - SpotlightSearch */,
 				19440C051D36797100519ED8 /* Project 33 - SpotlightSearchTests */,
 				19440C101D36797100519ED8 /* Project 33 - SpotlightSearchUITests */,
@@ -99,6 +109,7 @@
 			children = (
 				19440BF11D36797100519ED8 /* AppDelegate.swift */,
 				19440BF31D36797100519ED8 /* ViewController.swift */,
+				19B4F8841D3E27B9003D3D02 /* SceneryCell.swift */,
 				19440BF51D36797100519ED8 /* Main.storyboard */,
 				19440BF81D36797100519ED8 /* Assets.xcassets */,
 				19440BFA1D36797100519ED8 /* LaunchScreen.storyboard */,
@@ -260,6 +271,7 @@
 			files = (
 				19440BF41D36797100519ED8 /* ViewController.swift in Sources */,
 				19440BF21D36797100519ED8 /* AppDelegate.swift in Sources */,
+				19B4F8851D3E27B9003D3D02 /* SceneryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +500,7 @@
 				19440C181D36797100519ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19440C191D36797100519ED8 /* Build configuration list for PBXNativeTarget "Project 33 - SpotlightSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +509,7 @@
 				19440C1B1D36797100519ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19440C1C1D36797100519ED8 /* Build configuration list for PBXNativeTarget "Project 33 - SpotlightSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +518,7 @@
 				19440C1E1D36797100519ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
