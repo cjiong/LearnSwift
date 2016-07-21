@@ -123,19 +123,41 @@ Project 28 - [GenerateQRCode](https://github.com/cjiong/LearnSwift/tree/master/P
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2028%20-%20GenerateQRCode/GenerateQRCode.gif)
 
-<!--Project 29 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20)-->
+Project 29 - [CustomPullToRefresh](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20CustomPullToRefresh)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2015%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2029%20-%20CustomPullToRefresh/CustomPullToRefresh.gif)
 
-<!--Project 30 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2015%20-%20)-->
+Project 30 - [PopoverMenu](https://github.com/cjiong/LearnSwift/tree/master/Project%2030%20-%20PopoverMenu)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2015%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2030%20-%20PopoverMenu/PopoverMenu.gif)
 
-<!--Project 31 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2031%20-%20)-->
+Project 31 - [CollectionView](https://github.com/cjiong/LearnSwift/tree/master/Project%2031%20-%20CollectionView)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2031%20-%20/.gif)-->
+<img src="https://github.com/cjiong/LearnSwift/blob/master/Project%2031%20-%20CollectionView/CollectionView.png" width = "375" height = "667" />
 
+Project 32 - [CircleProgressView](https://github.com/cjiong/LearnSwift/tree/master/Project%2032%20-%20CircleProgressView)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2032%20-%20CircleProgressView/CircleProgressView.gif)
+
+Project 33 - [SpotlightSearch](https://github.com/cjiong/LearnSwift/tree/master/Project%2033%20-%20SpotlightSearch)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2033%20-%20SpotlightSearch/SpotlightSearch.gif)
+
+Project 34 - [BasicAnimation](https://github.com/cjiong/LearnSwift/tree/master/Project%2034%20-%20BasicAnimation)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2034%20-%20BasicAnimation/BasicAnimation.gif)
+
+Project 35 - [SimpleWeatherReport](https://github.com/cjiong/LearnSwift/tree/master/Project%2035%20-%20SimpleWeatherReport)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2035%20-%20SimpleWeatherReport/SimpleWeatherReport.gif)
+
+<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20/.gif)-->
 
 ## Learning Resource
+
 ## Contact Me
 ## 
+
+
