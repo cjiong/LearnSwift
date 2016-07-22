@@ -14,6 +14,11 @@
 		19DCDDC11D37E98700AADF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DCDDBF1D37E98700AADF5E /* LaunchScreen.storyboard */; };
 		19DCDDCC1D37E98700AADF5E /* Project_34___BasicAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDDCB1D37E98700AADF5E /* Project_34___BasicAnimationTests.swift */; };
 		19DCDDD71D37E98700AADF5E /* Project_34___BasicAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDDD61D37E98700AADF5E /* Project_34___BasicAnimationUITests.swift */; };
+		19F3E4151D4109B0007CC5B8 /* PositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E4141D4109B0007CC5B8 /* PositionViewController.swift */; };
+		19F3E4171D4109D2007CC5B8 /* OpacityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E4161D4109D2007CC5B8 /* OpacityViewController.swift */; };
+		19F3E4191D410A87007CC5B8 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E4181D410A87007CC5B8 /* ColorViewController.swift */; };
+		19F3E41B1D410A98007CC5B8 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E41A1D410A98007CC5B8 /* RotationViewController.swift */; };
+		19F3E41D1D410AA4007CC5B8 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F3E41C1D410AA4007CC5B8 /* ScaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		19DCDDD21D37E98700AADF5E /* Project 34 - BasicAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 34 - BasicAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DCDDD61D37E98700AADF5E /* Project_34___BasicAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_34___BasicAnimationUITests.swift"; sourceTree = "<group>"; };
 		19DCDDD81D37E98700AADF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F3E4141D4109B0007CC5B8 /* PositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionViewController.swift; sourceTree = "<group>"; };
+		19F3E4161D4109D2007CC5B8 /* OpacityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityViewController.swift; sourceTree = "<group>"; };
+		19F3E4181D410A87007CC5B8 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		19F3E41A1D410A98007CC5B8 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		19F3E41C1D410AA4007CC5B8 /* ScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 			children = (
 				19DCDDB61D37E98700AADF5E /* AppDelegate.swift */,
 				19DCDDB81D37E98700AADF5E /* ViewController.swift */,
+				19F3E4141D4109B0007CC5B8 /* PositionViewController.swift */,
+				19F3E4161D4109D2007CC5B8 /* OpacityViewController.swift */,
+				19F3E4181D410A87007CC5B8 /* ColorViewController.swift */,
+				19F3E41A1D410A98007CC5B8 /* RotationViewController.swift */,
+				19F3E41C1D410AA4007CC5B8 /* ScaleViewController.swift */,
 				19DCDDBA1D37E98700AADF5E /* Main.storyboard */,
 				19DCDDBD1D37E98700AADF5E /* Assets.xcassets */,
 				19DCDDBF1D37E98700AADF5E /* LaunchScreen.storyboard */,
@@ -258,7 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19F3E4151D4109B0007CC5B8 /* PositionViewController.swift in Sources */,
 				19DCDDB91D37E98700AADF5E /* ViewController.swift in Sources */,
+				19F3E41B1D410A98007CC5B8 /* RotationViewController.swift in Sources */,
+				19F3E4171D4109D2007CC5B8 /* OpacityViewController.swift in Sources */,
+				19F3E4191D410A87007CC5B8 /* ColorViewController.swift in Sources */,
+				19F3E41D1D410AA4007CC5B8 /* ScaleViewController.swift in Sources */,
 				19DCDDB71D37E98700AADF5E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +508,7 @@
 				19DCDDDD1D37E98700AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19DCDDDE1D37E98700AADF5E /* Build configuration list for PBXNativeTarget "Project 34 - BasicAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +517,7 @@
 				19DCDDE01D37E98700AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19DCDDE11D37E98700AADF5E /* Build configuration list for PBXNativeTarget "Project 34 - BasicAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +526,7 @@
 				19DCDDE31D37E98700AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

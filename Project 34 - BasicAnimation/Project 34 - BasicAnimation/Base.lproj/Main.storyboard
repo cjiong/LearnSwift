@@ -135,7 +135,7 @@
         <!--Position View Controller-->
         <scene sceneID="X5Y-Bm-nUl">
             <objects>
-                <viewController id="ezk-Xu-yBm" userLabel="Position View Controller" sceneMemberID="viewController">
+                <viewController id="ezk-Xu-yBm" userLabel="Position View Controller" customClass="PositionViewController" customModule="Project_34___BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qhX-5C-4bC"/>
                         <viewControllerLayoutGuide type="bottom" id="kxm-J1-8o0"/>
@@ -158,6 +158,9 @@
                                 <state key="normal" title="下">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="downButtonDidTouch:" destination="ezk-Xu-yBm" eventType="touchUpInside" id="YNB-A5-GSJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-z5-Auh" userLabel="Up Button">
                                 <rect key="frame" x="162" y="512" width="50" height="50"/>
@@ -165,6 +168,9 @@
                                 <state key="normal" title="上">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="upButtonDidTouch:" destination="ezk-Xu-yBm" eventType="touchUpInside" id="8Xm-V9-uIX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeK-2O-kRy" userLabel="Right Button">
                                 <rect key="frame" x="220" y="553" width="50" height="50"/>
@@ -172,6 +178,9 @@
                                 <state key="normal" title="右">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rightButtonDidTouch:" destination="ezk-Xu-yBm" eventType="touchUpInside" id="CH2-uT-NqB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcy-sm-z96" userLabel="Left Button">
                                 <rect key="frame" x="104" y="553" width="50" height="50"/>
@@ -179,6 +188,9 @@
                                 <state key="normal" title="左">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="leftButtonDidTouch:" destination="ezk-Xu-yBm" eventType="touchUpInside" id="WDz-ee-ac1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,6 +200,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="squareView" destination="mlS-os-alw" id="jGe-lb-96g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy5-4f-dYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +228,7 @@
         <!--Opacity View Controller-->
         <scene sceneID="d9e-hH-TDL">
             <objects>
-                <viewController id="HYh-fq-XgV" userLabel="Opacity View Controller" sceneMemberID="viewController">
+                <viewController id="HYh-fq-XgV" userLabel="Opacity View Controller" customClass="OpacityViewController" customModule="Project_34___BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QeS-ot-B04"/>
                         <viewControllerLayoutGuide type="bottom" id="LTa-uC-BZP"/>
@@ -235,6 +250,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="HOU-HQ-BWf" id="5Si-sh-A86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSM-BW-38A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +261,7 @@
         <!--Color View Controller-->
         <scene sceneID="hYR-Y5-mus">
             <objects>
-                <viewController id="i71-2z-Y8b" userLabel="Color View Controller" sceneMemberID="viewController">
+                <viewController id="i71-2z-Y8b" userLabel="Color View Controller" customClass="ColorViewController" customModule="Project_34___BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AFG-5A-PRk"/>
                         <viewControllerLayoutGuide type="bottom" id="ts3-XE-6s2"/>
@@ -280,6 +298,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bgView" destination="L9f-TW-a6t" id="27l-Ie-bBd"/>
+                        <outlet property="label" destination="1Px-Tb-x2P" id="D5W-qn-udu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIt-ld-aFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,7 +310,7 @@
         <!--Rotation View Controller-->
         <scene sceneID="bn6-ML-DYy">
             <objects>
-                <viewController id="hyc-i8-cIj" userLabel="Rotation View Controller" sceneMemberID="viewController">
+                <viewController id="hyc-i8-cIj" userLabel="Rotation View Controller" customClass="RotationViewController" customModule="Project_34___BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P8U-Ku-koe"/>
                         <viewControllerLayoutGuide type="bottom" id="VSU-Bi-9uk"/>
@@ -304,15 +326,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="rotationImageView" destination="34J-Gk-DLH" id="AHa-Vr-Yi2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wra-ba-cRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="467.5" y="1202.5"/>
+            <point key="canvasLocation" x="455.5" y="1202.5"/>
         </scene>
         <!--Scale View Controller-->
         <scene sceneID="tFR-s2-tCz">
             <objects>
-                <viewController id="Hdw-Vf-Pcq" userLabel="Scale View Controller" sceneMemberID="viewController">
+                <viewController id="Hdw-Vf-Pcq" userLabel="Scale View Controller" customClass="ScaleViewController" customModule="Project_34___BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhE-0A-G93"/>
                         <viewControllerLayoutGuide type="bottom" id="F0N-iJ-B2M"/>
@@ -328,6 +353,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scaleImageView" destination="5Ke-Af-Gi6" id="qa6-K7-R3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Dh-qA-sVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
