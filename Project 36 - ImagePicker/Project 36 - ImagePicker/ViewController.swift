@@ -8,16 +8,49 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var headPicture: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    @IBAction func changeHeadPicture(sender: AnyObject) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+            
+            let picker = UIImagePickerController()
+            
+            //MARK: 设置代理
+            picker.delegate = self
+            picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            picker.allowsEditing = true
+            
+            self.presentViewController(picker, animated: true, completion: { () -> Void in
+                
+            })
+            
+        } else {
+            
+            print("error")
+        }
     }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        headPicture.setBackgroundImage(image, forState: UIControlState.Normal)
+        picker.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
