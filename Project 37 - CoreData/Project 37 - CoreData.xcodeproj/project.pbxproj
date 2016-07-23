@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		199C95BF1D43D33A00F008DA /* list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 199C95BD1D43D33A00F008DA /* list.xcdatamodeld */; };
 		19DCDE651D37EB9600AADF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDE641D37EB9600AADF5E /* AppDelegate.swift */; };
 		19DCDE671D37EB9600AADF5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDE661D37EB9600AADF5E /* ViewController.swift */; };
 		19DCDE6A1D37EB9600AADF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DCDE681D37EB9600AADF5E /* Main.storyboard */; };
-		19DCDE6D1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDE6B1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodeld */; };
 		19DCDE6F1D37EB9600AADF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DCDE6E1D37EB9600AADF5E /* Assets.xcassets */; };
 		19DCDE721D37EB9600AADF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DCDE701D37EB9600AADF5E /* LaunchScreen.storyboard */; };
 		19DCDE7D1D37EB9600AADF5E /* Project_37___CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCDE7C1D37EB9600AADF5E /* Project_37___CoreDataTests.swift */; };
@@ -35,11 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		199C95BE1D43D33A00F008DA /* list.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = list.xcdatamodel; sourceTree = "<group>"; };
 		19DCDE611D37EB9600AADF5E /* Project 37 - CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 37 - CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DCDE641D37EB9600AADF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19DCDE661D37EB9600AADF5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19DCDE691D37EB9600AADF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		19DCDE6C1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Project_37___CoreData.xcdatamodel"; sourceTree = "<group>"; };
 		19DCDE6E1D37EB9600AADF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DCDE711D37EB9600AADF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19DCDE731D37EB9600AADF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				19DCDE6E1D37EB9600AADF5E /* Assets.xcassets */,
 				19DCDE701D37EB9600AADF5E /* LaunchScreen.storyboard */,
 				19DCDE731D37EB9600AADF5E /* Info.plist */,
-				19DCDE6B1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodeld */,
+				199C95BD1D43D33A00F008DA /* list.xcdatamodeld */,
 			);
 			path = "Project 37 - CoreData";
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			files = (
 				19DCDE671D37EB9600AADF5E /* ViewController.swift in Sources */,
 				19DCDE651D37EB9600AADF5E /* AppDelegate.swift in Sources */,
-				19DCDE6D1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodeld in Sources */,
+				199C95BF1D43D33A00F008DA /* list.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +492,7 @@
 				19DCDE8E1D37EB9600AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19DCDE8F1D37EB9600AADF5E /* Build configuration list for PBXNativeTarget "Project 37 - CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +501,7 @@
 				19DCDE911D37EB9600AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19DCDE921D37EB9600AADF5E /* Build configuration list for PBXNativeTarget "Project 37 - CoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,17 +510,18 @@
 				19DCDE941D37EB9600AADF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		19DCDE6B1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodeld */ = {
+		199C95BD1D43D33A00F008DA /* list.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				19DCDE6C1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodel */,
+				199C95BE1D43D33A00F008DA /* list.xcdatamodel */,
 			);
-			currentVersion = 19DCDE6C1D37EB9600AADF5E /* Project_37___CoreData.xcdatamodel */;
-			path = "Project_37___CoreData.xcdatamodeld";
+			currentVersion = 199C95BE1D43D33A00F008DA /* list.xcdatamodel */;
+			path = list.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
