@@ -21,30 +21,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine" translatesAutoresizingMaskIntoConstraints="NO" id="Y30-oS-14v">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egk-Ke-shl">
-                                <rect key="frame" x="292" y="268" width="76" height="73"/>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S8G-nm-vwH">
+                                <rect key="frame" x="292" y="268" width="77" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="X0P-Tr-g1y"/>
+                                    <constraint firstAttribute="width" constant="77" id="kYM-qz-IA9"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="changeHeadPicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajc-RS-0Na"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Egk-Ke-shl" secondAttribute="trailing" constant="-9" id="LWh-bU-fVe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y30-oS-14v" secondAttribute="trailing" constant="-20" id="TAC-0S-vLE"/>
-                            <constraint firstItem="Egk-Ke-shl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="248" id="Z6o-gR-dwA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S8G-nm-vwH" secondAttribute="bottom" constant="324" id="UKp-gt-JX9"/>
                             <constraint firstItem="Y30-oS-14v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dUu-NH-2qs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Y30-oS-14v" secondAttribute="bottom" id="hzC-4E-6ia"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S8G-nm-vwH" secondAttribute="trailing" constant="-10" id="k6R-2j-0Oe"/>
                             <constraint firstItem="Y30-oS-14v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="k9D-8n-gMI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Egk-Ke-shl" secondAttribute="bottom" constant="326" id="kWw-Bb-yAN"/>
+                            <constraint firstItem="S8G-nm-vwH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="248" id="yqv-6l-EcH"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="headPicture" destination="Egk-Ke-shl" id="zAN-XB-wR1"/>
+                        <outlet property="headPicture" destination="S8G-nm-vwH" id="WvQ-Te-lSh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
