@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190B02021D47B51B0096021F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02011D47B51B0096021F /* AppDelegate.swift */; };
+		190B02041D47B51B0096021F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02031D47B51B0096021F /* ViewController.swift */; };
+		190B02071D47B51B0096021F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190B02051D47B51B0096021F /* Main.storyboard */; };
+		190B02091D47B51B0096021F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190B02081D47B51B0096021F /* Assets.xcassets */; };
+		190B020C1D47B51B0096021F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190B020A1D47B51B0096021F /* LaunchScreen.storyboard */; };
+		190B02171D47B51B0096021F /* Project_46___DrawingBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02161D47B51B0096021F /* Project_46___DrawingBoardTests.swift */; };
+		190B02221D47B51B0096021F /* Project_46___DrawingBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02211D47B51B0096021F /* Project_46___DrawingBoardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190B02131D47B51B0096021F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190B01F61D47B51B0096021F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190B01FD1D47B51B0096021F;
+			remoteInfo = "Project 46 - DrawingBoard";
+		};
+		190B021E1D47B51B0096021F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 190B01F61D47B51B0096021F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190B01FD1D47B51B0096021F;
+			remoteInfo = "Project 46 - DrawingBoard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190B01FE1D47B51B0096021F /* Project 46 - DrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 46 - DrawingBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B02011D47B51B0096021F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		190B02031D47B51B0096021F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		190B02061D47B51B0096021F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		190B02081D47B51B0096021F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		190B020B1D47B51B0096021F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		190B020D1D47B51B0096021F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190B02121D47B51B0096021F /* Project 46 - DrawingBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 46 - DrawingBoardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B02161D47B51B0096021F /* Project_46___DrawingBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_46___DrawingBoardTests.swift"; sourceTree = "<group>"; };
+		190B02181D47B51B0096021F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190B021D1D47B51B0096021F /* Project 46 - DrawingBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 46 - DrawingBoardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190B02211D47B51B0096021F /* Project_46___DrawingBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_46___DrawingBoardUITests.swift"; sourceTree = "<group>"; };
+		190B02231D47B51B0096021F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		190B01FB1D47B51B0096021F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B020F1D47B51B0096021F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B021A1D47B51B0096021F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190B01F51D47B51B0096021F = {
+			isa = PBXGroup;
+			children = (
+				190B02001D47B51B0096021F /* Project 46 - DrawingBoard */,
+				190B02151D47B51B0096021F /* Project 46 - DrawingBoardTests */,
+				190B02201D47B51B0096021F /* Project 46 - DrawingBoardUITests */,
+				190B01FF1D47B51B0096021F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		190B01FF1D47B51B0096021F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				190B01FE1D47B51B0096021F /* Project 46 - DrawingBoard.app */,
+				190B02121D47B51B0096021F /* Project 46 - DrawingBoardTests.xctest */,
+				190B021D1D47B51B0096021F /* Project 46 - DrawingBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		190B02001D47B51B0096021F /* Project 46 - DrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				190B02011D47B51B0096021F /* AppDelegate.swift */,
+				190B02031D47B51B0096021F /* ViewController.swift */,
+				190B02051D47B51B0096021F /* Main.storyboard */,
+				190B02081D47B51B0096021F /* Assets.xcassets */,
+				190B020A1D47B51B0096021F /* LaunchScreen.storyboard */,
+				190B020D1D47B51B0096021F /* Info.plist */,
+			);
+			path = "Project 46 - DrawingBoard";
+			sourceTree = "<group>";
+		};
+		190B02151D47B51B0096021F /* Project 46 - DrawingBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				190B02161D47B51B0096021F /* Project_46___DrawingBoardTests.swift */,
+				190B02181D47B51B0096021F /* Info.plist */,
+			);
+			path = "Project 46 - DrawingBoardTests";
+			sourceTree = "<group>";
+		};
+		190B02201D47B51B0096021F /* Project 46 - DrawingBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				190B02211D47B51B0096021F /* Project_46___DrawingBoardUITests.swift */,
+				190B02231D47B51B0096021F /* Info.plist */,
+			);
+			path = "Project 46 - DrawingBoardUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		190B01FD1D47B51B0096021F /* Project 46 - DrawingBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B02261D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoard" */;
+			buildPhases = (
+				190B01FA1D47B51B0096021F /* Sources */,
+				190B01FB1D47B51B0096021F /* Frameworks */,
+				190B01FC1D47B51B0096021F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 46 - DrawingBoard";
+			productName = "Project 46 - DrawingBoard";
+			productReference = 190B01FE1D47B51B0096021F /* Project 46 - DrawingBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		190B02111D47B51B0096021F /* Project 46 - DrawingBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B02291D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardTests" */;
+			buildPhases = (
+				190B020E1D47B51B0096021F /* Sources */,
+				190B020F1D47B51B0096021F /* Frameworks */,
+				190B02101D47B51B0096021F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190B02141D47B51B0096021F /* PBXTargetDependency */,
+			);
+			name = "Project 46 - DrawingBoardTests";
+			productName = "Project 46 - DrawingBoardTests";
+			productReference = 190B02121D47B51B0096021F /* Project 46 - DrawingBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		190B021C1D47B51B0096021F /* Project 46 - DrawingBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190B022C1D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardUITests" */;
+			buildPhases = (
+				190B02191D47B51B0096021F /* Sources */,
+				190B021A1D47B51B0096021F /* Frameworks */,
+				190B021B1D47B51B0096021F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190B021F1D47B51B0096021F /* PBXTargetDependency */,
+			);
+			name = "Project 46 - DrawingBoardUITests";
+			productName = "Project 46 - DrawingBoardUITests";
+			productReference = 190B021D1D47B51B0096021F /* Project 46 - DrawingBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		190B01F61D47B51B0096021F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					190B01FD1D47B51B0096021F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					190B02111D47B51B0096021F = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 190B01FD1D47B51B0096021F;
+					};
+					190B021C1D47B51B0096021F = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 190B01FD1D47B51B0096021F;
+					};
+				};
+			};
+			buildConfigurationList = 190B01F91D47B51B0096021F /* Build configuration list for PBXProject "Project 46 - DrawingBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 190B01F51D47B51B0096021F;
+			productRefGroup = 190B01FF1D47B51B0096021F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				190B01FD1D47B51B0096021F /* Project 46 - DrawingBoard */,
+				190B02111D47B51B0096021F /* Project 46 - DrawingBoardTests */,
+				190B021C1D47B51B0096021F /* Project 46 - DrawingBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		190B01FC1D47B51B0096021F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B020C1D47B51B0096021F /* LaunchScreen.storyboard in Resources */,
+				190B02091D47B51B0096021F /* Assets.xcassets in Resources */,
+				190B02071D47B51B0096021F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B02101D47B51B0096021F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B021B1D47B51B0096021F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		190B01FA1D47B51B0096021F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B02041D47B51B0096021F /* ViewController.swift in Sources */,
+				190B02021D47B51B0096021F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B020E1D47B51B0096021F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B02171D47B51B0096021F /* Project_46___DrawingBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190B02191D47B51B0096021F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B02221D47B51B0096021F /* Project_46___DrawingBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190B02141D47B51B0096021F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190B01FD1D47B51B0096021F /* Project 46 - DrawingBoard */;
+			targetProxy = 190B02131D47B51B0096021F /* PBXContainerItemProxy */;
+		};
+		190B021F1D47B51B0096021F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190B01FD1D47B51B0096021F /* Project 46 - DrawingBoard */;
+			targetProxy = 190B021E1D47B51B0096021F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		190B02051D47B51B0096021F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B02061D47B51B0096021F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		190B020A1D47B51B0096021F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190B020B1D47B51B0096021F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190B02241D47B51C0096021F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		190B02251D47B51C0096021F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190B02271D47B51C0096021F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 46 - DrawingBoard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		190B02281D47B51C0096021F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 46 - DrawingBoard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		190B022A1D47B51C0096021F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 46 - DrawingBoardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 46 - DrawingBoard.app/Project 46 - DrawingBoard";
+			};
+			name = Debug;
+		};
+		190B022B1D47B51C0096021F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 46 - DrawingBoardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 46 - DrawingBoard.app/Project 46 - DrawingBoard";
+			};
+			name = Release;
+		};
+		190B022D1D47B51C0096021F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 46 - DrawingBoardUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 46 - DrawingBoard";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		190B022E1D47B51C0096021F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 46 - DrawingBoardUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-46---DrawingBoardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 46 - DrawingBoard";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		190B01F91D47B51B0096021F /* Build configuration list for PBXProject "Project 46 - DrawingBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B02241D47B51C0096021F /* Debug */,
+				190B02251D47B51C0096021F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190B02261D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B02271D47B51C0096021F /* Debug */,
+				190B02281D47B51C0096021F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		190B02291D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B022A1D47B51C0096021F /* Debug */,
+				190B022B1D47B51C0096021F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		190B022C1D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190B022D1D47B51C0096021F /* Debug */,
+				190B022E1D47B51C0096021F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 190B01F61D47B51B0096021F /* Project object */;
+}
