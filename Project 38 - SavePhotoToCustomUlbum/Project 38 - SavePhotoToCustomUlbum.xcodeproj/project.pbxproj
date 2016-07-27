@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197A5FF41D465E7B00AE0E1A /* CustomUlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197A5FF31D465E7B00AE0E1A /* CustomUlbum.swift */; };
 		19FE707C1D389B2600BCF5EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE707B1D389B2600BCF5EF /* AppDelegate.swift */; };
 		19FE707E1D389B2600BCF5EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE707D1D389B2600BCF5EF /* ViewController.swift */; };
 		19FE70811D389B2600BCF5EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE707F1D389B2600BCF5EF /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		197A5FF31D465E7B00AE0E1A /* CustomUlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUlbum.swift; sourceTree = "<group>"; };
 		19FE70781D389B2600BCF5EF /* Project 38 - SavePhotoToCustomUlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 38 - SavePhotoToCustomUlbum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FE707B1D389B2600BCF5EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FE707D1D389B2600BCF5EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				19FE707B1D389B2600BCF5EF /* AppDelegate.swift */,
 				19FE707D1D389B2600BCF5EF /* ViewController.swift */,
+				197A5FF31D465E7B00AE0E1A /* CustomUlbum.swift */,
 				19FE707F1D389B2600BCF5EF /* Main.storyboard */,
 				19FE70821D389B2600BCF5EF /* Assets.xcassets */,
 				19FE70841D389B2600BCF5EF /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FE707E1D389B2600BCF5EF /* ViewController.swift in Sources */,
+				197A5FF41D465E7B00AE0E1A /* CustomUlbum.swift in Sources */,
 				19FE707C1D389B2600BCF5EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +492,7 @@
 				19FE70A21D389B2700BCF5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FE70A31D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				19FE70A51D389B2700BCF5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FE70A61D389B2700BCF5EF /* Build configuration list for PBXNativeTarget "Project 38 - SavePhotoToCustomUlbumUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				19FE70A81D389B2700BCF5EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
