@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19B16A0B1D49077B00D54C9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A0A1D49077B00D54C9E /* AppDelegate.swift */; };
+		19B16A0D1D49077B00D54C9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A0C1D49077B00D54C9E /* ViewController.swift */; };
+		19B16A101D49077B00D54C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B16A0E1D49077B00D54C9E /* Main.storyboard */; };
+		19B16A121D49077B00D54C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B16A111D49077B00D54C9E /* Assets.xcassets */; };
+		19B16A151D49077B00D54C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B16A131D49077B00D54C9E /* LaunchScreen.storyboard */; };
+		19B16A201D49077B00D54C9E /* Project_47___TagViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A1F1D49077B00D54C9E /* Project_47___TagViewAppTests.swift */; };
+		19B16A2B1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A2A1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B16A1C1D49077B00D54C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B169FF1D49077B00D54C9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B16A061D49077B00D54C9E;
+			remoteInfo = "Project 47 - TagViewApp";
+		};
+		19B16A271D49077B00D54C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B169FF1D49077B00D54C9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B16A061D49077B00D54C9E;
+			remoteInfo = "Project 47 - TagViewApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B16A071D49077B00D54C9E /* Project 47 - TagViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 47 - TagViewApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B16A0A1D49077B00D54C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19B16A0C1D49077B00D54C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19B16A0F1D49077B00D54C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19B16A111D49077B00D54C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19B16A141D49077B00D54C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19B16A161D49077B00D54C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B16A1B1D49077B00D54C9E /* Project 47 - TagViewAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 47 - TagViewAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B16A1F1D49077B00D54C9E /* Project_47___TagViewAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_47___TagViewAppTests.swift"; sourceTree = "<group>"; };
+		19B16A211D49077B00D54C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B16A261D49077B00D54C9E /* Project 47 - TagViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 47 - TagViewAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B16A2A1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_47___TagViewAppUITests.swift"; sourceTree = "<group>"; };
+		19B16A2C1D49077B00D54C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B16A041D49077B00D54C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A181D49077B00D54C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A231D49077B00D54C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B169FE1D49077B00D54C9E = {
+			isa = PBXGroup;
+			children = (
+				19B16A091D49077B00D54C9E /* Project 47 - TagViewApp */,
+				19B16A1E1D49077B00D54C9E /* Project 47 - TagViewAppTests */,
+				19B16A291D49077B00D54C9E /* Project 47 - TagViewAppUITests */,
+				19B16A081D49077B00D54C9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19B16A081D49077B00D54C9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B16A071D49077B00D54C9E /* Project 47 - TagViewApp.app */,
+				19B16A1B1D49077B00D54C9E /* Project 47 - TagViewAppTests.xctest */,
+				19B16A261D49077B00D54C9E /* Project 47 - TagViewAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B16A091D49077B00D54C9E /* Project 47 - TagViewApp */ = {
+			isa = PBXGroup;
+			children = (
+				19B16A0A1D49077B00D54C9E /* AppDelegate.swift */,
+				19B16A0C1D49077B00D54C9E /* ViewController.swift */,
+				19B16A0E1D49077B00D54C9E /* Main.storyboard */,
+				19B16A111D49077B00D54C9E /* Assets.xcassets */,
+				19B16A131D49077B00D54C9E /* LaunchScreen.storyboard */,
+				19B16A161D49077B00D54C9E /* Info.plist */,
+			);
+			path = "Project 47 - TagViewApp";
+			sourceTree = "<group>";
+		};
+		19B16A1E1D49077B00D54C9E /* Project 47 - TagViewAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				19B16A1F1D49077B00D54C9E /* Project_47___TagViewAppTests.swift */,
+				19B16A211D49077B00D54C9E /* Info.plist */,
+			);
+			path = "Project 47 - TagViewAppTests";
+			sourceTree = "<group>";
+		};
+		19B16A291D49077B00D54C9E /* Project 47 - TagViewAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19B16A2A1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift */,
+				19B16A2C1D49077B00D54C9E /* Info.plist */,
+			);
+			path = "Project 47 - TagViewAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B16A061D49077B00D54C9E /* Project 47 - TagViewApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B16A2F1D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewApp" */;
+			buildPhases = (
+				19B16A031D49077B00D54C9E /* Sources */,
+				19B16A041D49077B00D54C9E /* Frameworks */,
+				19B16A051D49077B00D54C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 47 - TagViewApp";
+			productName = "Project 47 - TagViewApp";
+			productReference = 19B16A071D49077B00D54C9E /* Project 47 - TagViewApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19B16A1A1D49077B00D54C9E /* Project 47 - TagViewAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B16A321D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppTests" */;
+			buildPhases = (
+				19B16A171D49077B00D54C9E /* Sources */,
+				19B16A181D49077B00D54C9E /* Frameworks */,
+				19B16A191D49077B00D54C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B16A1D1D49077B00D54C9E /* PBXTargetDependency */,
+			);
+			name = "Project 47 - TagViewAppTests";
+			productName = "Project 47 - TagViewAppTests";
+			productReference = 19B16A1B1D49077B00D54C9E /* Project 47 - TagViewAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19B16A251D49077B00D54C9E /* Project 47 - TagViewAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B16A351D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppUITests" */;
+			buildPhases = (
+				19B16A221D49077B00D54C9E /* Sources */,
+				19B16A231D49077B00D54C9E /* Frameworks */,
+				19B16A241D49077B00D54C9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B16A281D49077B00D54C9E /* PBXTargetDependency */,
+			);
+			name = "Project 47 - TagViewAppUITests";
+			productName = "Project 47 - TagViewAppUITests";
+			productReference = 19B16A261D49077B00D54C9E /* Project 47 - TagViewAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B169FF1D49077B00D54C9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19B16A061D49077B00D54C9E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19B16A1A1D49077B00D54C9E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19B16A061D49077B00D54C9E;
+					};
+					19B16A251D49077B00D54C9E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 55TJDVV762;
+						TestTargetID = 19B16A061D49077B00D54C9E;
+					};
+				};
+			};
+			buildConfigurationList = 19B16A021D49077B00D54C9E /* Build configuration list for PBXProject "Project 47 - TagViewApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19B169FE1D49077B00D54C9E;
+			productRefGroup = 19B16A081D49077B00D54C9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B16A061D49077B00D54C9E /* Project 47 - TagViewApp */,
+				19B16A1A1D49077B00D54C9E /* Project 47 - TagViewAppTests */,
+				19B16A251D49077B00D54C9E /* Project 47 - TagViewAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B16A051D49077B00D54C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B16A151D49077B00D54C9E /* LaunchScreen.storyboard in Resources */,
+				19B16A121D49077B00D54C9E /* Assets.xcassets in Resources */,
+				19B16A101D49077B00D54C9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A191D49077B00D54C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A241D49077B00D54C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B16A031D49077B00D54C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B16A0D1D49077B00D54C9E /* ViewController.swift in Sources */,
+				19B16A0B1D49077B00D54C9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A171D49077B00D54C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B16A201D49077B00D54C9E /* Project_47___TagViewAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B16A221D49077B00D54C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B16A2B1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B16A1D1D49077B00D54C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B16A061D49077B00D54C9E /* Project 47 - TagViewApp */;
+			targetProxy = 19B16A1C1D49077B00D54C9E /* PBXContainerItemProxy */;
+		};
+		19B16A281D49077B00D54C9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B16A061D49077B00D54C9E /* Project 47 - TagViewApp */;
+			targetProxy = 19B16A271D49077B00D54C9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19B16A0E1D49077B00D54C9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B16A0F1D49077B00D54C9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19B16A131D49077B00D54C9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B16A141D49077B00D54C9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B16A2D1D49077B00D54C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19B16A2E1D49077B00D54C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B16A301D49077B00D54C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 47 - TagViewApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19B16A311D49077B00D54C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Project 47 - TagViewApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19B16A331D49077B00D54C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 47 - TagViewAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 47 - TagViewApp.app/Project 47 - TagViewApp";
+			};
+			name = Debug;
+		};
+		19B16A341D49077B00D54C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 47 - TagViewAppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 47 - TagViewApp.app/Project 47 - TagViewApp";
+			};
+			name = Release;
+		};
+		19B16A361D49077B00D54C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 47 - TagViewAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 47 - TagViewApp";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19B16A371D49077B00D54C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 47 - TagViewAppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-47---TagViewAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 47 - TagViewApp";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B16A021D49077B00D54C9E /* Build configuration list for PBXProject "Project 47 - TagViewApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B16A2D1D49077B00D54C9E /* Debug */,
+				19B16A2E1D49077B00D54C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B16A2F1D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B16A301D49077B00D54C9E /* Debug */,
+				19B16A311D49077B00D54C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B16A321D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B16A331D49077B00D54C9E /* Debug */,
+				19B16A341D49077B00D54C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B16A351D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B16A361D49077B00D54C9E /* Debug */,
+				19B16A371D49077B00D54C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19B169FF1D49077B00D54C9E /* Project object */;
+}
