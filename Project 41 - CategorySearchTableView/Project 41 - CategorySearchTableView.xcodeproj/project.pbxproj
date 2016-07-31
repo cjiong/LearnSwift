@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19019D541D4D9692007C794F /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19019D531D4D9692007C794F /* CarCell.swift */; };
 		19FE8D2C1D3E7FD900683541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE8D2B1D3E7FD900683541 /* AppDelegate.swift */; };
 		19FE8D2E1D3E7FD900683541 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FE8D2D1D3E7FD900683541 /* ViewController.swift */; };
 		19FE8D311D3E7FD900683541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FE8D2F1D3E7FD900683541 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19019D531D4D9692007C794F /* CarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 		19FE8D281D3E7FD900683541 /* Project 41 - CategorySearchTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 41 - CategorySearchTableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FE8D2B1D3E7FD900683541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FE8D2D1D3E7FD900683541 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				19FE8D2B1D3E7FD900683541 /* AppDelegate.swift */,
 				19FE8D2D1D3E7FD900683541 /* ViewController.swift */,
 				19FE8D2F1D3E7FD900683541 /* Main.storyboard */,
+				19019D531D4D9692007C794F /* CarCell.swift */,
 				19FE8D321D3E7FD900683541 /* Assets.xcassets */,
 				19FE8D341D3E7FD900683541 /* LaunchScreen.storyboard */,
 				19FE8D371D3E7FD900683541 /* Info.plist */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19019D541D4D9692007C794F /* CarCell.swift in Sources */,
 				19FE8D2E1D3E7FD900683541 /* ViewController.swift in Sources */,
 				19FE8D2C1D3E7FD900683541 /* AppDelegate.swift in Sources */,
 			);
@@ -488,6 +492,7 @@
 				19FE8D521D3E7FD900683541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FE8D531D3E7FD900683541 /* Build configuration list for PBXNativeTarget "Project 41 - CategorySearchTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				19FE8D551D3E7FD900683541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19FE8D561D3E7FD900683541 /* Build configuration list for PBXNativeTarget "Project 41 - CategorySearchTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				19FE8D581D3E7FD900683541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
