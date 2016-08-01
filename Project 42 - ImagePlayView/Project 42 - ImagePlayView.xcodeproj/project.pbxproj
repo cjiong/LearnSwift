@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19119C7A1D4F075B005FF1DA /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19119C791D4F075B005FF1DA /* CarTableViewCell.swift */; };
+		19119C7C1D4F0858005FF1DA /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19119C7B1D4F0858005FF1DA /* CarCollectionViewCell.swift */; };
 		1947FF5B1D3FD2B700FA6B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1947FF5A1D3FD2B700FA6B2D /* AppDelegate.swift */; };
 		1947FF5D1D3FD2B700FA6B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1947FF5C1D3FD2B700FA6B2D /* ViewController.swift */; };
 		1947FF601D3FD2B700FA6B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1947FF5E1D3FD2B700FA6B2D /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19119C791D4F075B005FF1DA /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		19119C7B1D4F0858005FF1DA /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 		1947FF571D3FD2B700FA6B2D /* Project 42 - ImagePlayView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 42 - ImagePlayView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1947FF5A1D3FD2B700FA6B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1947FF5C1D3FD2B700FA6B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				1947FF5A1D3FD2B700FA6B2D /* AppDelegate.swift */,
 				1947FF5C1D3FD2B700FA6B2D /* ViewController.swift */,
+				19119C7B1D4F0858005FF1DA /* CarCollectionViewCell.swift */,
+				19119C791D4F075B005FF1DA /* CarTableViewCell.swift */,
 				1947FF5E1D3FD2B700FA6B2D /* Main.storyboard */,
 				1947FF611D3FD2B700FA6B2D /* Assets.xcassets */,
 				1947FF631D3FD2B700FA6B2D /* LaunchScreen.storyboard */,
@@ -260,6 +266,8 @@
 			files = (
 				1947FF5D1D3FD2B700FA6B2D /* ViewController.swift in Sources */,
 				1947FF5B1D3FD2B700FA6B2D /* AppDelegate.swift in Sources */,
+				19119C7A1D4F075B005FF1DA /* CarTableViewCell.swift in Sources */,
+				19119C7C1D4F0858005FF1DA /* CarCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +496,7 @@
 				1947FF811D3FD2B700FA6B2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1947FF821D3FD2B700FA6B2D /* Build configuration list for PBXNativeTarget "Project 42 - ImagePlayViewTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				1947FF841D3FD2B700FA6B2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1947FF851D3FD2B700FA6B2D /* Build configuration list for PBXNativeTarget "Project 42 - ImagePlayViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				1947FF871D3FD2B700FA6B2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
