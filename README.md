@@ -151,9 +151,18 @@ Project 35 - [SimpleWeatherReport](https://github.com/cjiong/LearnSwift/tree/mas
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2035%20-%20SimpleWeatherReport/SimpleWeatherReport.gif)
 
+Project 36 - [ImagePicker](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20ImagePicker)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20ImagePicker/ImagePicker.gif)
+
 <!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
 
 <!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20/.gif)-->
+
+<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20/.gif)-->
+
 
 ## Learning Resource
 
