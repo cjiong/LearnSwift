@@ -155,13 +155,13 @@ Project 36 - [ImagePicker](https://github.com/cjiong/LearnSwift/tree/master/Proj
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20ImagePicker/ImagePicker.gif)
 
+Project 37 - [CoreData](https://github.com/cjiong/LearnSwift/tree/master/Project%2037%20-%20CoreData)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2037%20-%20CoreData/CoreData.gif)
+
 <!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20/.gif)-->
-
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
-
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2036%20-%20/.gif)-->
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
 
 
 ## Learning Resource
