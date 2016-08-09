@@ -163,9 +163,9 @@ Project 38 - [SavePhotoToCustomUlbum](https://github.com/cjiong/LearnSwift/tree/
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20SavePhotoToCustomUlbum/SavePhotoToCustomUlbum.gif)
 
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 39 - [FloatingButton](https://github.com/cjiong/LearnSwift/tree/master/Project%2039%20-%20FloatingButton)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2039%20-%20FloatingButton/FloatingButton.gif)
 
 <!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
 
