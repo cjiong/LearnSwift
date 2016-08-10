@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--通讯录-->
         <scene sceneID="VOn-OT-vwP">
             <objects>
                 <viewController id="uK3-xP-du0" sceneMemberID="viewController">
@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xJO-C7-zez"/>
+                    <navigationItem key="navigationItem" title="通讯录" id="xJO-C7-zez"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dND-eu-i9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018.5" y="814.5"/>
         </scene>
-        <!--View Controller-->
+        <!--消息-->
         <scene sceneID="dpB-6f-Sfm">
             <objects>
                 <viewController id="IgD-Ef-trJ" sceneMemberID="viewController">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bB9-nZ-XWT"/>
+                    <navigationItem key="navigationItem" title="消息" id="bB9-nZ-XWT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWy-h7-iZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="555.5" y="814.5"/>
         </scene>
-        <!--View Controller-->
+        <!--发现-->
         <scene sceneID="qOQ-Lv-jKz">
             <objects>
                 <viewController id="R6r-DE-NES" sceneMemberID="viewController">
@@ -118,16 +118,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JF3-zg-X9k"/>
+                    <navigationItem key="navigationItem" title="发现" id="JF3-zg-X9k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xC3-yT-3M4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018.5" y="1566.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Discover-->
         <scene sceneID="poo-7q-nDX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jem-7c-7dx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jem-7c-7dx" userLabel="Discover" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Discover" id="ScS-YV-pwP">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="555.5" y="1566.5"/>
         </scene>
-        <!--View Controller-->
+        <!--我-->
         <scene sceneID="quF-CZ-3IJ">
             <objects>
                 <viewController id="Ujz-lv-Qsc" sceneMemberID="viewController">
@@ -159,16 +159,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="uzf-Mx-QRM"/>
+                    <navigationItem key="navigationItem" title="我" id="uzf-Mx-QRM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yru-LY-4bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1018.5" y="2322.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Me-->
         <scene sceneID="dIP-Cq-nMn">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6m-kf-8tK" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6m-kf-8tK" userLabel="Me" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Me" id="eT3-y7-k6j">
                         <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
                     </tabBarItem>
