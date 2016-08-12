@@ -1,4 +1,5 @@
 # LearnSwift
+[![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
 
 ## About Project
 
@@ -175,6 +176,7 @@ Project 39 - [FloatingButton](https://github.com/cjiong/LearnSwift/tree/master/P
 ## Learning Resource
 
 ## Contact Me
-## 
+
+## License
 
 
