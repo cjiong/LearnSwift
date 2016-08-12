@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		19B0693D1D451C2700F02F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0693C1D451C2700F02F97 /* AppDelegate.swift */; };
 		19B0693F1D451C2700F02F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0693E1D451C2700F02F97 /* ViewController.swift */; };
-		19B069421D451C2700F02F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B069401D451C2700F02F97 /* Main.storyboard */; };
 		19B069441D451C2700F02F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B069431D451C2700F02F97 /* Assets.xcassets */; };
-		19B069471D451C2700F02F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B069451D451C2700F02F97 /* LaunchScreen.storyboard */; };
+		19B069471D451C2700F02F97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B069451D451C2700F02F97 /* Main.storyboard */; };
 		19B069521D451C2700F02F97 /* Project_44___StretchyHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B069511D451C2700F02F97 /* Project_44___StretchyHeaderTests.swift */; };
 		19B0695D1D451C2700F02F97 /* Project_44___StretchyHeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B0695C1D451C2700F02F97 /* Project_44___StretchyHeaderUITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +36,8 @@
 		19B069391D451C2700F02F97 /* Project 44 - StretchyHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 44 - StretchyHeader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B0693C1D451C2700F02F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19B0693E1D451C2700F02F97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19B069411D451C2700F02F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19B069431D451C2700F02F97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		19B069461D451C2700F02F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19B069461D451C2700F02F97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19B069481D451C2700F02F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B0694D1D451C2700F02F97 /* Project 44 - StretchyHeaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 44 - StretchyHeaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B069511D451C2700F02F97 /* Project_44___StretchyHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_44___StretchyHeaderTests.swift"; sourceTree = "<group>"; };
@@ -99,9 +97,8 @@
 			children = (
 				19B0693C1D451C2700F02F97 /* AppDelegate.swift */,
 				19B0693E1D451C2700F02F97 /* ViewController.swift */,
-				19B069401D451C2700F02F97 /* Main.storyboard */,
 				19B069431D451C2700F02F97 /* Assets.xcassets */,
-				19B069451D451C2700F02F97 /* LaunchScreen.storyboard */,
+				19B069451D451C2700F02F97 /* Main.storyboard */,
 				19B069481D451C2700F02F97 /* Info.plist */,
 			);
 			path = "Project 44 - StretchyHeader";
@@ -231,9 +228,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19B069471D451C2700F02F97 /* LaunchScreen.storyboard in Resources */,
+				19B069471D451C2700F02F97 /* Main.storyboard in Resources */,
 				19B069441D451C2700F02F97 /* Assets.xcassets in Resources */,
-				19B069421D451C2700F02F97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,20 +291,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		19B069401D451C2700F02F97 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19B069411D451C2700F02F97 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		19B069451D451C2700F02F97 /* LaunchScreen.storyboard */ = {
+		19B069451D451C2700F02F97 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				19B069461D451C2700F02F97 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,6 +476,7 @@
 				19B069631D451C2700F02F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B069641D451C2700F02F97 /* Build configuration list for PBXNativeTarget "Project 44 - StretchyHeaderTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +485,7 @@
 				19B069661D451C2700F02F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B069671D451C2700F02F97 /* Build configuration list for PBXNativeTarget "Project 44 - StretchyHeaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +494,7 @@
 				19B069691D451C2700F02F97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
