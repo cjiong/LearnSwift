@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		190253031D5F732C004A9DAC /* SocialItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253021D5F732C004A9DAC /* SocialItemCell.swift */; };
+		190253051D5F7447004A9DAC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253041D5F7447004A9DAC /* MenuViewController.swift */; };
+		190253071D5F74B5004A9DAC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253061D5F74B5004A9DAC /* DetailViewController.swift */; };
+		190253091D5F74F0004A9DAC /* ZoomingIconTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253081D5F74F0004A9DAC /* ZoomingIconTransition.swift */; };
 		199D68BF1D4A4A7800AFA656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199D68BE1D4A4A7800AFA656 /* AppDelegate.swift */; };
 		199D68C11D4A4A7800AFA656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199D68C01D4A4A7800AFA656 /* ViewController.swift */; };
 		199D68C41D4A4A7800AFA656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 199D68C21D4A4A7800AFA656 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		190253021D5F732C004A9DAC /* SocialItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialItemCell.swift; sourceTree = "<group>"; };
+		190253041D5F7447004A9DAC /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		190253061D5F74B5004A9DAC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		190253081D5F74F0004A9DAC /* ZoomingIconTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomingIconTransition.swift; sourceTree = "<group>"; };
 		199D68BB1D4A4A7800AFA656 /* Project 48 - ZoomingIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 48 - ZoomingIcons.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		199D68BE1D4A4A7800AFA656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		199D68C01D4A4A7800AFA656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 				199D68C01D4A4A7800AFA656 /* ViewController.swift */,
 				199D68C21D4A4A7800AFA656 /* Main.storyboard */,
 				190253021D5F732C004A9DAC /* SocialItemCell.swift */,
+				190253061D5F74B5004A9DAC /* DetailViewController.swift */,
+				190253041D5F7447004A9DAC /* MenuViewController.swift */,
+				190253081D5F74F0004A9DAC /* ZoomingIconTransition.swift */,
 				199D68C51D4A4A7800AFA656 /* Assets.xcassets */,
 				199D68C71D4A4A7800AFA656 /* LaunchScreen.storyboard */,
 				199D68CA1D4A4A7800AFA656 /* Info.plist */,
@@ -202,8 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				199D68C11D4A4A7800AFA656 /* ViewController.swift in Sources */,
+				190253091D5F74F0004A9DAC /* ZoomingIconTransition.swift in Sources */,
 				199D68BF1D4A4A7800AFA656 /* AppDelegate.swift in Sources */,
+				190253071D5F74B5004A9DAC /* DetailViewController.swift in Sources */,
 				190253031D5F732C004A9DAC /* SocialItemCell.swift in Sources */,
+				190253051D5F7447004A9DAC /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

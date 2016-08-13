@@ -164,7 +164,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon-back" width="200" height="166"/>
+        <image name="icon-back" width="13" height="21"/>
         <image name="icon-twitter" width="200" height="166"/>
     </resources>
 </document>
