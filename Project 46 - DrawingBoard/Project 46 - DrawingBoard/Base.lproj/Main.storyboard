@@ -20,49 +20,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTt-64-FIB">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTt-64-FIB" customClass="DrawingBoard" customModule="Project_46___DrawingBoard" customModuleProvider="target">
                                 <rect key="frame" x="2" y="57" width="370" height="537"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeZ-ke-xnk" userLabel="Black">
                                 <rect key="frame" x="11" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.00088916336839999996" blue="0.0018742108590000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Rc-yv-Ozc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9X-rh-7Gc" userLabel="Red">
                                 <rect key="frame" x="47" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.1485161787" blue="0.053310883949999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkB-Sl-ARY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUD-Y6-BmF" userLabel="DeepBlue">
                                 <rect key="frame" x="83" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.1098039299" green="0.58823531870000001" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ph6-Qm-3pY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-hN-QZA" userLabel="Purple">
                                 <rect key="frame" x="119" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.4282579145" green="0.36413405630000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ds9-sz-Fwl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKU-R9-ANJ" userLabel="Gray">
                                 <rect key="frame" x="155" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCc-le-Kbx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qX-dQ-5b6" userLabel="Blue">
                                 <rect key="frame" x="191" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.18216370179999999" green="0.74070371690000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyh-Kx-V28"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILH-jG-NwA" userLabel="Orange">
                                 <rect key="frame" x="227" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.99607843139999996" green="0.51989629849999996" blue="0.074718284639999993" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaN-Pv-kfY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ8-0I-A9I" userLabel="LightBlue">
                                 <rect key="frame" x="263" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.18237191780000001" green="0.93139397660000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNj-Al-Kiq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLE-ek-7Pq" userLabel="Green">
                                 <rect key="frame" x="299" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.27241311171920329" green="0.84317787247474751" blue="0.37527429873221241" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qO-Gc-GKP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ0-AB-Muw" userLabel="Yellow">
                                 <rect key="frame" x="335" y="21" width="30" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeStrokeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynl-hC-udX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-w8-Sq3">
                                 <rect key="frame" x="208" y="602" width="140" height="45"/>
@@ -71,6 +101,9 @@
                                     <constraint firstAttribute="width" constant="140" id="lBG-Ll-8Xl"/>
                                 </constraints>
                                 <state key="normal" title="清空画板"/>
+                                <connections>
+                                    <action selector="clearDrawBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8yJ-Ft-NuS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-bD-e24">
                                 <rect key="frame" x="25" y="602" width="140" height="45"/>
@@ -79,6 +112,9 @@
                                     <constraint firstAttribute="width" constant="140" id="yl3-83-zF6"/>
                                 </constraints>
                                 <state key="normal" title="保存图片"/>
+                                <connections>
+                                    <action selector="saveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8h-pp-i7s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -208,10 +244,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="board" destination="xTt-64-FIB" id="s0d-cf-PJ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305.5" y="388.5"/>
+            <point key="canvasLocation" x="266.5" y="339.5"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190253131D60CDCB004A9DAC /* DrawingBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253121D60CDCB004A9DAC /* DrawingBoard.swift */; };
+		190253151D6205B3004A9DAC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190253141D6205B3004A9DAC /* Line.swift */; };
 		190B02021D47B51B0096021F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02011D47B51B0096021F /* AppDelegate.swift */; };
 		190B02041D47B51B0096021F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190B02031D47B51B0096021F /* ViewController.swift */; };
 		190B02071D47B51B0096021F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190B02051D47B51B0096021F /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190253121D60CDCB004A9DAC /* DrawingBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingBoard.swift; sourceTree = "<group>"; };
+		190253141D6205B3004A9DAC /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		190B01FE1D47B51B0096021F /* Project 46 - DrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 46 - DrawingBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		190B02011D47B51B0096021F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		190B02031D47B51B0096021F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				190B02011D47B51B0096021F /* AppDelegate.swift */,
 				190B02031D47B51B0096021F /* ViewController.swift */,
+				190253141D6205B3004A9DAC /* Line.swift */,
+				190253121D60CDCB004A9DAC /* DrawingBoard.swift */,
 				190B02051D47B51B0096021F /* Main.storyboard */,
 				190B02081D47B51B0096021F /* Assets.xcassets */,
 				190B020A1D47B51B0096021F /* LaunchScreen.storyboard */,
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				190B02041D47B51B0096021F /* ViewController.swift in Sources */,
+				190253151D6205B3004A9DAC /* Line.swift in Sources */,
+				190253131D60CDCB004A9DAC /* DrawingBoard.swift in Sources */,
 				190B02021D47B51B0096021F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +496,7 @@
 				190B02281D47B51C0096021F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		190B02291D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				190B022B1D47B51C0096021F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		190B022C1D47B51C0096021F /* Build configuration list for PBXNativeTarget "Project 46 - DrawingBoardUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				190B022E1D47B51C0096021F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
