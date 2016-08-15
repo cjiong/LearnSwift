@@ -14,17 +14,16 @@ class DrawingBoard: UIView {
     var pathColor: UIColor = UIColor.blackColor()
     var boardBackgroundColor: UIColor!
     
+    //MARK: 保存线条
     var lines = [Line]()
     var touchPoint: CGPoint!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

@@ -246,6 +246,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="board" destination="xTt-64-FIB" id="s0d-cf-PJ2"/>
+                        <outlet property="clearButton" destination="O0I-w8-Sq3" id="v9R-NT-2YS"/>
+                        <outlet property="saveImageButton" destination="I6b-bD-e24" id="ggi-GY-xrR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -12,12 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var board: DrawingBoard!
     
+    @IBOutlet weak var saveImageButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         board.backgroundColor = UIColor.whiteColor()
+        saveImageButton.layer.cornerRadius = 5
+        clearButton.layer.cornerRadius = 5
     }
-
+    
     @IBAction func changeStrokeColor(sender: UIButton) {
         
         //BUG: 会使所有线条的颜色都改变
@@ -28,10 +33,18 @@ class ViewController: UIViewController {
         
         let image = self.board.getImage()
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
+        let alertController = UIAlertController(title: "保存成功", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        alertController.addAction(okAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
+        self.board.clearBoard()
     }
     
     @IBAction func clearDrawBoard(sender: UIButton) {
-        board.clearBoard()
+        self.board.clearBoard()
     }
     
     override func didReceiveMemoryWarning() {
