@@ -168,10 +168,29 @@ Project 39 - [FloatingButton](https://github.com/cjiong/LearnSwift/tree/master/P
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2039%20-%20FloatingButton/FloatingButton.gif)
 
+Project 40 - [SearchTableView](https://github.com/cjiong/LearnSwift/tree/master/Project%2040%20-%20SearchTableView)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2040%20-%20SearchTableView/SearchTableView.gif)
+
+Project 41 - [CategorySearchTableView](https://github.com/cjiong/LearnSwift/tree/master/Project%2041%20-%20CategorySearchTableView)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2041%20-%20CategorySearchTableView/CategorySearchTableView.gif)
+
 <!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
 
 <!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
 
+<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+
+<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+
+<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
 
 ## Learning Resource
 
