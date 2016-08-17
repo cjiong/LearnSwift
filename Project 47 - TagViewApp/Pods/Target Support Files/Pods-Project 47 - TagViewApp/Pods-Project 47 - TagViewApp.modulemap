@@ -1,0 +1,6 @@
+framework module Pods_Project_47___TagViewApp {
+  umbrella header "Pods-Project 47 - TagViewApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,6 +14,7 @@
 		19B16A151D49077B00D54C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B16A131D49077B00D54C9E /* LaunchScreen.storyboard */; };
 		19B16A201D49077B00D54C9E /* Project_47___TagViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A1F1D49077B00D54C9E /* Project_47___TagViewAppTests.swift */; };
 		19B16A2B1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B16A2A1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift */; };
+		5AF675FDB75799629FC73623 /* Pods_Project_47___TagViewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A84A1A5ACFB52363B4B875 /* Pods_Project_47___TagViewApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11000897C1C437784818DBAA /* Pods-Project 47 - TagViewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 47 - TagViewApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 47 - TagViewApp/Pods-Project 47 - TagViewApp.debug.xcconfig"; sourceTree = "<group>"; };
 		19B16A071D49077B00D54C9E /* Project 47 - TagViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 47 - TagViewApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B16A0A1D49077B00D54C9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19B16A0C1D49077B00D54C9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		19B16A261D49077B00D54C9E /* Project 47 - TagViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 47 - TagViewAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19B16A2A1D49077B00D54C9E /* Project_47___TagViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_47___TagViewAppUITests.swift"; sourceTree = "<group>"; };
 		19B16A2C1D49077B00D54C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9315F9FF2F7F75B7F822A6 /* Pods-Project 47 - TagViewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 47 - TagViewApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 47 - TagViewApp/Pods-Project 47 - TagViewApp.release.xcconfig"; sourceTree = "<group>"; };
+		63A84A1A5ACFB52363B4B875 /* Pods_Project_47___TagViewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Project_47___TagViewApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF675FDB75799629FC73623 /* Pods_Project_47___TagViewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				19B16A1E1D49077B00D54C9E /* Project 47 - TagViewAppTests */,
 				19B16A291D49077B00D54C9E /* Project 47 - TagViewAppUITests */,
 				19B16A081D49077B00D54C9E /* Products */,
+				8844DE36BF5DA28458F9A4C4 /* Pods */,
+				955EBDEC001259F5E43DB287 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = "Project 47 - TagViewAppUITests";
 			sourceTree = "<group>";
 		};
+		8844DE36BF5DA28458F9A4C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11000897C1C437784818DBAA /* Pods-Project 47 - TagViewApp.debug.xcconfig */,
+				4B9315F9FF2F7F75B7F822A6 /* Pods-Project 47 - TagViewApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		955EBDEC001259F5E43DB287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A84A1A5ACFB52363B4B875 /* Pods_Project_47___TagViewApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19B16A2F1D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewApp" */;
 			buildPhases = (
+				56BD3B3B70FB5114380E17B2 /* Check Pods Manifest.lock */,
 				19B16A031D49077B00D54C9E /* Sources */,
 				19B16A041D49077B00D54C9E /* Frameworks */,
 				19B16A051D49077B00D54C9E /* Resources */,
+				5B95CAA2BD1BC310218EF6CE /* Embed Pods Frameworks */,
+				6B34F6239F032E060821C38C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56BD3B3B70FB5114380E17B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B95CAA2BD1BC310218EF6CE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 47 - TagViewApp/Pods-Project 47 - TagViewApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B34F6239F032E060821C38C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 47 - TagViewApp/Pods-Project 47 - TagViewApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19B16A031D49077B00D54C9E /* Sources */ = {
@@ -399,6 +474,7 @@
 		};
 		19B16A301D49077B00D54C9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11000897C1C437784818DBAA /* Pods-Project 47 - TagViewApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -411,6 +487,7 @@
 		};
 		19B16A311D49077B00D54C9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9315F9FF2F7F75B7F822A6 /* Pods-Project 47 - TagViewApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -488,6 +565,7 @@
 				19B16A311D49077B00D54C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B16A321D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +574,7 @@
 				19B16A341D49077B00D54C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19B16A351D49077B00D54C9E /* Build configuration list for PBXNativeTarget "Project 47 - TagViewAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +583,7 @@
 				19B16A371D49077B00D54C9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
