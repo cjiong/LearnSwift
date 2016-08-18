@@ -176,9 +176,9 @@ Project 41 - [CategorySearchTableView](https://github.com/cjiong/LearnSwift/tree
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2041%20-%20CategorySearchTableView/CategorySearchTableView.gif)
 
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 42 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2042%20-%20ImagePlayView)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2042%20-%20ImagePlayView/ImagePlayView.gif)
 
 <!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
 
