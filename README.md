@@ -180,17 +180,38 @@ Project 42 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2042%20
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2042%20-%20ImagePlayView/ImagePlayView.gif)
 
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 43 - [LaunchScreenCountdown](https://github.com/cjiong/LearnSwift/tree/master/Project%2043%20-%20LaunchScreenCountdown)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2043%20-%20LaunchScreenCountdown/LaunchScreenCountdown.gif)
 
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 44 - [StretchyHeader](https://github.com/cjiong/LearnSwift/tree/master/Project%2044%20-%20StretchyHeader)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2044%20-%20StretchyHeader/StretchyHeader.gif)
 
-<!--Project 36 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 45 - [TabbarApp](https://github.com/cjiong/LearnSwift/tree/master/Project%2045%20-%20TabbarApp)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2038%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2045%20-%20TabbarApp/TabbarApp.gif)
+
+Project 46 - [DrawingBoard](https://github.com/cjiong/LearnSwift/tree/master/Project%2046%20-%20DrawingBoard)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2046%20-%20DrawingBoard/DrawingBoard.gif)
+
+Project 47 - [TagViewApp](https://github.com/cjiong/LearnSwift/tree/master/Project%2047%20-%20TagViewApp)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2047%20-%20TagViewApp/TagViewApp.gif)
+
+Project 48 - [ZoomingIcons](https://github.com/cjiong/LearnSwift/tree/master/Project%2048%20-%20ZoomingIcons)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2048%20-%20ZoomingIcons/ZoomingIcons.gif)
+
+<!--Project 49 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2049%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2049%20-%20/.gif)-->
+
+<!--Project 50 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+
+<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2050%20-%20/.gif)-->
+
 
 ## Learning Resource
 
