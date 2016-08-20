@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D8CA1E1D680BC8003F8268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */; };
+		19D8CA201D680BC8003F8268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA1F1D680BC8003F8268 /* ViewController.swift */; };
+		19D8CA231D680BC8003F8268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8CA211D680BC8003F8268 /* Main.storyboard */; };
+		19D8CA251D680BC8003F8268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D8CA241D680BC8003F8268 /* Assets.xcassets */; };
+		19D8CA281D680BC8003F8268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8CA261D680BC8003F8268 /* LaunchScreen.storyboard */; };
+		19D8CA331D680BC8003F8268 /* Project_50___GradientAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA321D680BC8003F8268 /* Project_50___GradientAnimationTests.swift */; };
+		19D8CA3E1D680BC8003F8268 /* Project_50___GradientAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA3D1D680BC8003F8268 /* Project_50___GradientAnimationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D8CA2F1D680BC8003F8268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D8CA121D680BC8003F8268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D8CA191D680BC8003F8268;
+			remoteInfo = "Project 50 - GradientAnimation";
+		};
+		19D8CA3A1D680BC8003F8268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D8CA121D680BC8003F8268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D8CA191D680BC8003F8268;
+			remoteInfo = "Project 50 - GradientAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19D8CA1A1D680BC8003F8268 /* Project 50 - GradientAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 50 - GradientAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19D8CA1F1D680BC8003F8268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19D8CA221D680BC8003F8268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19D8CA241D680BC8003F8268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19D8CA271D680BC8003F8268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19D8CA291D680BC8003F8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D8CA2E1D680BC8003F8268 /* Project 50 - GradientAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 50 - GradientAnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D8CA321D680BC8003F8268 /* Project_50___GradientAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_50___GradientAnimationTests.swift"; sourceTree = "<group>"; };
+		19D8CA341D680BC8003F8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19D8CA391D680BC8003F8268 /* Project 50 - GradientAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 50 - GradientAnimationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D8CA3D1D680BC8003F8268 /* Project_50___GradientAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_50___GradientAnimationUITests.swift"; sourceTree = "<group>"; };
+		19D8CA3F1D680BC8003F8268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D8CA171D680BC8003F8268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA2B1D680BC8003F8268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA361D680BC8003F8268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D8CA111D680BC8003F8268 = {
+			isa = PBXGroup;
+			children = (
+				19D8CA1C1D680BC8003F8268 /* Project 50 - GradientAnimation */,
+				19D8CA311D680BC8003F8268 /* Project 50 - GradientAnimationTests */,
+				19D8CA3C1D680BC8003F8268 /* Project 50 - GradientAnimationUITests */,
+				19D8CA1B1D680BC8003F8268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19D8CA1B1D680BC8003F8268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D8CA1A1D680BC8003F8268 /* Project 50 - GradientAnimation.app */,
+				19D8CA2E1D680BC8003F8268 /* Project 50 - GradientAnimationTests.xctest */,
+				19D8CA391D680BC8003F8268 /* Project 50 - GradientAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D8CA1C1D680BC8003F8268 /* Project 50 - GradientAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */,
+				19D8CA1F1D680BC8003F8268 /* ViewController.swift */,
+				19D8CA211D680BC8003F8268 /* Main.storyboard */,
+				19D8CA241D680BC8003F8268 /* Assets.xcassets */,
+				19D8CA261D680BC8003F8268 /* LaunchScreen.storyboard */,
+				19D8CA291D680BC8003F8268 /* Info.plist */,
+			);
+			path = "Project 50 - GradientAnimation";
+			sourceTree = "<group>";
+		};
+		19D8CA311D680BC8003F8268 /* Project 50 - GradientAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D8CA321D680BC8003F8268 /* Project_50___GradientAnimationTests.swift */,
+				19D8CA341D680BC8003F8268 /* Info.plist */,
+			);
+			path = "Project 50 - GradientAnimationTests";
+			sourceTree = "<group>";
+		};
+		19D8CA3C1D680BC8003F8268 /* Project 50 - GradientAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19D8CA3D1D680BC8003F8268 /* Project_50___GradientAnimationUITests.swift */,
+				19D8CA3F1D680BC8003F8268 /* Info.plist */,
+			);
+			path = "Project 50 - GradientAnimationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D8CA191D680BC8003F8268 /* Project 50 - GradientAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D8CA421D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimation" */;
+			buildPhases = (
+				19D8CA161D680BC8003F8268 /* Sources */,
+				19D8CA171D680BC8003F8268 /* Frameworks */,
+				19D8CA181D680BC8003F8268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 50 - GradientAnimation";
+			productName = "Project 50 - GradientAnimation";
+			productReference = 19D8CA1A1D680BC8003F8268 /* Project 50 - GradientAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D8CA2D1D680BC8003F8268 /* Project 50 - GradientAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D8CA451D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationTests" */;
+			buildPhases = (
+				19D8CA2A1D680BC8003F8268 /* Sources */,
+				19D8CA2B1D680BC8003F8268 /* Frameworks */,
+				19D8CA2C1D680BC8003F8268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D8CA301D680BC8003F8268 /* PBXTargetDependency */,
+			);
+			name = "Project 50 - GradientAnimationTests";
+			productName = "Project 50 - GradientAnimationTests";
+			productReference = 19D8CA2E1D680BC8003F8268 /* Project 50 - GradientAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19D8CA381D680BC8003F8268 /* Project 50 - GradientAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D8CA481D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationUITests" */;
+			buildPhases = (
+				19D8CA351D680BC8003F8268 /* Sources */,
+				19D8CA361D680BC8003F8268 /* Frameworks */,
+				19D8CA371D680BC8003F8268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D8CA3B1D680BC8003F8268 /* PBXTargetDependency */,
+			);
+			name = "Project 50 - GradientAnimationUITests";
+			productName = "Project 50 - GradientAnimationUITests";
+			productReference = 19D8CA391D680BC8003F8268 /* Project 50 - GradientAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D8CA121D680BC8003F8268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19D8CA191D680BC8003F8268 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19D8CA2D1D680BC8003F8268 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 19D8CA191D680BC8003F8268;
+					};
+					19D8CA381D680BC8003F8268 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 19D8CA191D680BC8003F8268;
+					};
+				};
+			};
+			buildConfigurationList = 19D8CA151D680BC8003F8268 /* Build configuration list for PBXProject "Project 50 - GradientAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19D8CA111D680BC8003F8268;
+			productRefGroup = 19D8CA1B1D680BC8003F8268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D8CA191D680BC8003F8268 /* Project 50 - GradientAnimation */,
+				19D8CA2D1D680BC8003F8268 /* Project 50 - GradientAnimationTests */,
+				19D8CA381D680BC8003F8268 /* Project 50 - GradientAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D8CA181D680BC8003F8268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D8CA281D680BC8003F8268 /* LaunchScreen.storyboard in Resources */,
+				19D8CA251D680BC8003F8268 /* Assets.xcassets in Resources */,
+				19D8CA231D680BC8003F8268 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA2C1D680BC8003F8268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA371D680BC8003F8268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D8CA161D680BC8003F8268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D8CA201D680BC8003F8268 /* ViewController.swift in Sources */,
+				19D8CA1E1D680BC8003F8268 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA2A1D680BC8003F8268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D8CA331D680BC8003F8268 /* Project_50___GradientAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D8CA351D680BC8003F8268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D8CA3E1D680BC8003F8268 /* Project_50___GradientAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D8CA301D680BC8003F8268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D8CA191D680BC8003F8268 /* Project 50 - GradientAnimation */;
+			targetProxy = 19D8CA2F1D680BC8003F8268 /* PBXContainerItemProxy */;
+		};
+		19D8CA3B1D680BC8003F8268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D8CA191D680BC8003F8268 /* Project 50 - GradientAnimation */;
+			targetProxy = 19D8CA3A1D680BC8003F8268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D8CA211D680BC8003F8268 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D8CA221D680BC8003F8268 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19D8CA261D680BC8003F8268 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D8CA271D680BC8003F8268 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D8CA401D680BC8003F8268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19D8CA411D680BC8003F8268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19D8CA431D680BC8003F8268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 50 - GradientAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19D8CA441D680BC8003F8268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 50 - GradientAnimation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19D8CA461D680BC8003F8268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 50 - GradientAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 50 - GradientAnimation.app/Project 50 - GradientAnimation";
+			};
+			name = Debug;
+		};
+		19D8CA471D680BC8003F8268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 50 - GradientAnimationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 50 - GradientAnimation.app/Project 50 - GradientAnimation";
+			};
+			name = Release;
+		};
+		19D8CA491D680BC8003F8268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 50 - GradientAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 50 - GradientAnimation";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19D8CA4A1D680BC8003F8268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 50 - GradientAnimationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-50---GradientAnimationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 50 - GradientAnimation";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D8CA151D680BC8003F8268 /* Build configuration list for PBXProject "Project 50 - GradientAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D8CA401D680BC8003F8268 /* Debug */,
+				19D8CA411D680BC8003F8268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D8CA421D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D8CA431D680BC8003F8268 /* Debug */,
+				19D8CA441D680BC8003F8268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19D8CA451D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D8CA461D680BC8003F8268 /* Debug */,
+				19D8CA471D680BC8003F8268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19D8CA481D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D8CA491D680BC8003F8268 /* Debug */,
+				19D8CA4A1D680BC8003F8268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D8CA121D680BC8003F8268 /* Project object */;
+}
