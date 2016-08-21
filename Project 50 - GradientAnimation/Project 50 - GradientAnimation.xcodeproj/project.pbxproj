@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195B44C11D6955800099EF4E /* AnimatedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195B44C01D6955800099EF4E /* AnimatedLabel.swift */; };
 		19D8CA1E1D680BC8003F8268 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */; };
 		19D8CA201D680BC8003F8268 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D8CA1F1D680BC8003F8268 /* ViewController.swift */; };
 		19D8CA231D680BC8003F8268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D8CA211D680BC8003F8268 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195B44C01D6955800099EF4E /* AnimatedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedLabel.swift; sourceTree = "<group>"; };
 		19D8CA1A1D680BC8003F8268 /* Project 50 - GradientAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 50 - GradientAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D8CA1F1D680BC8003F8268 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				19D8CA1D1D680BC8003F8268 /* AppDelegate.swift */,
 				19D8CA1F1D680BC8003F8268 /* ViewController.swift */,
 				19D8CA211D680BC8003F8268 /* Main.storyboard */,
+				195B44C01D6955800099EF4E /* AnimatedLabel.swift */,
 				19D8CA241D680BC8003F8268 /* Assets.xcassets */,
 				19D8CA261D680BC8003F8268 /* LaunchScreen.storyboard */,
 				19D8CA291D680BC8003F8268 /* Info.plist */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195B44C11D6955800099EF4E /* AnimatedLabel.swift in Sources */,
 				19D8CA201D680BC8003F8268 /* ViewController.swift in Sources */,
 				19D8CA1E1D680BC8003F8268 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +488,7 @@
 				19D8CA441D680BC8003F8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19D8CA451D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				19D8CA471D680BC8003F8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19D8CA481D680BC8003F8268 /* Build configuration list for PBXNativeTarget "Project 50 - GradientAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				19D8CA4A1D680BC8003F8268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
