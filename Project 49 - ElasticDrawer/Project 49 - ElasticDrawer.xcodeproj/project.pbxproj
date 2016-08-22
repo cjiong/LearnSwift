@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19010FBE1D6B61B0008B6A7B /* DrawerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19010FBC1D6B61B0008B6A7B /* DrawerCell.swift */; };
+		19010FC21D6B6540008B6A7B /* DrawerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19010FC01D6B6540008B6A7B /* DrawerTableViewController.swift */; };
 		19403C8C1D67633000D1A0EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19403C8B1D67633000D1A0EE /* AppDelegate.swift */; };
 		19403C8E1D67633000D1A0EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19403C8D1D67633000D1A0EE /* ViewController.swift */; };
 		19403C911D67633000D1A0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19403C8F1D67633000D1A0EE /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19010FBC1D6B61B0008B6A7B /* DrawerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerCell.swift; sourceTree = "<group>"; };
+		19010FC01D6B6540008B6A7B /* DrawerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTableViewController.swift; sourceTree = "<group>"; };
 		19403C881D67633000D1A0EE /* Project 49 - ElasticDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 49 - ElasticDrawer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19403C8B1D67633000D1A0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19403C8D1D67633000D1A0EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				19403C8B1D67633000D1A0EE /* AppDelegate.swift */,
 				19403C8D1D67633000D1A0EE /* ViewController.swift */,
+				19010FBC1D6B61B0008B6A7B /* DrawerCell.swift */,
+				19010FC01D6B6540008B6A7B /* DrawerTableViewController.swift */,
 				19403C8F1D67633000D1A0EE /* Main.storyboard */,
 				19403C921D67633000D1A0EE /* Assets.xcassets */,
 				19403C941D67633000D1A0EE /* LaunchScreen.storyboard */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19010FBE1D6B61B0008B6A7B /* DrawerCell.swift in Sources */,
 				19403C8E1D67633000D1A0EE /* ViewController.swift in Sources */,
+				19010FC21D6B6540008B6A7B /* DrawerTableViewController.swift in Sources */,
 				19403C8C1D67633000D1A0EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +492,7 @@
 				19403CB21D67633100D1A0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19403CB31D67633100D1A0EE /* Build configuration list for PBXNativeTarget "Project 49 - ElasticDrawerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				19403CB51D67633100D1A0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		19403CB61D67633100D1A0EE /* Build configuration list for PBXNativeTarget "Project 49 - ElasticDrawerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				19403CB81D67633100D1A0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
