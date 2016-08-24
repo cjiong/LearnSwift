@@ -1,4 +1,7 @@
 # LearnSwift
+
+![](https://github.com/cjiong/LearnSwift/blob/master/learnswift-cover.png)
+
 [![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
 
 ## About Project
@@ -214,6 +217,22 @@ Project 50 - [GradientAnimation](https://github.com/cjiong/LearnSwift/tree/maste
 
 
 ## Learning Resource
+
+[The Swift Programming Language](https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)
+
+[Swift Standard Library](https://developer.apple.com/reference/swift)
+
+[Foundation Framework Reference](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/ObjC_classic/index.html#classes)
+
+[AppCoda](http://www.appcoda.com/)
+
+[DevelopersAcademy](http://developersacademy.io/blog/)
+
+[HackingWithSwift](https://www.hackingwithswift.com/)
+
+[SwiftGG](http://swift.gg)
+
+[Matthew Cheok](http://blog.matthewcheok.com/)
 
 ## Contact Me
 
