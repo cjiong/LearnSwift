@@ -204,19 +204,18 @@ Project 48 - [ZoomingIcons](https://github.com/cjiong/LearnSwift/tree/master/Pro
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2048%20-%20ZoomingIcons/ZoomingIcons.gif)
 
-<!--Project 49 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2049%20-%20)-->
+Project 49 - [ElasticDrawer](https://github.com/cjiong/LearnSwift/tree/master/Project%2049%20-%20ElasticDrawer)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2049%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2049%20-%20ElasticDrawer/ElasticDrawer.gif)
 
-<!--Project 50 - [](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20)-->
+Project 50 - [GradientAnimation](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20GradientAnimation)
 
-<!--![](https://github.com/cjiong/LearnSwift/blob/master/Project%2050%20-%20/.gif)-->
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2050%20-%20GradientAnimation/GradientAnimation.gif)
 
 
 ## Learning Resource
 
 ## Contact Me
 
-## License
 
 
