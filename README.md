@@ -236,5 +236,14 @@ Project 50 - [GradientAnimation](https://github.com/cjiong/LearnSwift/tree/maste
 
 ## Contact Me
 
+Weibo: [@陈陈陈炯](http://weibo.com/u/2415589437)
+
+Zhihu: [@陈炯](https://www.zhihu.com/people/chen-jiong-52-35)
+
+Instagram: [@chen_jiong](https://www.instagram.com/chen_jiong)
+
+LinkedIn: [@陈炯](https://www.linkedin.com/in/%E7%82%AF-%E9%99%88-17a831b7)
+
+Twitter: [@cjiong2015](https://twitter.com/cjiong2015)
 
 
