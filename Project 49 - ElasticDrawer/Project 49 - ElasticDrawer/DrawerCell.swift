@@ -8,10 +8,27 @@
 
 import UIKit
 
+struct Player {
+    
+    let name: String
+    let pic: String
+    
+    init(name: String, pic: String) {
+        
+        self.name = name
+        self.pic = pic
+    }
+}
+
 class DrawerCell: UITableViewCell {
+    
+    @IBOutlet weak var playerImageView: UIImageView!
+    
+    @IBOutlet weak var nameLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
