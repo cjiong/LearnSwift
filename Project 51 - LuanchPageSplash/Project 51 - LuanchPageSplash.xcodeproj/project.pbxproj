@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19B46ECA1D7325A600359755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B46EC91D7325A600359755 /* AppDelegate.swift */; };
+		19B46ECC1D7325A600359755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B46ECB1D7325A600359755 /* ViewController.swift */; };
+		19B46ECF1D7325A600359755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B46ECD1D7325A600359755 /* Main.storyboard */; };
+		19B46ED11D7325A600359755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B46ED01D7325A600359755 /* Assets.xcassets */; };
+		19B46ED41D7325A600359755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B46ED21D7325A600359755 /* LaunchScreen.storyboard */; };
+		19B46EDF1D7325A600359755 /* Project_51___LuanchPageSplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B46EDE1D7325A600359755 /* Project_51___LuanchPageSplashTests.swift */; };
+		19B46EEA1D7325A600359755 /* Project_51___LuanchPageSplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B46EE91D7325A600359755 /* Project_51___LuanchPageSplashUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19B46EDB1D7325A600359755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B46EBE1D7325A600359755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B46EC51D7325A600359755;
+			remoteInfo = "Project 51 - LuanchPageSplash";
+		};
+		19B46EE61D7325A600359755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19B46EBE1D7325A600359755 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B46EC51D7325A600359755;
+			remoteInfo = "Project 51 - LuanchPageSplash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19B46EC61D7325A600359755 /* Project 51 - LuanchPageSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 51 - LuanchPageSplash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B46EC91D7325A600359755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19B46ECB1D7325A600359755 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19B46ECE1D7325A600359755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19B46ED01D7325A600359755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19B46ED31D7325A600359755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19B46ED51D7325A600359755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B46EDA1D7325A600359755 /* Project 51 - LuanchPageSplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 51 - LuanchPageSplashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B46EDE1D7325A600359755 /* Project_51___LuanchPageSplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_51___LuanchPageSplashTests.swift"; sourceTree = "<group>"; };
+		19B46EE01D7325A600359755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B46EE51D7325A600359755 /* Project 51 - LuanchPageSplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 51 - LuanchPageSplashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B46EE91D7325A600359755 /* Project_51___LuanchPageSplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_51___LuanchPageSplashUITests.swift"; sourceTree = "<group>"; };
+		19B46EEB1D7325A600359755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B46EC31D7325A600359755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46ED71D7325A600359755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46EE21D7325A600359755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19B46EBD1D7325A600359755 = {
+			isa = PBXGroup;
+			children = (
+				19B46EC81D7325A600359755 /* Project 51 - LuanchPageSplash */,
+				19B46EDD1D7325A600359755 /* Project 51 - LuanchPageSplashTests */,
+				19B46EE81D7325A600359755 /* Project 51 - LuanchPageSplashUITests */,
+				19B46EC71D7325A600359755 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19B46EC71D7325A600359755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B46EC61D7325A600359755 /* Project 51 - LuanchPageSplash.app */,
+				19B46EDA1D7325A600359755 /* Project 51 - LuanchPageSplashTests.xctest */,
+				19B46EE51D7325A600359755 /* Project 51 - LuanchPageSplashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B46EC81D7325A600359755 /* Project 51 - LuanchPageSplash */ = {
+			isa = PBXGroup;
+			children = (
+				19B46EC91D7325A600359755 /* AppDelegate.swift */,
+				19B46ECB1D7325A600359755 /* ViewController.swift */,
+				19B46ECD1D7325A600359755 /* Main.storyboard */,
+				19B46ED01D7325A600359755 /* Assets.xcassets */,
+				19B46ED21D7325A600359755 /* LaunchScreen.storyboard */,
+				19B46ED51D7325A600359755 /* Info.plist */,
+			);
+			path = "Project 51 - LuanchPageSplash";
+			sourceTree = "<group>";
+		};
+		19B46EDD1D7325A600359755 /* Project 51 - LuanchPageSplashTests */ = {
+			isa = PBXGroup;
+			children = (
+				19B46EDE1D7325A600359755 /* Project_51___LuanchPageSplashTests.swift */,
+				19B46EE01D7325A600359755 /* Info.plist */,
+			);
+			path = "Project 51 - LuanchPageSplashTests";
+			sourceTree = "<group>";
+		};
+		19B46EE81D7325A600359755 /* Project 51 - LuanchPageSplashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19B46EE91D7325A600359755 /* Project_51___LuanchPageSplashUITests.swift */,
+				19B46EEB1D7325A600359755 /* Info.plist */,
+			);
+			path = "Project 51 - LuanchPageSplashUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B46EC51D7325A600359755 /* Project 51 - LuanchPageSplash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B46EEE1D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplash" */;
+			buildPhases = (
+				19B46EC21D7325A600359755 /* Sources */,
+				19B46EC31D7325A600359755 /* Frameworks */,
+				19B46EC41D7325A600359755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 51 - LuanchPageSplash";
+			productName = "Project 51 - LuanchPageSplash";
+			productReference = 19B46EC61D7325A600359755 /* Project 51 - LuanchPageSplash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19B46ED91D7325A600359755 /* Project 51 - LuanchPageSplashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B46EF11D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplashTests" */;
+			buildPhases = (
+				19B46ED61D7325A600359755 /* Sources */,
+				19B46ED71D7325A600359755 /* Frameworks */,
+				19B46ED81D7325A600359755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B46EDC1D7325A600359755 /* PBXTargetDependency */,
+			);
+			name = "Project 51 - LuanchPageSplashTests";
+			productName = "Project 51 - LuanchPageSplashTests";
+			productReference = 19B46EDA1D7325A600359755 /* Project 51 - LuanchPageSplashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19B46EE41D7325A600359755 /* Project 51 - LuanchPageSplashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B46EF41D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplashUITests" */;
+			buildPhases = (
+				19B46EE11D7325A600359755 /* Sources */,
+				19B46EE21D7325A600359755 /* Frameworks */,
+				19B46EE31D7325A600359755 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19B46EE71D7325A600359755 /* PBXTargetDependency */,
+			);
+			name = "Project 51 - LuanchPageSplashUITests";
+			productName = "Project 51 - LuanchPageSplashUITests";
+			productReference = 19B46EE51D7325A600359755 /* Project 51 - LuanchPageSplashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B46EBE1D7325A600359755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jiong;
+				TargetAttributes = {
+					19B46EC51D7325A600359755 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					19B46ED91D7325A600359755 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 19B46EC51D7325A600359755;
+					};
+					19B46EE41D7325A600359755 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 19B46EC51D7325A600359755;
+					};
+				};
+			};
+			buildConfigurationList = 19B46EC11D7325A600359755 /* Build configuration list for PBXProject "Project 51 - LuanchPageSplash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19B46EBD1D7325A600359755;
+			productRefGroup = 19B46EC71D7325A600359755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B46EC51D7325A600359755 /* Project 51 - LuanchPageSplash */,
+				19B46ED91D7325A600359755 /* Project 51 - LuanchPageSplashTests */,
+				19B46EE41D7325A600359755 /* Project 51 - LuanchPageSplashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B46EC41D7325A600359755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B46ED41D7325A600359755 /* LaunchScreen.storyboard in Resources */,
+				19B46ED11D7325A600359755 /* Assets.xcassets in Resources */,
+				19B46ECF1D7325A600359755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46ED81D7325A600359755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46EE31D7325A600359755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B46EC21D7325A600359755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B46ECC1D7325A600359755 /* ViewController.swift in Sources */,
+				19B46ECA1D7325A600359755 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46ED61D7325A600359755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B46EDF1D7325A600359755 /* Project_51___LuanchPageSplashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19B46EE11D7325A600359755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B46EEA1D7325A600359755 /* Project_51___LuanchPageSplashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19B46EDC1D7325A600359755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B46EC51D7325A600359755 /* Project 51 - LuanchPageSplash */;
+			targetProxy = 19B46EDB1D7325A600359755 /* PBXContainerItemProxy */;
+		};
+		19B46EE71D7325A600359755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19B46EC51D7325A600359755 /* Project 51 - LuanchPageSplash */;
+			targetProxy = 19B46EE61D7325A600359755 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19B46ECD1D7325A600359755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B46ECE1D7325A600359755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19B46ED21D7325A600359755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B46ED31D7325A600359755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B46EEC1D7325A600359755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19B46EED1D7325A600359755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B46EEF1D7325A600359755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19B46EF01D7325A600359755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19B46EF21D7325A600359755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplashTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 51 - LuanchPageSplash.app/Project 51 - LuanchPageSplash";
+			};
+			name = Debug;
+		};
+		19B46EF31D7325A600359755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplashTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project 51 - LuanchPageSplash.app/Project 51 - LuanchPageSplash";
+			};
+			name = Release;
+		};
+		19B46EF51D7325A600359755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 51 - LuanchPageSplash";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		19B46EF61D7325A600359755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Project 51 - LuanchPageSplashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jiong..Project-51---LuanchPageSplashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Project 51 - LuanchPageSplash";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B46EC11D7325A600359755 /* Build configuration list for PBXProject "Project 51 - LuanchPageSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B46EEC1D7325A600359755 /* Debug */,
+				19B46EED1D7325A600359755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B46EEE1D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B46EEF1D7325A600359755 /* Debug */,
+				19B46EF01D7325A600359755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B46EF11D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B46EF21D7325A600359755 /* Debug */,
+				19B46EF31D7325A600359755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19B46EF41D7325A600359755 /* Build configuration list for PBXNativeTarget "Project 51 - LuanchPageSplashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B46EF51D7325A600359755 /* Debug */,
+				19B46EF61D7325A600359755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19B46EBE1D7325A600359755 /* Project object */;
+}

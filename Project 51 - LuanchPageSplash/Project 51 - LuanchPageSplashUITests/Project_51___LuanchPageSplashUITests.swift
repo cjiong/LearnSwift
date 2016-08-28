@@ -1,14 +1,14 @@
 //
-//  Project_51___LoadingDotsUITests.swift
-//  Project 51 - LoadingDotsUITests
+//  Project_51___LuanchPageSplashUITests.swift
+//  Project 51 - LuanchPageSplashUITests
 //
-//  Created by 陈炯 on 16/8/27.
+//  Created by 陈炯 on 16/8/28.
 //  Copyright © 2016年 Jiong. All rights reserved.
 //
 
 import XCTest
 
-class Project_51___LoadingDotsUITests: XCTestCase {
+class Project_51___LuanchPageSplashUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

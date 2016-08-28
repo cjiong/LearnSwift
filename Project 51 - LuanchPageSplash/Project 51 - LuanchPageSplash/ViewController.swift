@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Project 51 - LoadingDots
+//  Project 51 - LuanchPageSplash
 //
-//  Created by 陈炯 on 16/8/27.
+//  Created by 陈炯 on 16/8/28.
 //  Copyright © 2016年 Jiong. All rights reserved.
 //
 

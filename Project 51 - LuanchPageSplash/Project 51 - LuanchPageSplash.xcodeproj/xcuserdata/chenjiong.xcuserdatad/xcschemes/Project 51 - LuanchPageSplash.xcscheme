@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19E98B191D71DDE9000704E7"
-               BuildableName = "Project 51 - LoadingDots.app"
-               BlueprintName = "Project 51 - LoadingDots"
-               ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+               BlueprintIdentifier = "19B46EC51D7325A600359755"
+               BuildableName = "Project 51 - LuanchPageSplash.app"
+               BlueprintName = "Project 51 - LuanchPageSplash"
+               ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19E98B2D1D71DDE9000704E7"
-               BuildableName = "Project 51 - LoadingDotsTests.xctest"
-               BlueprintName = "Project 51 - LoadingDotsTests"
-               ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+               BlueprintIdentifier = "19B46ED91D7325A600359755"
+               BuildableName = "Project 51 - LuanchPageSplashTests.xctest"
+               BlueprintName = "Project 51 - LuanchPageSplashTests"
+               ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "19E98B381D71DDE9000704E7"
-               BuildableName = "Project 51 - LoadingDotsUITests.xctest"
-               BlueprintName = "Project 51 - LoadingDotsUITests"
-               ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+               BlueprintIdentifier = "19B46EE41D7325A600359755"
+               BuildableName = "Project 51 - LuanchPageSplashUITests.xctest"
+               BlueprintName = "Project 51 - LuanchPageSplashUITests"
+               ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19E98B191D71DDE9000704E7"
-            BuildableName = "Project 51 - LoadingDots.app"
-            BlueprintName = "Project 51 - LoadingDots"
-            ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+            BlueprintIdentifier = "19B46EC51D7325A600359755"
+            BuildableName = "Project 51 - LuanchPageSplash.app"
+            BlueprintName = "Project 51 - LuanchPageSplash"
+            ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19E98B191D71DDE9000704E7"
-            BuildableName = "Project 51 - LoadingDots.app"
-            BlueprintName = "Project 51 - LoadingDots"
-            ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+            BlueprintIdentifier = "19B46EC51D7325A600359755"
+            BuildableName = "Project 51 - LuanchPageSplash.app"
+            BlueprintName = "Project 51 - LuanchPageSplash"
+            ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "19E98B191D71DDE9000704E7"
-            BuildableName = "Project 51 - LoadingDots.app"
-            BlueprintName = "Project 51 - LoadingDots"
-            ReferencedContainer = "container:Project 51 - LoadingDots.xcodeproj">
+            BlueprintIdentifier = "19B46EC51D7325A600359755"
+            BuildableName = "Project 51 - LuanchPageSplash.app"
+            BlueprintName = "Project 51 - LuanchPageSplash"
+            ReferencedContainer = "container:Project 51 - LuanchPageSplash.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

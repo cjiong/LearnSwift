@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Project 51 - LoadingDots.xcscheme</key>
+		<key>Project 51 - LuanchPageSplash.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>19E98B191D71DDE9000704E7</key>
+		<key>19B46EC51D7325A600359755</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19E98B2D1D71DDE9000704E7</key>
+		<key>19B46ED91D7325A600359755</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19E98B381D71DDE9000704E7</key>
+		<key>19B46EE41D7325A600359755</key>
 		<dict>
 			<key>primary</key>
 			<true/>
