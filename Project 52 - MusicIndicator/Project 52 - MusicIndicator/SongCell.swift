@@ -8,8 +8,21 @@
 
 import UIKit
 
+struct Song {
+    
+    let name: String
+    let artist: String
+    init(name: String, artist: String) {
+        self.name = name
+        self.artist = artist
+    }
+}
+
 class SongCell: UITableViewCell {
 
+    @IBOutlet weak var namaeLabel: UILabel!
+    @IBOutlet weak var artistLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
