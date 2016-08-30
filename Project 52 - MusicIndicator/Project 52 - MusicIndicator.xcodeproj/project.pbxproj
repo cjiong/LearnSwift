@@ -14,6 +14,7 @@
 		19361D3F1D75B52D00F310F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19361D3D1D75B52D00F310F6 /* LaunchScreen.storyboard */; };
 		19361D4A1D75B52D00F310F6 /* Project_52___MusicIndicatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19361D491D75B52D00F310F6 /* Project_52___MusicIndicatorTests.swift */; };
 		19361D551D75B52D00F310F6 /* Project_52___MusicIndicatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19361D541D75B52D00F310F6 /* Project_52___MusicIndicatorUITests.swift */; };
+		19361D631D75B77F00F310F6 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19361D621D75B77F00F310F6 /* SongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		19361D501D75B52D00F310F6 /* Project 52 - MusicIndicatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 52 - MusicIndicatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19361D541D75B52D00F310F6 /* Project_52___MusicIndicatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project_52___MusicIndicatorUITests.swift"; sourceTree = "<group>"; };
 		19361D561D75B52D00F310F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19361D621D75B77F00F310F6 /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				19361D341D75B52D00F310F6 /* AppDelegate.swift */,
 				19361D361D75B52D00F310F6 /* ViewController.swift */,
+				19361D621D75B77F00F310F6 /* SongCell.swift */,
 				19361D381D75B52D00F310F6 /* Main.storyboard */,
 				19361D3B1D75B52D00F310F6 /* Assets.xcassets */,
 				19361D3D1D75B52D00F310F6 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19361D631D75B77F00F310F6 /* SongCell.swift in Sources */,
 				19361D371D75B52D00F310F6 /* ViewController.swift in Sources */,
 				19361D351D75B52D00F310F6 /* AppDelegate.swift in Sources */,
 			);
