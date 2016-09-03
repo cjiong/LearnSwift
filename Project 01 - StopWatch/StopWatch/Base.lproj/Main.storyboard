@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,20 +16,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2T-td-3Wx">
-                                <rect key="frame" x="0.0" y="0.0" width="377" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNE-DM-k5X">
-                                        <rect key="frame" x="13" y="79" width="350" height="64.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="350" id="sP9-D3-aPd"/>
                                             <constraint firstAttribute="width" constant="350" id="zmO-dt-QJS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="54"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -37,7 +36,6 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYS-I5-rrL">
-                                        <rect key="frame" x="281" y="28" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ted-jX-QRY"/>
                                             <constraint firstAttribute="width" constant="30" id="nFo-ke-3y5"/>
@@ -49,14 +47,15 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="resetButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SYC-Ct-mNC"/>
+                                            <action selector="resetButtonDidTouchWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V1F-r9-nu8"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="uYS-I5-rrL" secondAttribute="trailing" constant="66" id="CH1-h9-jaA"/>
                                     <constraint firstAttribute="trailing" secondItem="uYS-I5-rrL" secondAttribute="trailing" constant="17" id="Fdf-Rp-XYt"/>
+                                    <constraint firstItem="CNE-DM-k5X" firstAttribute="top" secondItem="uYS-I5-rrL" secondAttribute="bottom" constant="21" id="Fjv-6L-ggM"/>
                                     <constraint firstItem="uYS-I5-rrL" firstAttribute="leading" secondItem="U2T-td-3Wx" secondAttribute="leading" constant="333" id="RAd-za-UL1"/>
                                     <constraint firstItem="uYS-I5-rrL" firstAttribute="leading" secondItem="U2T-td-3Wx" secondAttribute="leading" constant="330" id="URW-8s-9tz"/>
                                     <constraint firstItem="uYS-I5-rrL" firstAttribute="top" secondItem="U2T-td-3Wx" secondAttribute="top" constant="28" id="UYD-yQ-wrw"/>
@@ -70,7 +69,6 @@
                                     <constraint firstItem="CNE-DM-k5X" firstAttribute="top" secondItem="uYS-I5-rrL" secondAttribute="bottom" constant="29" id="kDV-P9-nt8"/>
                                     <constraint firstItem="CNE-DM-k5X" firstAttribute="leading" secondItem="U2T-td-3Wx" secondAttribute="leading" constant="13" id="mCC-2B-P3N"/>
                                     <constraint firstItem="CNE-DM-k5X" firstAttribute="leading" secondItem="U2T-td-3Wx" secondAttribute="leading" constant="166" id="oRw-OY-GCI"/>
-                                    <constraint firstAttribute="height" constant="222" id="tI6-2b-94W"/>
                                     <constraint firstItem="uYS-I5-rrL" firstAttribute="top" secondItem="U2T-td-3Wx" secondAttribute="top" constant="29" id="v1K-NL-clr"/>
                                 </constraints>
                                 <variation key="default">
@@ -90,30 +88,27 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKo-uW-oHF" userLabel="PlayBtn">
-                                <rect key="frame" x="74" y="474" width="30" height="30"/>
                                 <state key="normal" title="开始"/>
                                 <connections>
-                                    <action selector="playButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQ7-OX-dn7"/>
+                                    <action selector="playButtonDidTouchWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRt-b1-FFO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-M5-cXK" userLabel="PauseBtn">
-                                <rect key="frame" x="263" y="474" width="30" height="30"/>
                                 <state key="normal" title="暂停"/>
                                 <connections>
-                                    <action selector="pauseButtonDidTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZx-hN-4fX"/>
+                                    <action selector="pauseButtonDidTouchWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T1W-lI-5YF"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jKo-uW-oHF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="58" id="3mO-CV-Cd2"/>
                             <constraint firstItem="jKo-uW-oHF" firstAttribute="baseline" secondItem="E5u-M5-cXK" secondAttribute="baseline" id="3vl-j2-JWc"/>
                             <constraint firstItem="jKo-uW-oHF" firstAttribute="baseline" secondItem="E5u-M5-cXK" secondAttribute="baseline" id="5cR-m6-zjn"/>
-                            <constraint firstItem="U2T-td-3Wx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="87v-GR-Ktc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E5u-M5-cXK" secondAttribute="trailing" constant="66" id="Dax-yq-SQU"/>
                             <constraint firstItem="jKo-uW-oHF" firstAttribute="height" secondItem="E5u-M5-cXK" secondAttribute="height" id="JtY-dK-mhn"/>
-                            <constraint firstAttribute="bottom" secondItem="U2T-td-3Wx" secondAttribute="bottom" constant="445" id="MzX-Se-Pst"/>
                             <constraint firstItem="U2T-td-3Wx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N55-VZ-JXH"/>
+                            <constraint firstItem="U2T-td-3Wx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Nt4-LL-qxc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jKo-uW-oHF" secondAttribute="bottom" constant="163" id="ssX-HA-HyZ"/>
                             <constraint firstItem="E5u-M5-cXK" firstAttribute="leading" secondItem="jKo-uW-oHF" secondAttribute="trailing" constant="139" id="wgW-tD-3nc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jKo-uW-oHF" secondAttribute="bottom" constant="158" id="yQQ-qS-tSn"/>
@@ -127,7 +122,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="pauseBtn" destination="E5u-M5-cXK" id="DLm-IM-MvU"/>
                         <outlet property="playBtn" destination="jKo-uW-oHF" id="XXa-w0-aOx"/>
