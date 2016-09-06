@@ -2,7 +2,7 @@
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/learnswift-cover.png)
 
-[![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
+![Language](https://img.shields.io/badge/language-Swift-orange.svg) [![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
 
 ## About Project
 
