@@ -28,7 +28,7 @@ class CollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.collectionView?.backgroundColor = UIColor.whiteColor()
+        self.collectionView?.backgroundColor = UIColor.white
         
     }
 
@@ -37,20 +37,20 @@ class CollectionViewController: UICollectionViewController {
     }
 
     // MARK: UICollectionViewDataSource
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return wheel.count
     }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
-        (cell.contentView.viewWithTag(1) as! UIImageView).image = UIImage(named: wheel[indexPath.item]["pic"]!)
-        (cell.contentView.viewWithTag(2) as! UILabel).text = wheel[indexPath.item]["name"]
+        (cell.contentView.viewWithTag(1) as! UIImageView).image = UIImage(named: wheel[(indexPath as NSIndexPath).item]["pic"]!)
+        (cell.contentView.viewWithTag(2) as! UILabel).text = wheel[(indexPath as NSIndexPath).item]["name"]
         
         return cell
     }
