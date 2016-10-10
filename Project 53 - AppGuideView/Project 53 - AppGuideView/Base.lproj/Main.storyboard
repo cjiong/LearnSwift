@@ -1,25 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Guide View Controller-->
+        <scene sceneID="ifz-Ji-b4w">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuideViewController" id="GrO-Oc-0p3" customClass="GuideViewController" customModule="Project_53___AppGuideView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="mnR-Bp-IdG"/>
+                        <viewControllerLayoutGuide type="bottom" id="bne-AR-Op9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ILn-Nb-lxE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="v4e-xz-Ryb"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qS-xy-CF8">
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.61960784310000006" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tdk-dm-Krv"/>
+                                    <constraint firstAttribute="width" constant="80" id="z2y-kC-lLj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="开始体验">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2qS-xy-CF8" firstAttribute="centerX" secondItem="v4e-xz-Ryb" secondAttribute="centerX" id="Ee4-da-AFr"/>
+                            <constraint firstItem="v4e-xz-Ryb" firstAttribute="centerX" secondItem="ILn-Nb-lxE" secondAttribute="centerX" id="OT5-Tz-rDr"/>
+                            <constraint firstItem="v4e-xz-Ryb" firstAttribute="top" secondItem="2qS-xy-CF8" secondAttribute="bottom" constant="19" id="OjI-pv-zxJ"/>
+                            <constraint firstItem="bne-AR-Op9" firstAttribute="top" secondItem="v4e-xz-Ryb" secondAttribute="bottom" constant="20" id="TEU-YY-erj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="v4e-xz-Ryb" id="myr-hH-b9P"/>
+                        <outlet property="startButton" destination="2qS-xy-CF8" id="yhR-di-Qlc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDO-LR-Kgy" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
