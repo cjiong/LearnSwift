@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GrO-Oc-0p3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="v4e-xz-Ryb"/>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="v4e-xz-Ryb"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qS-xy-CF8">
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.61960784310000006" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Tdk-dm-Krv"/>
-                                    <constraint firstAttribute="width" constant="80" id="z2y-kC-lLj"/>
+                                    <constraint firstAttribute="height" constant="45" id="Tdk-dm-Krv"/>
+                                    <constraint firstAttribute="width" constant="125" id="z2y-kC-lLj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="开始体验">
+                                <state key="normal" title="开始使用">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -35,17 +35,18 @@
                         <constraints>
                             <constraint firstItem="2qS-xy-CF8" firstAttribute="centerX" secondItem="v4e-xz-Ryb" secondAttribute="centerX" id="Ee4-da-AFr"/>
                             <constraint firstItem="v4e-xz-Ryb" firstAttribute="centerX" secondItem="ILn-Nb-lxE" secondAttribute="centerX" id="OT5-Tz-rDr"/>
-                            <constraint firstItem="v4e-xz-Ryb" firstAttribute="top" secondItem="2qS-xy-CF8" secondAttribute="bottom" constant="19" id="OjI-pv-zxJ"/>
+                            <constraint firstItem="v4e-xz-Ryb" firstAttribute="top" secondItem="2qS-xy-CF8" secondAttribute="bottom" constant="16" id="OjI-pv-zxJ"/>
                             <constraint firstItem="bne-AR-Op9" firstAttribute="top" secondItem="v4e-xz-Ryb" secondAttribute="bottom" constant="20" id="TEU-YY-erj"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="pageControl" destination="v4e-xz-Ryb" id="myr-hH-b9P"/>
-                        <outlet property="startButton" destination="2qS-xy-CF8" id="yhR-di-Qlc"/>
+                        <outlet property="pageControl" destination="v4e-xz-Ryb" id="RVM-IM-tq4"/>
+                        <outlet property="startButton" destination="2qS-xy-CF8" id="fiV-Yp-Scp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SDO-LR-Kgy" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
