@@ -41,16 +41,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func playButtonDidTouch(sender: AnyObject) {
+    @IBAction func playButtonDidTouch(_ sender: AnyObject) {
         
         //MARK: 播放视频
-        let path = NSBundle.mainBundle().pathForResource("1", ofType: "mp4")
+        let path = Bundle.main.path(forResource: "1", ofType: "mp4")
         
-        playerView = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+        playerView = AVPlayer(url: URL(fileURLWithPath: path!))
         
         playViewController.player = playerView
         
-        self.presentViewController(playViewController, animated: true) {
+        self.present(playViewController, animated: true) {
         
             self.playViewController.player?.play()
         }
@@ -58,20 +58,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     //MARK: 单元格行数
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
     //MARK: 单元格行高
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
     }
         
     //MARK: 单元格样式
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = videoTableView.dequeueReusableCellWithIdentifier("VideoCell", forIndexPath: indexPath) as! VideoCell
-        let video = data[indexPath.row]
+        let cell = videoTableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoCell
+        let video = data[(indexPath as NSIndexPath).row]
         
         cell.videoScreenshot.image = UIImage(named: video.image)
         cell.videoSourceLabel.text = video.source
