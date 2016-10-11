@@ -24,8 +24,8 @@ class ViewController: VideoSplashViewController {
         signupButton.layer.cornerRadius = 5
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,18 +35,18 @@ class ViewController: VideoSplashViewController {
     //MARK: 配置
     func setupVideoBackground() {
         
-        let videoPath = NSBundle.mainBundle().pathForResource("spotify", ofType: "mp4")
-        let videoUrl = NSURL.fileURLWithPath(videoPath!)
+        let videoPath = Bundle.main.path(forResource: "spotify", ofType: "mp4")
+        let videoUrl = URL(fileURLWithPath: videoPath!)
         
         videoFrame = view.frame
-        fillMode = ScalingMode.ResizeAspectFill
+        fillMode = ScalingMode.resizeAspectFill
         alwaysRepeat = true
         sound = false
         startTime = 2.0
         alpha = 0.8
         
         contentURL = videoUrl
-        view.userInteractionEnabled = false
+        view.isUserInteractionEnabled = false
     }
 
     
