@@ -211,10 +211,13 @@ Project 49 - [ElasticDrawer](https://github.com/cjiong/LearnSwift/tree/master/Pr
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2049%20-%20ElasticDrawer/ElasticDrawer.gif)
 
-Project 50 - [GradientAnimation](https://github.com/cjiong/LearnSwift/tree/master/Project%2036%20-%20GradientAnimation)
+Project 50 - [GradientAnimation](https://github.com/cjiong/LearnSwift/tree/master/Project%2050%20-%20GradientAnimation)
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2050%20-%20GradientAnimation/GradientAnimation.gif)
 
+Project 51 - [LuanchPageSplash](https://github.com/cjiong/LearnSwift/tree/master/Project%2051%20-%20LuanchPageSplash)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2051%20-%20LuanchPageSplash/LuanchPageSplash.gif)
 
 ## Learning Resource
 
