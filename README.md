@@ -219,6 +219,14 @@ Project 51 - [LuanchPageSplash](https://github.com/cjiong/LearnSwift/tree/master
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/Project%2051%20-%20LuanchPageSplash/LuanchPageSplash.gif)
 
+Project 52 - [MusicIndicator](https://github.com/cjiong/LearnSwift/tree/master/Project%2052%20-%20MusicIndicator)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2052%20-%20MusicIndicator/MusicIndicator.gif)
+
+Project 53 - [AppGuideView](https://github.com/cjiong/LearnSwift/tree/master/Project%2053%20-%20AppGuideView)
+
+![](https://github.com/cjiong/LearnSwift/blob/master/Project%2053%20-%20AppGuideView/AppGuideView.gif)
+
 ## Learning Resource
 
 [The Swift Programming Language](https://developer.apple.com/library/prerelease/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)
