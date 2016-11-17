@@ -16,18 +16,18 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addNewItem")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ViewController.addNewItem))
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let manageContext = appDelegate.managedObjectContext
-        let fetchRequest = NSFetchRequest(entityName: "List")
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "List")
         
         do {
             
-            let results = try manageContext.executeFetchRequest(fetchRequest)
+            let results = try manageContext.fetch(fetchRequest)
             listItems = results as! [NSManagedObject]
             self.tableView.reloadData()
             
@@ -39,9 +39,9 @@ class ViewController: UITableViewController {
 
     func addNewItem() {
         
-        let alertController = UIAlertController(title: "New Item", message: "Add new item", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "New Item", message: "Add new item", preferredStyle: UIAlertControllerStyle.alert)
         
-        let addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.Default, handler: ({
+        let addAction = UIAlertAction(title: "Add", style: UIAlertActionStyle.default, handler: ({
             (_) in
             
             if let field = alertController.textFields![0] as? UITextField {
@@ -51,9 +51,9 @@ class ViewController: UITableViewController {
             }
         }))
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil)
         
-        alertController.addTextFieldWithConfigurationHandler ({
+        alertController.addTextField (configurationHandler: {
             (textField) in
             
             textField.placeholder = "Input your new item"
@@ -62,16 +62,16 @@ class ViewController: UITableViewController {
         alertController.addAction(cancelAction)
         alertController.addAction(addAction)
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
 
-    func saveItem(itemToSave: String) {
+    func saveItem(_ itemToSave: String) {
         
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
-        let entity = NSEntityDescription.entityForName("List", inManagedObjectContext: managedContext)
-        let item = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        let entity = NSEntityDescription.entity(forEntityName: "List", in: managedContext)
+        let item = NSManagedObject(entity: entity!, insertInto: managedContext)
         
         item.setValue(itemToSave, forKey: "item")
         
@@ -89,38 +89,38 @@ class ViewController: UITableViewController {
     }
     
     //MARK: UITableViewDataSource
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listItems.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         
-        let item = listItems[indexPath.row]
-        cell.textLabel?.text = item.valueForKey("item") as? String
+        let item = listItems[(indexPath as NSIndexPath).row]
+        cell.textLabel?.text = item.value(forKey: "item") as? String
         cell.textLabel?.font = UIFont(name: "Avenir Next", size: 20)
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        let delete = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "Delete") { (action, index) -> Void in
+        let delete = UITableViewRowAction(style: UITableViewRowActionStyle.normal, title: "Delete") { (action, index) -> Void in
             
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let managedContext = appDelegate.managedObjectContext
             
-            tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            managedContext.deleteObject(self.listItems[indexPath.row])
+            tableView.reloadRows(at: [indexPath], with: .fade)
+            managedContext.delete(self.listItems[(indexPath as NSIndexPath).row])
             do {
                 
                 try managedContext.save()
-                self.listItems.removeAtIndex(indexPath.row)
+                self.listItems.remove(at: (indexPath as NSIndexPath).row)
                 self.tableView.reloadData()
                 
             } catch {
@@ -129,12 +129,12 @@ class ViewController: UITableViewController {
             }
             
         }
-        delete.backgroundColor = UIColor.redColor()
+        delete.backgroundColor = UIColor.red
         
         return [delete]
     }
     
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
