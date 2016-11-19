@@ -15,13 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var counter = 0.0
-    var timer = NSTimer()
+    var timer = Timer()
     var isPlaying = false
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
-    
+//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return UIStatusBarStyle.lightContent
+//    }
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         //显示时间
@@ -35,16 +35,16 @@ class ViewController: UIViewController {
         if(isPlaying) {
             return
         }
-        playBtn.enabled = false
-        pauseBtn.enabled = true
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        playBtn.isEnabled = false
+        pauseBtn.isEnabled = true
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.updateTimer), userInfo: nil, repeats: true)
         isPlaying = true
     }
     
     //点击暂停按钮
     @IBAction func pauseButtonDidTouch(sender: AnyObject) {
-        playBtn.enabled = true
-        pauseBtn.enabled = false
+        playBtn.isEnabled = true
+        pauseBtn.isEnabled = false
         //计时器停止
         timer.invalidate()
         isPlaying = false
@@ -56,8 +56,8 @@ class ViewController: UIViewController {
         isPlaying = false
         counter = 0.0
         timeLabel.text = String(counter)
-        playBtn.enabled = true
-        pauseBtn.enabled = true
+        playBtn.isEnabled = true
+        pauseBtn.isEnabled = true
     }
     
     //更新timer

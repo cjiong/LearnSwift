@@ -22,7 +22,7 @@ class BeginPageViewController: UIViewController {
         loginButton.layer.cornerRadius = 5
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
+//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return UIStatusBarStyle.lightContent
+//    }
 }
