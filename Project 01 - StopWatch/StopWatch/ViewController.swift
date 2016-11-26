@@ -15,11 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var counter = 0.0
-    var timer = NSTimer()
+    var timer = Timer()
     var isPlaying = false
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func viewDidLoad() {
@@ -31,33 +31,33 @@ class ViewController: UIViewController {
     }
 
     //点击开始按钮
-    @IBAction func playButtonDidTouch(sender: AnyObject) {
+    @IBAction func playButtonDidTouch(_ sender: AnyObject) {
         if(isPlaying) {
             return
         }
-        playBtn.enabled = false
-        pauseBtn.enabled = true
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        playBtn.isEnabled = false
+        pauseBtn.isEnabled = true
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.updateTimer), userInfo: nil, repeats: true)
         isPlaying = true
     }
     
     //点击暂停按钮
-    @IBAction func pauseButtonDidTouch(sender: AnyObject) {
-        playBtn.enabled = true
-        pauseBtn.enabled = false
+    @IBAction func pauseButtonDidTouch(_ sender: AnyObject) {
+        playBtn.isEnabled = true
+        pauseBtn.isEnabled = false
         //计时器停止
         timer.invalidate()
         isPlaying = false
     }
     
     //点击重置按钮
-    @IBAction func resetButtonDidTouch(sender: AnyObject) {
+    @IBAction func resetButtonDidTouch(_ sender: AnyObject) {
         timer.invalidate()
         isPlaying = false
         counter = 0.0
         timeLabel.text = String(counter)
-        playBtn.enabled = true
-        pauseBtn.enabled = true
+        playBtn.isEnabled = true
+        pauseBtn.isEnabled = true
     }
     
     //更新timer
