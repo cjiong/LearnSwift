@@ -22,38 +22,40 @@ class ViewController: UIViewController, UIWebViewDelegate, UITextFieldDelegate {
         webView1.delegate = self
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        //加载请求
         loadUrl(textField.text!, web: webView1)
+        //解除textField的第一响应者的注册资格，键盘消失；
+        //若没有这一步，键盘会一直留在屏幕内
         textField.resignFirstResponder()
         return true
     }
     
     //加载请求的方法
-    func loadUrl(url: String, web: UIWebView) {
+    func loadUrl(_ url: String, web: UIWebView) {
         
         //载入输入的请求
-        let aUrl = NSURL(string: ("https://" + url))
-        
-        //解除textField的第一响应者的注册资格，键盘消失；若没有这一步，键盘会一直留在屏幕内
-        let urlRequest = NSURLRequest(URL: aUrl!)
+        let aUrl = URL(string: ("https://" + url))
+        let urlRequest = URLRequest(url: aUrl!)
         web.loadRequest(urlRequest)
         
     }
     
     //网页开始加载
-    func webViewDidStartLoad(webView: UIWebView) {
+    func webViewDidStartLoad(_ webView: UIWebView) {
         //轮圈开始转动
         loading.startAnimating()
         
         //状态栏的网络请求轮圈开始转动
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
     
     //网页加载结束
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         
         loading.stopAnimating()
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         
     }
 
