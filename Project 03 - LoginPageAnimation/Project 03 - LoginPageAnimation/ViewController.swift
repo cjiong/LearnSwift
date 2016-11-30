@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func backButtonDidToch(sender: AnyObject) {
-       self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidToch(_ sender: AnyObject) {
+       self.dismiss(animated: true, completion: nil)
     }
     
     //用户名和密码输入框
@@ -35,15 +35,15 @@ class ViewController: UIViewController {
         
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         centerAlignUsername.constant -= view.layer.bounds.width
@@ -51,24 +51,24 @@ class ViewController: UIViewController {
         loginButton.alpha = 0
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration(0.5, delay: 0.00, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.00, options: UIViewAnimationOptions(), animations: {
             
             self.centerAlignUsername.constant += self.view.bounds.width
             self.view.layoutIfNeeded()
             
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.10, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.10, options: UIViewAnimationOptions(), animations: {
             
             self.centerAlignPassword.constant += self.view.bounds.width
             self.view.layoutIfNeeded()
             
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.20, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.20, options: UIViewAnimationOptions(), animations: {
             
             self.loginButton.alpha = 1
             
@@ -76,16 +76,16 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func loginButtonDidTouch(sender: AnyObject) {
+    @IBAction func loginButtonDidTouch(_ sender: AnyObject) {
         
         let bounds = self.loginButton.bounds
         
         //点击按钮出现的动画 按钮变宽
-        UIView.animateWithDuration(1.0, delay: 0.00, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveLinear, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.00, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveLinear, animations: {
             
             self.loginButton.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 80, height: bounds.size.height)
-            self.loginButton.enabled = true
-            }, completion: { finished in self.loginButton.enabled = true
+            self.loginButton.isEnabled = true
+            }, completion: { finished in self.loginButton.isEnabled = true
                 
         })
     }
