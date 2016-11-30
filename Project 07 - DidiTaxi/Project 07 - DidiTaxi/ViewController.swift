@@ -16,7 +16,7 @@ class ViewController: UIViewController, DIOpenSDKDelegate {
     }
 
     @IBOutlet weak var tipLabel: UILabel!
-    @IBAction func startBtnDidTouch(sender: UIButton) {
+    @IBAction func startBtnDidTouch(_ sender: UIButton) {
         
         //注册账户和密码
         DIOpenSDK.registerApp("test", secret: "test")
