@@ -26,14 +26,14 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var fontTableView: UITableView!
     @IBOutlet weak var changeFontButton: UIButton!
-    @IBAction func changeFont(sender: AnyObject) {
+    @IBAction func changeFont(_ sender: AnyObject) {
         
         fontRowIndex = (fontRowIndex + 1) % 3
         fontTableView.reloadData()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func viewDidLoad() {
@@ -43,8 +43,8 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         fontTableView.dataSource = self
         
         //遍历电脑的字体
-        for family in UIFont.familyNames() {
-            for font in UIFont.fontNamesForFamilyName(family) {
+        for family in UIFont.familyNames {
+            for font in UIFont.fontNames(forFamilyName: family) {
                 print(font)
             }
         }
@@ -55,26 +55,26 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     //返回行高
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     //
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     //设置单元格样式
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = fontTableView.dequeueReusableCellWithIdentifier("FontCell", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = fontTableView.dequeueReusableCell(withIdentifier: "FontCell", for: indexPath)
         let text = data[indexPath.row]
         
             cell.textLabel?.text = text
-            cell.textLabel?.textColor = UIColor.whiteColor()
+            cell.textLabel?.textColor = UIColor.white
             cell.textLabel?.font = UIFont(name: self.fontNames[fontRowIndex], size: 16)
         return cell
     }
 
     //实现数据源协议
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
 
