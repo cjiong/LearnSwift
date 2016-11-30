@@ -14,12 +14,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var dataArray1 = [Int]()
     var dataArray2 = [Int]()
     var dataArray3 = [Int]()
-    var bounds: CGRect = CGRectZero
+    var bounds: CGRect = CGRect.zero
 
     @IBOutlet weak var emojiPickerView: UIPickerView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
-    @IBAction func goButtonDidTouch(sender: AnyObject) {
+    @IBAction func goButtonDidTouch(_ sender: AnyObject) {
         
         //随机
         emojiPickerView.selectRow(Int(arc4random()) % 9 + 3, inComponent: 0, animated: true)
@@ -27,7 +27,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         emojiPickerView.selectRow(Int(arc4random()) % 9 + 3, inComponent: 2, animated: true)
         
         //判断三个轮盘结果是否相同
-        if(dataArray1[emojiPickerView.selectedRowInComponent(0)] == dataArray2[emojiPickerView.selectedRowInComponent(1)] && dataArray2[emojiPickerView.selectedRowInComponent(1)] == dataArray3[emojiPickerView.selectedRowInComponent(2)] && dataArray1[emojiPickerView.selectedRowInComponent(0)] == dataArray2[emojiPickerView.selectedRowInComponent(2)]) {
+        if(dataArray1[emojiPickerView.selectedRow(inComponent: 0)] == dataArray2[emojiPickerView.selectedRow(inComponent: 1)] && dataArray2[emojiPickerView.selectedRow(inComponent: 1)] == dataArray3[emojiPickerView.selectedRow(inComponent: 2)] && dataArray1[emojiPickerView.selectedRow(inComponent: 0)] == dataArray2[emojiPickerView.selectedRow(inComponent: 2)]) {
             
             resultLabel.text = "SUCCESS"
         } else {
@@ -35,13 +35,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
 
         //点击按钮动画
-        UIView.animateWithDuration(0.5, delay: 0.0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .CurveLinear, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .curveLinear, animations: {
             
             self.goButton.bounds = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.size.width + 20, height: self.bounds.size.height)
             
             }, completion: { (complete: Bool) in
                 
-                UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions(), animations: {
                     
                     self.goButton.bounds = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.size.width, height: self.bounds.size.height)
                     
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         bounds = goButton.bounds
         imageArray = ["🐶", "🐼", "🐵", "🐸", "🐮", "🐲", "🐯", "🐰", "🐹", "🐭"]
         
-        for(var i = 0; i < 100; i++) {
+        for _ in 0 ..< 100 {
             dataArray1.append((Int)(arc4random() % 10))
             dataArray2.append((Int)(arc4random() % 10))
             dataArray3.append((Int)(arc4random() % 10))
@@ -73,16 +73,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         goButton.layer.cornerRadius = 5
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         goButton.alpha = 0.0
         
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration(0.5, delay: 0.3, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: UIViewAnimationOptions.curveEaseOut, animations: {
             
             self.goButton.alpha = 1.0
             
@@ -95,26 +95,26 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 
     //转盘的数据行数
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 10
     }
     
     //转盘个数
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3
     }
     
     //宽度和高度
-    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return 100.0
     }
 
-    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 100.0
     }
     
     //Key
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         let pickerLabel = UILabel()
         
@@ -128,14 +128,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         //emoji大小和对齐方式
         pickerLabel.font = UIFont(name: "Apple Color Emoji", size: 80)
-        pickerLabel.textAlignment = .Center
+        pickerLabel.textAlignment = .center
         
         return pickerLabel
         
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 }
 
