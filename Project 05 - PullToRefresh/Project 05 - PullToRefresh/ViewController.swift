@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let originEmoji = ["😏😏😏", "😂😂😂", "😘😘😘", "👀👀👀", "👊🏻👊🏻👊🏻", "👍🏼👍🏼👍🏼", "🐔🐔🐔"]
     let newEmoji = ["🌚🌚🌚", "😱😱😱", "😳😳😳", "😄😄😄", "😂😂😂", "😘😘😘", "👀👀👀", "🙊🙊🙊", "🐶🐶🐶"]
     var emojiData = [String]()
-    var tableViewController = UITableViewController(style: .Plain)
+    var tableViewController = UITableViewController(style: .plain)
     
     var refreshControl = UIRefreshControl()
     
@@ -25,48 +25,49 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         emojiData = originEmoji
         let emojiTableView = tableViewController.tableView
         
-        emojiTableView.backgroundColor = UIColor.grayColor()
-        emojiTableView.delegate = self
-        emojiTableView.dataSource = self
+        emojiTableView?.backgroundColor = UIColor.gray
+        emojiTableView?.delegate = self
+        emojiTableView?.dataSource = self
         
-        emojiTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifer)
+        emojiTableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifer)
         
         tableViewController.refreshControl = self.refreshControl
-        self.refreshControl.addTarget(self, action: "didRoadEmoji", forControlEvents: .ValueChanged)
+        self.refreshControl.addTarget(self, action: #selector(ViewController.didRoadEmoji), for: .valueChanged)
         
-        self.refreshControl.backgroundColor = UIColor.blackColor()
-        let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        self.refreshControl.attributedTitle = NSAttributedString(string: "最近一次加载\(NSDate())", attributes: attributes)
-        self.refreshControl.tintColor = UIColor.blueColor()
+        self.refreshControl.backgroundColor = UIColor.black
+        let attributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.refreshControl.attributedTitle = NSAttributedString(string: "最近一次加载\(Date())", attributes: attributes)
+        self.refreshControl.tintColor = UIColor.blue
         
-        emojiTableView.rowHeight = UITableViewAutomaticDimension
-        emojiTableView.estimatedRowHeight = 80.0
-        emojiTableView.tableFooterView = UIView(frame: CGRectZero)
-        emojiTableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        emojiTableView?.rowHeight = UITableViewAutomaticDimension
+        emojiTableView?.estimatedRowHeight = 80.0
+        emojiTableView?.tableFooterView = UIView(frame: CGRect.zero)
+        emojiTableView?.separatorStyle = UITableViewCellSeparatorStyle.none
         
-        self.view.addSubview(emojiTableView)
+        self.view.addSubview(emojiTableView!)
         //self.view.addSubview(navigationBar)
+        
         
     }
 
     
     //数据源协议
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return emojiData.count
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer)! as UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifer)! as UITableViewCell
         
         cell.textLabel!.text = self.emojiData[indexPath.row]
-        cell.textLabel!.textAlignment = NSTextAlignment.Center
+        cell.textLabel!.textAlignment = NSTextAlignment.center
         cell.textLabel?.font = UIFont(name: "systemFont", size: 50)
-        cell.backgroundColor = UIColor.clearColor()
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.backgroundColor = UIColor.clear
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         return cell
         
@@ -78,8 +79,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.refreshControl.endRefreshing()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var prefersStatusBarHidden: Bool {
+        
+        return true
     }
     
     override func didReceiveMemoryWarning() {
