@@ -9,8 +9,8 @@
 import Foundation
 
 enum Operator: Int {
-    case Plus = 200, Minus, Multiply, Divide
-    case Default = 0
+    case plus = 200, minus, multiply, divide
+    case `default` = 0
 }
 
 class CalculatorLogic {
@@ -26,7 +26,7 @@ class CalculatorLogic {
         print("Calculator init")
         lastRetainValue = 0.0
         isMainLabelTextTemporary = false
-        currentOperator = .Default
+        currentOperator = .default
     }
     
     //折构器
@@ -35,7 +35,7 @@ class CalculatorLogic {
     }
     
     //更新主标签的方法
-    func updateMainLabelStringByNumberTag(tag : Int, withMainLabelString mainLabelString : String) -> String {
+    func updateMainLabelStringByNumberTag(_ tag : Int, withMainLabelString mainLabelString : String) -> String {
         
         var string = mainLabelString
         
@@ -59,7 +59,7 @@ class CalculatorLogic {
     }
     
     //判断是否含有小数点的方法
-    func doesStringContainDecimal(string : String) -> Bool {
+    func doesStringContainDecimal(_ string : String) -> Bool {
         for ch in string.characters {
             if ch == "." {
                 return true
@@ -70,23 +70,23 @@ class CalculatorLogic {
     
     //计算方法
     
-    func calculatorByTag(tag : Int, withMainLabelString mainLabelString : String) -> String {
+    func calculatorByTag(_ tag : Int, withMainLabelString mainLabelString : String) -> String {
         
         //把String转换为double
         let currentValue = (mainLabelString as NSString).doubleValue
         
         switch currentOperator {
-        case .Plus:
+        case .plus:
             lastRetainValue += currentValue
-        case .Minus:
+        case .minus:
             lastRetainValue -= currentValue
-        case .Multiply:
+        case .multiply:
             lastRetainValue *= currentValue
-        case .Divide:
+        case .divide:
             if currentValue != 0 {
                 lastRetainValue /= currentValue
             } else {
-                currentOperator = .Default
+                currentOperator = .default
                 isMainLabelTextTemporary = true
                 return "Error"
             }
@@ -110,7 +110,7 @@ class CalculatorLogic {
     func clean() {
         lastRetainValue = 0.0
         isMainLabelTextTemporary = false
-        currentOperator = .Default
+        currentOperator = .default
     }
 }
 
