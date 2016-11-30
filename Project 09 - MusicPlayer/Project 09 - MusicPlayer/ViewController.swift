@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         //背景模糊效果
         bgImage.image = UIImage(named: "COA")
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         bgImage.addSubview(blurEffectView)
@@ -35,18 +35,18 @@ class ViewController: UIViewController {
         //歌曲信息
         albumImage.image = UIImage(named: "fun")
     
-        songLabel.textColor = UIColor.whiteColor()
+        songLabel.textColor = UIColor.white
         songLabel.text = "All Alone"
-        artistLabel.textColor = UIColor.whiteColor()
+        artistLabel.textColor = UIColor.white
         artistLabel.text = "Fun."
         
-        playButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+        playButton.setImage(UIImage(named: "Pause"), for: UIControlState())
         
         //播放音乐
         playMusic()
         
         //监听按钮点击
-        playButton.addTarget(self, action: "playOrPause", forControlEvents: UIControlEvents.TouchUpInside)
+        playButton.addTarget(self, action: #selector(ViewController.playOrPause), for: UIControlEvents.touchUpInside)
         
     }
 
@@ -54,11 +54,11 @@ class ViewController: UIViewController {
     //播放音乐
     func playMusic() {
         
-        let songUrl = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Fun. - All Alone", ofType: "mp3")!)
+        let songUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "Fun. - All Alone", ofType: "mp3")!)
         
         do {
             
-            try audioPlayer = AVAudioPlayer(contentsOfURL: songUrl)
+            try audioPlayer = AVAudioPlayer(contentsOf: songUrl)
             
             //循环播放
             audioPlayer.numberOfLoops = -1
@@ -75,11 +75,11 @@ class ViewController: UIViewController {
 
         if isPlaying {
             audioPlayer.stop()
-            playButton.setImage(UIImage(named: "Play"), forState: UIControlState.Normal)
+            playButton.setImage(UIImage(named: "Play"), for: UIControlState())
             isPlaying = false
         } else {
             audioPlayer.play()
-            playButton.setImage(UIImage(named: "Pause"), forState: UIControlState.Normal)
+            playButton.setImage(UIImage(named: "Pause"), for: UIControlState())
             isPlaying = true
         }
     }
