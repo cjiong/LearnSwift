@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         //MARK: 多指触摸操作
-        self.view.multipleTouchEnabled = true
+        self.view.isMultipleTouchEnabled = true
         
         imageView = UIImageView(image: UIImage(named: "JH13"))
         
@@ -30,8 +30,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         recenterImage()
     }
 
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,11 +51,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 
     //MARK: 设置 scrollview 属性，并添加到 view 上
-    private func setUpScrollView() {
+    fileprivate func setUpScrollView() {
         
         scrollView = UIScrollView(frame: view.bounds)
-        scrollView.autoresizingMask = [ .FlexibleWidth, .FlexibleHeight]
-        scrollView.backgroundColor = UIColor.clearColor()
+        scrollView.autoresizingMask = [ .flexibleWidth, .flexibleHeight]
+        scrollView.backgroundColor = UIColor.clear
         scrollView.contentSize = imageView.bounds.size
         
         scrollView.addSubview(imageView)
@@ -63,7 +63,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     //MARK: 设置缩放倍数
-    private func setZoomScale(scrollViewSize: CGSize) {
+    fileprivate func setZoomScale(_ scrollViewSize: CGSize) {
         
         let imageSize = imageView.bounds.size
         let widthScale = scrollViewSize.width / imageSize.width
@@ -74,7 +74,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.maximumZoomScale = 2.5
     }
     
-    private func recenterImage() {
+    fileprivate func recenterImage() {
         
         var horizonSpace = CGFloat()
         var verticalSpace = CGFloat()
@@ -97,11 +97,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentInset = UIEdgeInsetsMake(verticalSpace, horizonSpace, verticalSpace, horizonSpace)
     }
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         self.recenterImage()
     }
     
