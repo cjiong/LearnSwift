@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func changeValue(sender: AnyObject) {
+    @IBAction func changeValue(_ sender: AnyObject) {
         
         let slider = sender as! UISlider
         let value: Float = slider.value
@@ -37,10 +37,10 @@ class ViewController: UIViewController {
     }
     
     //MARK: 高斯模糊滤镜效果
-    func filterGaussianBlur(value: Float) {
+    func filterGaussianBlur(_ value: Float) {
         
         let context = CIContext(options: nil)
-        let cImage = CIImage(CGImage: self.image.CGImage!)
+        let cImage = CIImage(cgImage: self.image.cgImage!)
         
         let guassianBlur = CIFilter(name: "CIGaussianBlur")
         guassianBlur?.setValue(cImage, forKey: "inputImage")
@@ -49,11 +49,11 @@ class ViewController: UIViewController {
         self.label.text = text
         
         guassianBlur!.setValue(value, forKey: "inputRadius")
-        let result = guassianBlur?.valueForKey("outputImage") as! CIImage
+        let result = guassianBlur?.value(forKey: "outputImage") as! CIImage
         
-        let imageRef = context.createCGImage(result, fromRect: CGRectMake(0, 0, self.imageView.image!.size.width, self.imageView.image!.size.height))
+        let imageRef = context.createCGImage(result, from: CGRect(x: 0, y: 0, width: self.imageView.image!.size.width, height: self.imageView.image!.size.height))
         
-        let image = UIImage(CGImage: imageRef)
+        let image = UIImage(cgImage: imageRef!)
         self.imageView.image = image
         
     }
