@@ -19,12 +19,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     //MARK: 点击按钮，显示定位
-    @IBAction func showMyLocationButtonDidTouch(sender: AnyObject) {
+    @IBAction func showMyLocationButtonDidTouch(_ sender: AnyObject) {
         
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -38,11 +38,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.didReceiveMemoryWarning()
     }
 
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         self.locationLabel.text = "Error while updating location" + error.localizedDescription
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler:  { (placeMarks, error) -> Void in
             
             if (error != nil) {
@@ -60,7 +60,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     //MARK: 显示位置
-    func showLocationInfo(placemark: CLPlacemark?) {
+    func showLocationInfo(_ placemark: CLPlacemark?) {
         
         if let containsPlacemark = placemark {
             
