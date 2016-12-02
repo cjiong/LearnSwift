@@ -24,47 +24,47 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView = UITableView(frame: UIScreen.mainScreen().bounds, style: .Grouped)
+        self.tableView = UITableView(frame: UIScreen.main.bounds, style: .grouped)
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
         
-        self.tableView?.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(tableView!)
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return headers.count
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        cell.accessoryType = UITableViewCellAccessoryType.None
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
+        cell.accessoryType = UITableViewCellAccessoryType.none
         cell.textLabel?.text = self.data[indexPath.section][indexPath.row]
         
         return cell
     }
     
     //MARK: 实现索引数据源代理方法
-    func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return headers
     }
     
     //MARK: 表头
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return headers[section]
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 10
     }
     
     //MARK: 点击索引方法
-    func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         
         var currentIndex = 0
         //MARK: 遍历索引值
