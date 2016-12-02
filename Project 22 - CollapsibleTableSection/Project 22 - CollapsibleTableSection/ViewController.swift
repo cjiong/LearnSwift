@@ -37,11 +37,11 @@ class ViewController: UITableViewController {
         ]
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (sections[section].collapsed == true) {
             return 0
         } else {
@@ -49,12 +49,12 @@ class ViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50.0
     }
     
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableCellWithIdentifier("header") as! CollapsibleHeader
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableCell(withIdentifier: "header") as! CollapsibleHeader
         
         header.unfoldButton.tag = section
         header.brandLabel.text = sections[section].name
@@ -63,8 +63,8 @@ class ViewController: UITableViewController {
         return header.contentView
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         
         cell.textLabel?.text = sections[indexPath.section].items[indexPath.row]
         
@@ -72,16 +72,16 @@ class ViewController: UITableViewController {
     }
     
     //MARK: 添加点击事件
-    @IBAction func unfoldButtonDidTouch(sender: AnyObject) {
+    @IBAction func unfoldButtonDidTouch(_ sender: AnyObject) {
         
         let section = sender.tag
-        let collapsed = sections[section].collapsed
+        let collapsed = sections[section!].collapsed
         
         //MARK: 点击后改变状态
-        sections[section].collapsed = !collapsed
+        sections[section!].collapsed = !collapsed!
         
         //MARK: 重载Section数据
-        tableView.reloadSections(NSIndexSet(index: section), withRowAnimation: .Automatic)
+        tableView.reloadSections(IndexSet(integer: section!), with: .automatic)
     }
     
     override func didReceiveMemoryWarning() {
@@ -91,17 +91,17 @@ class ViewController: UITableViewController {
 
 //MARK: 扩展
 extension UIView {
-    func rotate(toValue: CGFloat, duration: CFTimeInterval = 0.2, completionDelegate: AnyObject? = nil) {
+    func rotate(_ toValue: CGFloat, duration: CFTimeInterval = 0.2, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.toValue = toValue
         rotateAnimation.duration = duration
-        rotateAnimation.removedOnCompletion = false
+        rotateAnimation.isRemovedOnCompletion = false
         rotateAnimation.fillMode = kCAFillModeForwards
         
-        if let delegate: AnyObject = completionDelegate {
-            rotateAnimation.delegate = delegate
-        }
-        self.layer.addAnimation(rotateAnimation, forKey: nil)
+//        if let delegate: AnyObject = completionDelegate {
+//            rotateAnimation.delegate = delegate
+//        }
+        self.layer.add(rotateAnimation, forKey: nil)
     }
 }
 
