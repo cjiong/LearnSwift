@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG4-9B-Zsw">
-                                <rect key="frame" x="135" y="408" width="105" height="30"/>
+                                <rect key="frame" x="133.5" y="408" width="108" height="30"/>
                                 <state key="normal" title="设置日期和时间"/>
                                 <connections>
                                     <segue destination="jbi-7T-2r1" kind="show" id="hY4-S6-6gn"/>
@@ -35,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a1K-KQ-Z48" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Es-jB-awf"/>
                             <constraint firstAttribute="trailing" secondItem="a1K-KQ-Z48" secondAttribute="trailing" id="FDu-fq-Xne"/>
@@ -44,7 +48,6 @@
                             <constraint firstItem="a1K-KQ-Z48" firstAttribute="centerX" secondItem="qG4-9B-Zsw" secondAttribute="centerX" id="yFt-RM-V8X"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="dateLabel" destination="a1K-KQ-Z48" id="RKb-qv-RwO"/>
                     </connections>
@@ -57,7 +60,6 @@
         <scene sceneID="8WJ-f1-qOd">
             <objects>
                 <navigationController id="jbi-7T-2r1" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oil-PP-45G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -104,7 +106,7 @@
                                 </date>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AfJ-Rq-RJq" firstAttribute="trailing" secondItem="Irz-Qk-n5d" secondAttribute="trailing" id="L4z-4Z-OPc"/>
                             <constraint firstItem="Z6M-Fg-C20" firstAttribute="leading" secondItem="Csh-hx-pLM" secondAttribute="leadingMargin" constant="-20" id="TOk-Zq-KuX"/>
@@ -129,7 +131,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="currentTimeLabel" destination="Z6M-Fg-C20" id="zoS-RH-Znn"/>
                         <outlet property="datePicker" destination="Irz-Qk-n5d" id="4gi-xA-Smi"/>
@@ -138,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKb-4r-Qca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="355.5" y="425.5"/>
+            <point key="canvasLocation" x="604" y="425"/>
         </scene>
     </scenes>
 </document>

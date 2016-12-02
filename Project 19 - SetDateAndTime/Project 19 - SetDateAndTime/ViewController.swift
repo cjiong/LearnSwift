@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var date = ""
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         print(date)
         dateLabel.text = date
@@ -30,9 +30,9 @@ class ViewController: UIViewController {
     }
     
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let navigationVC = segue.destinationViewController as! UINavigationController
+        let navigationVC = segue.destination as! UINavigationController
         let setDateVC = navigationVC.viewControllers.first as! SetDateController
         
         //MARK: 传值

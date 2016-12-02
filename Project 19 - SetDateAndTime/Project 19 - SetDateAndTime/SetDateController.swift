@@ -10,7 +10,7 @@ import UIKit
 
 class SetDateController: UIViewController {
     
-    var formatter = NSDateFormatter()
+    var formatter = DateFormatter()
     
     //MARK: 传值函数
     var newDate: ((String) -> Void)?
@@ -28,32 +28,32 @@ class SetDateController: UIViewController {
     //MARK: 获取当前时间
     func showTime() {
         
-        let data = NSDate()
-        let timeFormatter = NSDateFormatter()
+        let data = Date()
+        let timeFormatter = DateFormatter()
         
         timeFormatter.dateFormat = "yyyy-MM-dd' at 'HH:mm"
-        currentTimeLabel.text = timeFormatter.stringFromDate(data) as String
+        currentTimeLabel.text = timeFormatter.string(from: data) as String
     }
     
-    @IBAction func backButtonDidTouch(sender: AnyObject) {
+    @IBAction func backButtonDidTouch(_ sender: AnyObject) {
         
-        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func doneButtonDidTouch(sender: AnyObject) {
+    @IBAction func doneButtonDidTouch(_ sender: AnyObject) {
         
-        formatter.dateStyle = .MediumStyle
-        let dateString = formatter.stringFromDate(datePicker.date)
+        formatter.dateStyle = .medium
+        let dateString = formatter.string(from: datePicker.date)
         
-        formatter.timeStyle = .ShortStyle
-        formatter.dateStyle = .NoStyle
-        let timeString = formatter.stringFromDate(timePicker.date)
+        formatter.timeStyle = .short
+        formatter.dateStyle = .none
+        let timeString = formatter.string(from: timePicker.date)
         
         let resultString = dateString + " " + timeString
         
         self.newDate!(resultString)
         
-        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
         
     }
 }
