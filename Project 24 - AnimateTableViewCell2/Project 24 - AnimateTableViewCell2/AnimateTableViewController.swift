@@ -23,35 +23,35 @@ class AnimateTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return data.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
 
         cell.textLabel?.text = data[indexPath.row]
-        cell.textLabel?.textAlignment = .Left
-        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.textAlignment = .left
+        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.font = UIFont(name: "Avenir Next", size: 20)
 
         return cell
     }
     
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55.0
     }
     
     
-    func colorforIndex(index: Int) -> UIColor {
+    func colorforIndex(_ index: Int) -> UIColor {
         
         let itemCount = data.count - 1
         let color = (CGFloat(index) / CGFloat(itemCount)) * 0.7
@@ -59,13 +59,13 @@ class AnimateTableViewController: UITableViewController {
         
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         cell.backgroundColor =  colorforIndex(indexPath.row)
         
         //MARK: 动画
         cell.layer.transform = CATransform3DMakeScale(0.5, 1.0, 1.0)
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
+        UIView.animate(withDuration: 0.2, animations: { () -> Void in
             cell.layer.transform = CATransform3DMakeScale(1.0, 1.0, 1.0)
         })
     }
