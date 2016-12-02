@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
@@ -27,21 +27,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.didReceiveMemoryWarning()
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 20.0
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 30.0
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         switch (indexPath.section) {
         case 0: cell.textLabel?.text = ferrari[indexPath.row]
         case 1: cell.textLabel?.text = lamborghini[indexPath.row]
@@ -53,10 +53,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //MARK: Header
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let headerCell1 = tableView.dequeueReusableCellWithIdentifier("headerCell") as! HeaderCell
-        headerCell1.backgroundColor = UIColor.grayColor()
+        let headerCell1 = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! HeaderCell
+        headerCell1.backgroundColor = UIColor.gray
         
         switch (section) {
         case 0: headerCell1.headerLabel.text = " Ferrari"
@@ -68,8 +68,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return headerCell1
     }
     
-    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 25.0
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35.0
     }
 }
 
