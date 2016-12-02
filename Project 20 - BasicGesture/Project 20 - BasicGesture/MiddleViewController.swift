@@ -11,14 +11,14 @@ import UIKit
 class MiddleViewController: ViewController {
 
     
-    @IBAction func leftSwipe(sender: UISwipeGestureRecognizer) {
-        self.performSegueWithIdentifier("middleToBottom", sender: .None)
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
+        self.performSegue(withIdentifier: "middleToBottom", sender: .none)
         print("left")
     }
     
-    @IBAction func rightSwipe(sender: UISwipeGestureRecognizer) {
+    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
         
-        self.performSegueWithIdentifier("middleToTop", sender: .None)
+        self.performSegue(withIdentifier: "middleToTop", sender: .none)
         print("right")
     }
     override func viewDidLoad() {

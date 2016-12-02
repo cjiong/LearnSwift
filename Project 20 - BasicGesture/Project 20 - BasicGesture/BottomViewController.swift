@@ -11,8 +11,8 @@ import UIKit
 class BottomViewController: ViewController {
 
     
-    @IBAction func rightSwipe(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func rightSwipe(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

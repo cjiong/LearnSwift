@@ -11,9 +11,9 @@ import UIKit
 class TopViewController: ViewController {
 
     
-    @IBAction func leftSwipe(sender: UISwipeGestureRecognizer) {
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
         
-        self.performSegueWithIdentifier("topToMiddle", sender: .None)
+        self.performSegue(withIdentifier: "topToMiddle", sender: .none)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
