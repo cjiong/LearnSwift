@@ -14,12 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         //MARK: 文档可以为很多格式，比如PDF，PPT，WORD 等等，只需修改参数即可，这里用WORD文档举例
-        let url = NSBundle.mainBundle().URLForResource("Travel", withExtension: "docx")
+        let url = Bundle.main.url(forResource: "Travel", withExtension: "docx")
         
         if let url = url {
             
             let webview = UIWebView(frame: self.view.bounds)
-            let urlRequest = NSURLRequest(URL: url)
+            let urlRequest = URLRequest(url: url)
             webview.loadRequest(urlRequest)
             
             self.view.addSubview(webview)
