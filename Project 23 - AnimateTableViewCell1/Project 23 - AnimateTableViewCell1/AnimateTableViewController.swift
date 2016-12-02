@@ -15,15 +15,15 @@ class AnimateTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIApplication.sharedApplication().statusBarHidden = true
+        UIApplication.shared.isStatusBarHidden = true
         
-        self.view.backgroundColor = UIColor.blackColor()
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-        self.tableView.tableFooterView = UIView(frame: CGRectZero)
-        self.tableView.registerClass(AnimateTableViewCell.self, forCellReuseIdentifier: "cell")
+        self.view.backgroundColor = UIColor.black
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+        self.tableView.register(AnimateTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         animate()
     }
     
@@ -37,7 +37,7 @@ class AnimateTableViewController: UITableViewController {
         for i in cells {
             
             let cell: UITableViewCell = i as UITableViewCell
-            cell.transform = CGAffineTransformMakeTranslation(0, tableHeight)
+            cell.transform = CGAffineTransform(translationX: 0, y: tableHeight)
         }
         
         var index = 0
@@ -46,9 +46,9 @@ class AnimateTableViewController: UITableViewController {
             
             let cell: UITableViewCell = a as UITableViewCell
             
-            UIView.animateWithDuration(1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+            UIView.animate(withDuration: 1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
                 
-                cell.transform = CGAffineTransformMakeTranslation(0, 0)
+                cell.transform = CGAffineTransform(translationX: 0, y: 0)
                 
                 }, completion: nil)
             
@@ -56,33 +56,33 @@ class AnimateTableViewController: UITableViewController {
         }
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = data[indexPath.row] 
-        cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.textLabel?.textAlignment = .Left
-        cell.textLabel?.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textAlignment = .left
+        cell.textLabel?.backgroundColor = UIColor.clear
         cell.textLabel?.font = UIFont(name: "Avenir Next", size: 20)
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55.0
     }
     
     
-    func colorforIndex(index: Int) -> UIColor {
+    func colorforIndex(_ index: Int) -> UIColor {
         
         let itemCount = data.count - 1
         let color = (CGFloat(index) / CGFloat(itemCount)) * 0.7
@@ -90,13 +90,13 @@ class AnimateTableViewController: UITableViewController {
         
     }
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         cell.backgroundColor =  colorforIndex(indexPath.row)
         
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         animate()
     }
     
