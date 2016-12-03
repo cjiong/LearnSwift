@@ -15,10 +15,10 @@ class ScaleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UIView.animateWithDuration(2.0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+        UIView.animate(withDuration: 2.0, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
             
-            self.scaleImageView.transform = CGAffineTransformMakeScale(5.0, 5.0)
-            self.scaleImageView.transform = CGAffineTransformIdentity
+            self.scaleImageView.transform = CGAffineTransform(scaleX: 5.0, y: 5.0)
+            self.scaleImageView.transform = CGAffineTransform.identity
             
             }, completion: nil)
 

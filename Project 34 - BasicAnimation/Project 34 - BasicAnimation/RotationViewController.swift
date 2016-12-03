@@ -15,9 +15,9 @@ class RotationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIView.animateWithDuration(10.0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
+        UIView.animate(withDuration: 10.0, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
             
-            self.rotationImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+            self.rotationImageView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
             
             }, completion: nil)
 

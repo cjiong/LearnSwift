@@ -19,7 +19,7 @@ class OpacityViewController: UIViewController {
         animation.duration = 2.0
         animation.fromValue = 1.0
         animation.toValue = 0.0
-        self.imageView.layer.addAnimation(animation, forKey: "Image-opacity")
+        self.imageView.layer.add(animation, forKey: "Image-opacity")
         self.imageView.alpha = 0.0
         
     }

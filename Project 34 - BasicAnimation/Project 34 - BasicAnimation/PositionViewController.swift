@@ -21,31 +21,31 @@ class PositionViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func upButtonDidTouch(sender: AnyObject) {
+    @IBAction func upButtonDidTouch(_ sender: AnyObject) {
         
         let frame = squareView.frame
-        let newFrame = CGRectMake(frame.origin.x, frame.origin.y - 10, frame.size.width, frame.size.height)
+        let newFrame = CGRect(x: frame.origin.x, y: frame.origin.y - 10, width: frame.size.width, height: frame.size.height)
         squareView.frame = newFrame
     }
 
-    @IBAction func downButtonDidTouch(sender: AnyObject) {
+    @IBAction func downButtonDidTouch(_ sender: AnyObject) {
         
         let frame = squareView.frame
-        let newFrame = CGRectMake(frame.origin.x, frame.origin.y + 10, frame.size.width, frame.size.height)
+        let newFrame = CGRect(x: frame.origin.x, y: frame.origin.y + 10, width: frame.size.width, height: frame.size.height)
         squareView.frame = newFrame
     }
   
-    @IBAction func leftButtonDidTouch(sender: AnyObject) {
+    @IBAction func leftButtonDidTouch(_ sender: AnyObject) {
         
         let frame = squareView.frame
-        let newFrame = CGRectMake(frame.origin.x - 10, frame.origin.y, frame.size.width, frame.size.height)
+        let newFrame = CGRect(x: frame.origin.x - 10, y: frame.origin.y, width: frame.size.width, height: frame.size.height)
         squareView.frame = newFrame
     }
     
-    @IBAction func rightButtonDidTouch(sender: AnyObject) {
+    @IBAction func rightButtonDidTouch(_ sender: AnyObject) {
         
         let frame = squareView.frame
-        let newFrame = CGRectMake(frame.origin.x + 10, frame.origin.y, frame.size.width, frame.size.height)
+        let newFrame = CGRect(x: frame.origin.x + 10, y: frame.origin.y, width: frame.size.width, height: frame.size.height)
         squareView.frame = newFrame
     }
     

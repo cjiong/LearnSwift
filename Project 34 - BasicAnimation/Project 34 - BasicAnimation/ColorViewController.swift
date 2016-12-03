@@ -16,12 +16,12 @@ class ColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIView.animateWithDuration(2.0, animations: { () -> Void in
+        UIView.animate(withDuration: 2.0, animations: { () -> Void in
             
-            self.bgView.backgroundColor = UIColor.whiteColor()
+            self.bgView.backgroundColor = UIColor.white
             
             }, completion: nil)
-        UIView.animateWithDuration(1.0, animations: { () -> Void in
+        UIView.animate(withDuration: 1.0, animations: { () -> Void in
             
             self.label.textColor = UIColor(red: 1.00, green: 0.52, blue: 0.07, alpha: 1.00)
             
