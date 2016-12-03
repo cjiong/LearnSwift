@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         labelTemp.text = self.weatherData?.temp
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -44,29 +44,29 @@ class ViewController: UIViewController {
     
     func getWeatherData() {
         
-        let url  = NSURL(string: "http://api.k780.com:88/?app=weather.today&weaid=173&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json")
+        let url  = URL(string: "http://api.k780.com:88/?app=weather.today&weaid=173&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json")
         
         //MARK: 会话配置
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+        let config = URLSessionConfiguration.default
         
         config.timeoutIntervalForRequest = 10
         
-        let session = NSURLSession(configuration: config)
+        let session = URLSession(configuration: config)
         
-        let task = session.dataTaskWithURL(url!, completionHandler: { (data, _, error) -> Void in
+        let task = session.dataTask(with: url!, completionHandler: { (data, _, error) -> Void in
             
             if error == nil {
-                if let json = (try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments))
+                if let json = (try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.allowFragments))
                     as? NSDictionary {
                         
                         //MARK: JSON解析
-                        let weather = (json.valueForKey("result") as? NSDictionary).map {
+                        let weather = (json.value(forKey: "result") as? NSDictionary).map {
                             Weather(city: $0["citynm"] as? String,
                                 weather: $0["weather"] as? String,
                                 temp: $0["temperature_curr"] as? String)
                         }
                         
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        DispatchQueue.main.async(execute: { () -> Void in
                             self.weatherData = weather
                         })
                         
