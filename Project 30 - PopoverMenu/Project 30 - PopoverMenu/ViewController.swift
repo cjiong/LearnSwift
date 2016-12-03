@@ -16,31 +16,31 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         super.viewDidLoad()
         
         self.navigationItem.title = "微信"
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 73/255, green: 72/255, blue: 74/255, alpha: 1)
     
     }
     
-    @IBAction func plusButtonDidTouch(sender: UIBarButtonItem) {
+    @IBAction func plusButtonDidTouch(_ sender: UIBarButtonItem) {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
-        let popoverVC = sb.instantiateViewControllerWithIdentifier("popoverViewController") as! PopoverMenuViewController
-        popoverVC.modalPresentationStyle = .Popover
+        let popoverVC = sb.instantiateViewController(withIdentifier: "popoverViewController") as! PopoverMenuViewController
+        popoverVC.modalPresentationStyle = .popover
         popoverVC.preferredContentSize = CGSize(width: 120, height: 200)
-        popoverVC.popoverPresentationController?.permittedArrowDirections = .Up
+        popoverVC.popoverPresentationController?.permittedArrowDirections = .up
         popoverVC.popoverPresentationController?.backgroundColor = UIColor(red: 73/255, green: 72/255, blue: 74/255, alpha: 1)
         
         let popover = popoverVC.popoverPresentationController
         popover?.delegate = self
         popover?.barButtonItem = sender
         
-        self.presentViewController(popoverVC, animated: true, completion: nil)
+        self.present(popoverVC, animated: true, completion: nil)
         
     }
 
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .None
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 
     

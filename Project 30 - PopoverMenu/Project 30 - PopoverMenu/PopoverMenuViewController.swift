@@ -23,16 +23,16 @@ class PopoverMenuViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! PopoverMenuTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! PopoverMenuTableViewCell
         
         cell.menuImage.image = UIImage(named: data[indexPath.row].picture)
-        cell.menuName.setTitle(data[indexPath.row].name, forState: UIControlState.Normal)
+        cell.menuName.setTitle(data[indexPath.row].name, for: UIControlState())
         
         return cell
     }
