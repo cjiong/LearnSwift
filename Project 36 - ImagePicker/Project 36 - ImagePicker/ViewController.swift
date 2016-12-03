@@ -19,44 +19,44 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         //MARK: 给imageView添加点击事件
         let gestureRecognizer = UITapGestureRecognizer()
-        gestureRecognizer.addTarget(self, action: Selector("changeHeadPicture"))
+        gestureRecognizer.addTarget(self, action: #selector(ViewController.changeHeadPicture))
         headPicture.addGestureRecognizer(gestureRecognizer)
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
     func changeHeadPicture() {
         
-        let userIconAlert = UIAlertController(title: "请选择", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let userIconAlert = UIAlertController(title: "请选择", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
         
-        let chooseFromPhotoalbum = UIAlertAction(title: "从相册选择", style: UIAlertActionStyle.Default, handler: chooseFromPhotoAlbum)
+        let chooseFromPhotoalbum = UIAlertAction(title: "从相册选择", style: UIAlertActionStyle.default, handler: chooseFromPhotoAlbum)
         userIconAlert.addAction(chooseFromPhotoalbum)
         
-        let chooseFromcamera = UIAlertAction(title: "拍照", style: UIAlertActionStyle.Default,handler: chooseFromCamera)
+        let chooseFromcamera = UIAlertAction(title: "拍照", style: UIAlertActionStyle.default,handler: chooseFromCamera)
         userIconAlert.addAction(chooseFromcamera)
         
-        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.cancel, handler: nil)
         userIconAlert.addAction(cancelAction)
         
-        self.presentViewController(userIconAlert, animated: true, completion: nil)
+        self.present(userIconAlert, animated: true, completion: nil)
     
         
     }
     
-    func chooseFromPhotoAlbum(alertAction: UIAlertAction) -> Void {
+    func chooseFromPhotoAlbum(_ alertAction: UIAlertAction) -> Void {
         
-        if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             
             let picker = UIImagePickerController()
             
             //MARK: 设置代理
             picker.delegate = self
-            picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
             picker.allowsEditing = true
             
-            self.presentViewController(picker, animated: true, completion: nil)
+            self.present(picker, animated: true, completion: nil)
             
         } else {
             
@@ -65,18 +65,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
 
-    func chooseFromCamera(alertAction: UIAlertAction) -> Void {
+    func chooseFromCamera(_ alertAction: UIAlertAction) -> Void {
      
-        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
             
             let picker = UIImagePickerController()
             
             //MARK: 设置代理
             picker.delegate = self
-            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.sourceType = UIImagePickerControllerSourceType.camera
             picker.allowsEditing = true
             
-            self.presentViewController(picker, animated: true, completion: nil)
+            self.present(picker, animated: true, completion: nil)
             
         } else {
             
@@ -85,19 +85,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerEditedImage] as! UIImage
         
         let rect = CGRect(x: 292, y: 268, width: 77, height: 75)
         headPicture.frame = rect
         headPicture.image = image
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
-        picker.dismissViewControllerAnimated(true, completion: nil)
+        picker.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
