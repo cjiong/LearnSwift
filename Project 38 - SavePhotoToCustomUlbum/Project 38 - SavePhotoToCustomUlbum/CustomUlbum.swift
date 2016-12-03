@@ -14,7 +14,7 @@ class CustomUlbum {
     
     var assetCollection: PHAssetCollection!
     var albumFound : Bool = false
-    var photosAsset: PHFetchResult!
+    var photosAsset: PHFetchResult<AnyObject>!
     var collection: PHAssetCollection!
     var assetCollectionPlaceholder: PHObjectPlaceholder!
     
@@ -23,18 +23,18 @@ class CustomUlbum {
         
         let fetchOptions = PHFetchOptions()
         fetchOptions.predicate = NSPredicate(format: "title = %@", name)
-        let collection : PHFetchResult = PHAssetCollection.fetchAssetCollectionsWithType(.Album, subtype: .Any, options: fetchOptions)
+        let collection : PHFetchResult = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .any, options: fetchOptions)
         
         if let _: AnyObject = collection.firstObject {
             
             self.albumFound = true
-            assetCollection = collection.firstObject as! PHAssetCollection
+            assetCollection = collection.firstObject
             
         } else {
             
-            PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+            PHPhotoLibrary.shared().performChanges({
                 
-                let createAlbumRequest : PHAssetCollectionChangeRequest = PHAssetCollectionChangeRequest.creationRequestForAssetCollectionWithTitle(name)
+                let createAlbumRequest : PHAssetCollectionChangeRequest = PHAssetCollectionChangeRequest.creationRequestForAssetCollection(withTitle: name)
                 self.assetCollectionPlaceholder = createAlbumRequest.placeholderForCreatedAssetCollection
                 
                 }, completionHandler: { success, error in
@@ -42,9 +42,9 @@ class CustomUlbum {
                     
                     if success {
                         
-                        let collectionFetchResult = PHAssetCollection.fetchAssetCollectionsWithLocalIdentifiers([self.assetCollectionPlaceholder.localIdentifier], options: nil)
+                        let collectionFetchResult = PHAssetCollection.fetchAssetCollections(withLocalIdentifiers: [self.assetCollectionPlaceholder.localIdentifier], options: nil)
                         print(collectionFetchResult)
-                        self.assetCollection = collectionFetchResult.firstObject as! PHAssetCollection
+                        self.assetCollection = collectionFetchResult.firstObject
                     }
             })
         }
@@ -53,15 +53,15 @@ class CustomUlbum {
     //MARK: 存储图片
     func saveImage(image: UIImage, ulbumName: String) {
         
-        self.createAlbum(ulbumName)
+        self.createAlbum(name: ulbumName)
         
         if self.assetCollection != nil {
-            PHPhotoLibrary.sharedPhotoLibrary().performChanges({
+            PHPhotoLibrary.shared().performChanges({
                 
-                let assetChangeRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(image)
+                let assetChangeRequest = PHAssetChangeRequest.creationRequestForAsset(from: image)
                 let assetPlaceholder = assetChangeRequest.placeholderForCreatedAsset
-                let albumChangeRequest = PHAssetCollectionChangeRequest(forAssetCollection: self.assetCollection)
-                albumChangeRequest?.addAssets([assetPlaceholder!])
+                let albumChangeRequest = PHAssetCollectionChangeRequest(for: self.assetCollection)
+                albumChangeRequest?.addAssets(assetPlaceholder as! NSFastEnumeration)
                 }, completionHandler: nil)
         }
     }

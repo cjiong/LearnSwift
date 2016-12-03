@@ -19,17 +19,17 @@ class ViewController: UIViewController {
         saveButton.layer.cornerRadius = 10
     }
     
-    @IBAction func savePhoto(sender: AnyObject) {
+    @IBAction func savePhoto(_ sender: AnyObject) {
         
         let image = photoImageView?.image
         
-        CustomUlbum.sharedInstance.saveImage(image!, ulbumName: "James Harden")
+        CustomUlbum.sharedInstance.saveImage(image: image!, ulbumName: "James Harden")
         
-        let alertController = UIAlertController(title: "saved successful", message: "", preferredStyle: UIAlertControllerStyle.Alert)
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+        let alertController = UIAlertController(title: "saved successful", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
         alertController.addAction(okAction)
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
 
     }
 
