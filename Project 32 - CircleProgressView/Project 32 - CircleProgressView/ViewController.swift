@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
     }
     
-    @IBAction func addProgress(sender: AnyObject) {
+    @IBAction func addProgress(_ sender: AnyObject) {
         
         let num = Int(arc4random() % 10)
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         progerssView.setProgress(progerssView.progress + num, aimated: true, withDuration: 0.50)
     }
     
-    @IBAction func minusProgress(sender: AnyObject) {
+    @IBAction func minusProgress(_ sender: AnyObject) {
         
         let num = Int(arc4random() % 10)
         

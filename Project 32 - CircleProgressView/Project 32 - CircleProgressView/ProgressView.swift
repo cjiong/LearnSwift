@@ -48,32 +48,32 @@ import UIKit
         super.init(frame: frame)
     }
 
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
 
-        path.addArcWithCenter(CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds)),
+        path.addArc(withCenter: CGPoint(x: bounds.midX, y: bounds.midY),
             radius: bounds.size.width / 2 - Constant.lineWidth,
             startAngle: CGFloat(-90 / Double(180.0) * M_PI), endAngle: CGFloat(270 / Double(180.0) * M_PI), clockwise: true)
         
         //MARK: 绘制进度槽
         trackLayer.frame = bounds
-        trackLayer.fillColor = UIColor.clearColor().CGColor
-        trackLayer.strokeColor = Constant.trackColor.CGColor
+        trackLayer.fillColor = UIColor.clear.cgColor
+        trackLayer.strokeColor = Constant.trackColor.cgColor
         trackLayer.lineWidth = Constant.lineWidth
-        trackLayer.path = path.CGPath
+        trackLayer.path = path.cgPath
         layer.addSublayer(trackLayer)
         
         //MARK: 绘制进度条
         progressLayer.frame = bounds
-        progressLayer.fillColor = UIColor.clearColor().CGColor
-        progressLayer.strokeColor = Constant.progressColor.CGColor
+        progressLayer.fillColor = UIColor.clear.cgColor
+        progressLayer.strokeColor = Constant.progressColor.cgColor
         progressLayer.lineWidth = Constant.lineWidth
-        progressLayer.path = path.CGPath
+        progressLayer.path = path.cgPath
         progressLayer.strokeStart = 0
         progressLayer.strokeEnd = CGFloat(progress) / 100.0
         layer.addSublayer(progressLayer)
     }
     
-    func setProgress(pro: Int, aimated animate: Bool, withDuration duration: Double) -> Void {
+    func setProgress(_ pro: Int, aimated animate: Bool, withDuration duration: Double) -> Void {
         
         progress = pro
         
