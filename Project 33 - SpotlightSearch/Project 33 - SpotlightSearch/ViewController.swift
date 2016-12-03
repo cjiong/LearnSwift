@@ -45,10 +45,10 @@ class ViewController: UITableViewController {
             let searchItem = CSSearchableItem(uniqueIdentifier: "scenery\(i)", domainIdentifier: "scenery", attributeSet: searchItemAttributeSet)
             searchItems.append(searchItem)
             
-            CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([searchItem], completionHandler: { (error) -> Void in
+            CSSearchableIndex.default().indexSearchableItems([searchItem], completionHandler: { (error) -> Void in
                 
                 if error != nil {
-                    print(error?.localizedDescription)
+                    print(error?.localizedDescription!)
                 }
             })
         }
@@ -61,14 +61,14 @@ class ViewController: UITableViewController {
     
     
     //MARK: UITableViewDataSource
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SceneryCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SceneryCell
         
         cell.sceneryNameLabel.text = data[indexPath.row].name
         cell.sceneryImageView.image = UIImage(named: data[indexPath.row].image)
