@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var customView: UIView!
     var labelsArray: [UILabel] = []
     var isAnimating = false
-    var timer: NSTimer!
+    var timer: Timer!
     
     var currentLabel = 0
     var currentColor = 0
@@ -27,45 +27,45 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         refreshController = UIRefreshControl()
-        refreshController.backgroundColor = UIColor.clearColor()
-        refreshController.tintColor = UIColor.clearColor()
+        refreshController.backgroundColor = UIColor.clear
+        refreshController.tintColor = UIColor.clear
         tableView.addSubview(refreshController)
         
         loadCustomRefreshContents()
 
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell!
         
-        cell.textLabel!.font = UIFont(name: "Avenir Next", size: 30)
-        cell.textLabel!.text = data[indexPath.row]
+        cell?.textLabel!.font = UIFont(name: "Avenir Next", size: 30)
+        cell?.textLabel!.text = data[indexPath.row]
         
-        return cell
+        return cell!
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
     
     //MARK: Key
     func loadCustomRefreshContents() {
         
-        let refreshContents = NSBundle.mainBundle().loadNibNamed("RefreshContents", owner: self, options: nil)
+        let refreshContents = Bundle.main.loadNibNamed("RefreshContents", owner: self, options: nil)
         
-        customView = refreshContents[0] as! UIView
+        customView = refreshContents?[0] as! UIView
         customView.frame = refreshController.bounds
         
-        for var i = 0; i < customView.subviews.count; i++ {
+        for i in 0 ..< customView.subviews.count {
             
             labelsArray.append(customView.viewWithTag(i + 1) as! UILabel)
             
@@ -78,20 +78,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         isAnimating = false
         
-        UIView.animateWithDuration(0.1, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
             
-            self.labelsArray[self.currentLabel].transform = CGAffineTransformMakeRotation(CGFloat(M_PI))
+            self.labelsArray[self.currentLabel].transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
             self.labelsArray[self.currentLabel].textColor = self.getNextColor()
             
             }) { (finished) -> Void in
                 
-                UIView.animateWithDuration(0.05, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+                UIView.animate(withDuration: 0.05, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
                     
-                    self.labelsArray[self.currentLabel].transform = CGAffineTransformIdentity
+                    self.labelsArray[self.currentLabel].transform = CGAffineTransform.identity
                     
                     }, completion: { (finished) -> Void in
                         
-                        ++self.currentLabel
+                        self.currentLabel += 1
                         
                         if self.currentLabel < self.labelsArray.count {
                             
@@ -108,28 +108,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func refreshAnimateStep2() {
         
-        UIView.animateWithDuration(0.4, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+        UIView.animate(withDuration: 0.4, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
             
-            for var i = 0; i < self.labelsArray.count; i++ {
+            for i in 0 ..< self.labelsArray.count {
                 
-                self.labelsArray[i].transform = CGAffineTransformMakeScale(1.1 + 0.1 * CGFloat(i), 1.1 + 0.1 * CGFloat(i))
+                self.labelsArray[i].transform = CGAffineTransform(scaleX: 1.1 + 0.1 * CGFloat(i), y: 1.1 + 0.1 * CGFloat(i))
                 
             }
             
             }) { (finished) -> Void in
                 
-                UIView.animateWithDuration(0.25, delay: 0.0, options: UIViewAnimationOptions.CurveLinear, animations: { () -> Void in
+                UIView.animate(withDuration: 0.25, delay: 0.0, options: UIViewAnimationOptions.curveLinear, animations: { () -> Void in
                     
-                    for var j = 9; j >= 0; j-- {
+                    for j in 0 ..< 9 {
                         
-                        self.labelsArray[j].transform = CGAffineTransformIdentity
-                        
+                        self.labelsArray[9 - j].transform = CGAffineTransform.identity
+                    
                     }
 
                     
                     }, completion: { (finished) -> Void in
                         
-                        if self.refreshController.refreshing {
+                        if self.refreshController.isRefreshing {
                             
                             self.currentLabel = 0
                             self.refreshAnimateStep1()
@@ -138,9 +138,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             
                             self.isAnimating = false
                             self.currentLabel = 0
-                            for var i = 0; i < self.labelsArray.count - 1; i++ {
+                            for i in 0 ..< self.labelsArray.count - 1 {
                                 
-                                self.labelsArray[i].transform = CGAffineTransformIdentity
+                                self.labelsArray[i].transform = CGAffineTransform.identity
                                 
                             }
                             
@@ -153,7 +153,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func getNextColor() -> UIColor {
         
-        var colorArray: [UIColor] = [UIColor.brownColor(), UIColor.blueColor(), UIColor.purpleColor(), UIColor.redColor(), UIColor.grayColor(), UIColor.grayColor()]
+        var colorArray: [UIColor] = [UIColor.brown, UIColor.blue, UIColor.purple, UIColor.red, UIColor.gray, UIColor.gray]
         
         if currentColor == colorArray.count {
             
@@ -162,16 +162,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         let returnColor = colorArray[currentColor]
-        ++currentColor
+        currentColor += 1
         
         return returnColor
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        if refreshController.refreshing {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if refreshController.isRefreshing {
             if !isAnimating {
                 
-                timer = NSTimer.scheduledTimerWithTimeInterval(4.3, target: self, selector: "stopAnimation", userInfo: nil, repeats: true)
+                timer = Timer.scheduledTimer(timeInterval: 4.3, target: self, selector: #selector(ViewController.stopAnimation), userInfo: nil, repeats: true)
 
                 refreshAnimateStep1()
                 
