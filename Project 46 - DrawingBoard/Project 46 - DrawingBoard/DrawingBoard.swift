@@ -11,7 +11,7 @@ import UIKit
 class DrawingBoard: UIView {
 
     var lineWidth: CGFloat = 2
-    var pathColor: UIColor = UIColor.blackColor()
+    var pathColor: UIColor = UIColor.black
     var boardBackgroundColor: UIColor!
     
     //MARK: 保存线条
@@ -26,51 +26,51 @@ class DrawingBoard: UIView {
         super.init(coder: aDecoder)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             
-            touchPoint = touch.locationInView(self)
+            touchPoint = touch.location(in: self)
         }
         
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
         self.setNeedsDisplay()
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let firstTouch = touches.first {
             
-            let endPoint = firstTouch.locationInView(self)
+            let endPoint = firstTouch.location(in: self)
             lines.append(Line(start: touchPoint, end: endPoint))
             touchPoint = endPoint
         }
         
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
         self.setNeedsDisplay()
     }
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         let context = UIGraphicsGetCurrentContext()
-        CGContextBeginPath(context)
+        context?.beginPath()
         
         for line in lines {
-            CGContextMoveToPoint(context, line.startPoint.x, line.startPoint.y)
-            CGContextAddLineToPoint(context, line.endPoint.x, line.endPoint.y)
+            context?.move(to: CGPoint(x: line.startPoint.x, y: line.startPoint.y))
+            context?.addLine(to: CGPoint(x: line.endPoint.x, y: line.endPoint.y))
         }
         
-        CGContextSetStrokeColorWithColor(context, pathColor.CGColor)
-        CGContextSetLineWidth(context, lineWidth)
-        CGContextStrokePath(context)
+        context?.setStrokeColor(pathColor.cgColor)
+        context?.setLineWidth(lineWidth)
+        context?.strokePath()
 
     }
     
     //MARK: 保存图片
     func getImage() -> UIImage {
         
-        UIGraphicsBeginImageContext(CGSizeMake(self.bounds.size.width,
-            self.bounds.size.height))
-        self.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsBeginImageContext(CGSize(width: self.bounds.size.width,
+            height: self.bounds.size.height))
+        self.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return image
     }
