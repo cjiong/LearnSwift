@@ -26,23 +26,23 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         self.tableView.reloadData()
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchResultController.active ? searchResultData.count : data.count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return searchResultController.isActive ? searchResultData.count : data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         
-        if searchResultController.active {
+        if searchResultController.isActive {
             
             cell.textLabel?.text = searchResultData[indexPath.row]
             return cell
@@ -54,12 +54,12 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         }
     }
     
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         
-        searchResultData.removeAll(keepCapacity: false)
+        searchResultData.removeAll(keepingCapacity: false)
         
         let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchResultController.searchBar.text!)
-        let stringArray = (data as NSArray).filteredArrayUsingPredicate(searchPredicate)
+        let stringArray = (data as NSArray).filtered(using: searchPredicate)
         searchResultData = stringArray as! [String]
         
         tableView.reloadData()
