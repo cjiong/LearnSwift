@@ -51,20 +51,20 @@ class ViewController: UIViewController {
         controllerArray.append(controller8)
         
         let parameters: [CAPSPageMenuOption] = [
-            .MenuItemSeparatorWidth(0),
-            .UseMenuLikeSegmentedControl(true),
-            .ScrollMenuBackgroundColor(UIColor(red: 0.42, green: 0.80, blue: 1, alpha: 1)),
-            .UnselectedMenuItemLabelColor(UIColor.whiteColor()),
-            .SelectedMenuItemLabelColor(UIColor.whiteColor())
+            .menuItemSeparatorWidth(0),
+            .useMenuLikeSegmentedControl(true),
+            .scrollMenuBackgroundColor(UIColor(red: 0.42, green: 0.80, blue: 1, alpha: 1)),
+            .unselectedMenuItemLabelColor(UIColor.white),
+            .selectedMenuItemLabelColor(UIColor.white)
         ]
         
-        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, self.view.frame.width, self.view.frame.height), pageMenuOptions: parameters)
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
         
         self.view.addSubview((pageMenu?.view)!)
 
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
