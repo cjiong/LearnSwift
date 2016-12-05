@@ -33,17 +33,17 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SongCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SongCell
         
         cell.namaeLabel.text = data[indexPath.row].name
         cell.artistLabel.text = data[indexPath.row].artist
@@ -51,13 +51,13 @@ class ViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return 70.0
         
     }
     
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = UIView()
         view.backgroundColor = UIColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 0.6)
@@ -65,19 +65,19 @@ class ViewController: UITableViewController {
         return view
     }
     
-    func startMusicIndicatorAnimation(indicatorView: UIView, xPosition: CGFloat, yPosition: CGFloat) {
+    func startMusicIndicatorAnimation(_ indicatorView: UIView, xPosition: CGFloat, yPosition: CGFloat) {
         
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.bounds = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 30.0)
         replicatorLayer.position = CGPoint(x: xPosition, y: yPosition)
-        replicatorLayer.backgroundColor = UIColor.clearColor().CGColor
+        replicatorLayer.backgroundColor = UIColor.clear.cgColor
         indicatorView.layer.addSublayer(replicatorLayer)
         
         let bar = CALayer()
         bar.bounds = CGRect(x: 0.0, y: 0.0, width: 3.0, height: 20.0)
         bar.position = CGPoint(x: 0.0, y: 5.0)
         bar.cornerRadius = 1.0
-        bar.backgroundColor = UIColor.whiteColor().CGColor
+        bar.backgroundColor = UIColor.white.cgColor
         
         replicatorLayer.addSublayer(bar)
         
@@ -87,7 +87,7 @@ class ViewController: UITableViewController {
         move.autoreverses = true
         move.repeatCount = Float.infinity
         
-        bar.addAnimation(move, forKey: nil)
+        bar.add(move, forKey: nil)
         
         replicatorLayer.instanceCount = 4
         replicatorLayer.instanceTransform = CATransform3DMakeTranslation(5.0, 0.0, 0.0)
