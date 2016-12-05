@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    private let tableHeaderHeight: CGFloat = 250
+    fileprivate let tableHeaderHeight: CGFloat = 250
     
     var headerView: UIView!
     
     let data = [
-        Scenery(image: "pic1", name: "City", summary: "A large and densely populated urban area", nameColor: UIColor.redColor()),
-                Scenery(image: "pic2", name: "Mountain", summary: "A land mass that projects well above its surroundings", nameColor: UIColor.brownColor()),
-                Scenery(image: "pic3", name: "Field", summary: "A piece of land cleared of grass and usually enclosed", nameColor: UIColor.greenColor()),
-                Scenery(image: "pic4", name: "Tree", summary: "A figure that branches from a single root", nameColor: UIColor.purpleColor()),
-                Scenery(image: "pic5", name: "Snow", summary: "Precipitation falling from clouds in the form of ice crystals", nameColor: UIColor.blueColor()),
-                Scenery(image: "pic6", name: "Harbor", summary: "A sheltered port where ships can take on", nameColor: UIColor.orangeColor())
+        Scenery(image: "pic1", name: "City", summary: "A large and densely populated urban area", nameColor: UIColor.red),
+                Scenery(image: "pic2", name: "Mountain", summary: "A land mass that projects well above its surroundings", nameColor: UIColor.brown),
+                Scenery(image: "pic3", name: "Field", summary: "A piece of land cleared of grass and usually enclosed", nameColor: UIColor.green),
+                Scenery(image: "pic4", name: "Tree", summary: "A figure that branches from a single root", nameColor: UIColor.purple),
+                Scenery(image: "pic5", name: "Snow", summary: "Precipitation falling from clouds in the form of ice crystals", nameColor: UIColor.blue),
+                Scenery(image: "pic6", name: "Harbor", summary: "A sheltered port where ships can take on", nameColor: UIColor.orange)
                ]
     
     override func viewDidLoad() {
@@ -46,26 +46,26 @@ class ViewController: UITableViewController {
         headerView.frame = rect
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
     //MARK: tableview datasource
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55.0
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! SceneryCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SceneryCell
         
         cell.sceneImage.image = UIImage(named: data[indexPath.row].image)
         cell.nameLabel.text = data[indexPath.row].name
@@ -76,7 +76,7 @@ class ViewController: UITableViewController {
     }
     
     //MARK: UIScrollViewDelegate
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         updateHeaderView()
     }
     
