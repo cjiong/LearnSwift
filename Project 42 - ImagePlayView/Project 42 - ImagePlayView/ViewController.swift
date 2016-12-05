@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     ]
     
-    var timer: NSTimer!
+    var timer: Timer!
     var index: Int = 0
     
     override func viewDidLoad() {
@@ -36,8 +36,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func startTimer() {
         
-        self.timer = NSTimer.init(timeInterval: 2.0, target: self, selector: "automaticScroll", userInfo: nil, repeats: true)
-        NSRunLoop.currentRunLoop().addTimer(self.timer, forMode: NSRunLoopCommonModes)
+        self.timer = Timer.init(timeInterval: 2.0, target: self, selector: #selector(ViewController.automaticScroll), userInfo: nil, repeats: true)
+        RunLoop.current.add(self.timer, forMode: RunLoopMode.commonModes)
     }
     
     func automaticScroll() {
@@ -46,26 +46,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if self.index > cvData.count - 1 {
             
             self.index = 0
-            self.bannerView.scrollToItemAtIndexPath(NSIndexPath.init(forItem: self.index, inSection: 0), atScrollPosition: .Left, animated: false)
+            self.bannerView.scrollToItem(at: IndexPath.init(item: self.index, section: 0), at: .left, animated: false)
             
         } else {
             
-            self.bannerView.scrollToItemAtIndexPath(NSIndexPath.init(forItem: self.index, inSection: 0), atScrollPosition: .Left, animated: true)
+            self.bannerView.scrollToItem(at: IndexPath.init(item: self.index, section: 0), at: .left, animated: true)
         }
     }
 
     //MARK: tableview
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tvData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("tableViewCell") as! CarTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell") as! CarTableViewCell
         
         cell.countryLabel.text = tvData[indexPath.row].country
         cell.brandLabel.text = tvData[indexPath.row].brand
@@ -74,18 +74,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //MARK: collectionview
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return cvData.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("collectionViewCell", forIndexPath: indexPath) as! CarCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CarCollectionViewCell
         
         cell.carImageView.image = UIImage(named: cvData[indexPath.row])
         
@@ -93,18 +93,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     //MARK: scrollview
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         
-        if scrollView.isKindOfClass(UICollectionView.self) {
+        if scrollView.isKind(of: UICollectionView.self) {
             self.timer.invalidate()
             self.timer = nil
         }
     }
     
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if scrollView.isKindOfClass(UICollectionView.self) {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView.isKind(of: UICollectionView.self) {
             
-            self.index = Int(scrollView.contentOffset.x / UIScreen.mainScreen().bounds.size.width)
+            self.index = Int(scrollView.contentOffset.x / UIScreen.main.bounds.size.width)
             self.startTimer()
         }
     }
