@@ -9,58 +9,58 @@
 
 import UIKit
 
-private let kZoomingIconTransitionDuration: NSTimeInterval = 0.6
+private let kZoomingIconTransitionDuration: TimeInterval = 0.6
 private let kZoomingIconTransitionZoomedScale: CGFloat = 15
 private let kZoomingIconTransitionBackgroundScale: CGFloat = 0.80
 
 class ZoomingIconTransition: NSObject, UINavigationControllerDelegate, UIViewControllerAnimatedTransitioning {
-    var operation: UINavigationControllerOperation = .None
+    var operation: UINavigationControllerOperation = .none
     
     enum TransitionState {
-        case Initial
-        case Final
+        case initial
+        case final
     }
     
     typealias ZoomingViews = (coloredView: UIView, imageView: UIView)
     
-    func configureViewsForState(state: TransitionState, containerView: UIView, backgroundViewController: UIViewController, viewsInBackground: ZoomingViews, viewsInForeground: ZoomingViews, snapshotViews: ZoomingViews) {
+    func configureViewsForState(_ state: TransitionState, containerView: UIView, backgroundViewController: UIViewController, viewsInBackground: ZoomingViews, viewsInForeground: ZoomingViews, snapshotViews: ZoomingViews) {
         switch state {
-        case .Initial:
-            backgroundViewController.view.transform = CGAffineTransformIdentity
+        case .initial:
+            backgroundViewController.view.transform = CGAffineTransform.identity
             backgroundViewController.view.alpha = 1
             
-            snapshotViews.coloredView.transform = CGAffineTransformIdentity
-            snapshotViews.coloredView.frame = containerView.convertRect(viewsInBackground.coloredView.frame, fromView: viewsInBackground.coloredView.superview)
-            snapshotViews.imageView.frame = containerView.convertRect(viewsInBackground.imageView.frame, fromView: viewsInBackground.imageView.superview)
+            snapshotViews.coloredView.transform = CGAffineTransform.identity
+            snapshotViews.coloredView.frame = containerView.convert(viewsInBackground.coloredView.frame, from: viewsInBackground.coloredView.superview)
+            snapshotViews.imageView.frame = containerView.convert(viewsInBackground.imageView.frame, from: viewsInBackground.imageView.superview)
             
-        case .Final:
-            backgroundViewController.view.transform = CGAffineTransformMakeScale(kZoomingIconTransitionBackgroundScale, kZoomingIconTransitionBackgroundScale)
+        case .final:
+            backgroundViewController.view.transform = CGAffineTransform(scaleX: kZoomingIconTransitionBackgroundScale, y: kZoomingIconTransitionBackgroundScale)
             backgroundViewController.view.alpha = 0
             
-            snapshotViews.coloredView.transform = CGAffineTransformMakeScale(kZoomingIconTransitionZoomedScale, kZoomingIconTransitionZoomedScale)
-            snapshotViews.coloredView.center = containerView.convertPoint(viewsInForeground.imageView.center, fromView: viewsInForeground.imageView.superview)
-            snapshotViews.imageView.frame = containerView.convertRect(viewsInForeground.imageView.frame, fromView: viewsInForeground.imageView.superview)
+            snapshotViews.coloredView.transform = CGAffineTransform(scaleX: kZoomingIconTransitionZoomedScale, y: kZoomingIconTransitionZoomedScale)
+            snapshotViews.coloredView.center = containerView.convert(viewsInForeground.imageView.center, from: viewsInForeground.imageView.superview)
+            snapshotViews.imageView.frame = containerView.convert(viewsInForeground.imageView.frame, from: viewsInForeground.imageView.superview)
             
             
             ()
         }
     }
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return kZoomingIconTransitionDuration
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        let duration = transitionDuration(transitionContext)
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let duration = transitionDuration(using: transitionContext)
         
-        let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
-        let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
-        let containerView = transitionContext.containerView()
+        let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
+        let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
+        let containerView = transitionContext.containerView
         
         var backgroundViewController = fromViewController
         var foregroundViewController = toViewController
         
-        if operation == .Pop {
+        if operation == .pop {
             backgroundViewController = toViewController
             foregroundViewController = fromViewController
         }
@@ -89,37 +89,37 @@ class ZoomingIconTransition: NSObject, UINavigationControllerDelegate, UIViewCon
         
         // create view snapshots
         // view controller need to be in view hierarchy for snapshotting
-        containerView!.addSubview(backgroundViewController.view)
-        let snapshotOfColoredView = backgroundColoredView.snapshotViewAfterScreenUpdates(false)
+        containerView.addSubview(backgroundViewController.view)
+        let snapshotOfColoredView = backgroundColoredView.snapshotView(afterScreenUpdates: false)
         
         let snapshotOfImageView = UIImageView(image: backgroundImageView.image)
-        snapshotOfImageView.contentMode = .ScaleAspectFit
+        snapshotOfImageView.contentMode = .scaleAspectFit
         
         // setup animation
-        backgroundColoredView.hidden = true
-        foregroundColoredView.hidden = true
+        backgroundColoredView.isHidden = true
+        foregroundColoredView.isHidden = true
         
-        backgroundImageView.hidden = true
-        foregroundImageView.hidden = true
+        backgroundImageView.isHidden = true
+        foregroundImageView.isHidden = true
         
-        containerView!.backgroundColor = UIColor.whiteColor()
-        containerView!.addSubview(backgroundViewController.view)
-        containerView!.addSubview(snapshotOfColoredView)
-        containerView!.addSubview(foregroundViewController.view)
-        containerView!.addSubview(snapshotOfImageView)
+        containerView.backgroundColor = UIColor.white
+        containerView.addSubview(backgroundViewController.view)
+        containerView.addSubview(snapshotOfColoredView!)
+        containerView.addSubview(foregroundViewController.view)
+        containerView.addSubview(snapshotOfImageView)
         
         let foregroundViewBackgroundColor = foregroundViewController.view.backgroundColor
-        foregroundViewController.view.backgroundColor = UIColor.clearColor()
+        foregroundViewController.view.backgroundColor = UIColor.clear
         
-        var preTransitionState = TransitionState.Initial
-        var postTransitionState = TransitionState.Final
+        var preTransitionState = TransitionState.initial
+        var postTransitionState = TransitionState.final
         
-        if operation == .Pop {
-            preTransitionState = TransitionState.Final
-            postTransitionState = TransitionState.Initial
+        if operation == .pop {
+            preTransitionState = TransitionState.final
+            postTransitionState = TransitionState.initial
         }
         
-        configureViewsForState(preTransitionState, containerView: containerView!, backgroundViewController: backgroundViewController, viewsInBackground: (backgroundColoredView, backgroundImageView), viewsInForeground: (foregroundColoredView, foregroundImageView), snapshotViews: (snapshotOfColoredView, snapshotOfImageView))
+        configureViewsForState(preTransitionState, containerView: containerView, backgroundViewController: backgroundViewController, viewsInBackground: (backgroundColoredView, backgroundImageView), viewsInForeground: (foregroundColoredView, foregroundImageView), snapshotViews: (snapshotOfColoredView!, snapshotOfImageView))
         
         // perform animation
         (backgroundViewController as? ZoomingIconViewController)?.zoomingIconTransition?(self, willAnimateTransitionWithOperation: operation, isForegroundViewController: false)
@@ -128,31 +128,31 @@ class ZoomingIconTransition: NSObject, UINavigationControllerDelegate, UIViewCon
         // need to layout now if we want the correct parameters for frame
         foregroundViewController.view.layoutIfNeeded()
         
-        UIView.animateWithDuration(duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
-            [self]
-            self.configureViewsForState(postTransitionState, containerView: containerView!, backgroundViewController: backgroundViewController, viewsInBackground: (backgroundColoredView, backgroundImageView), viewsInForeground: (foregroundColoredView, foregroundImageView), snapshotViews: (snapshotOfColoredView, snapshotOfImageView))
+        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            
+            self.configureViewsForState(postTransitionState, containerView: containerView, backgroundViewController: backgroundViewController, viewsInBackground: (backgroundColoredView, backgroundImageView), viewsInForeground: (foregroundColoredView, foregroundImageView), snapshotViews: (snapshotOfColoredView!, snapshotOfImageView))
             
             }, completion: {
                 (finished) in
                 
-                backgroundViewController.view.transform = CGAffineTransformIdentity
+                backgroundViewController.view.transform = CGAffineTransform.identity
                 
-                snapshotOfColoredView.removeFromSuperview()
+                snapshotOfColoredView?.removeFromSuperview()
                 snapshotOfImageView.removeFromSuperview()
                 
-                backgroundColoredView.hidden = false
-                foregroundColoredView.hidden = false
+                backgroundColoredView.isHidden = false
+                foregroundColoredView.isHidden = false
                 
-                backgroundImageView.hidden = false
-                foregroundImageView.hidden = false
+                backgroundImageView.isHidden = false
+                foregroundImageView.isHidden = false
                 
                 foregroundViewController.view.backgroundColor = foregroundViewBackgroundColor
                 
-                transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         })
     }
     
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         // protocol needs to be @objc for conformance testing
         if fromVC is ZoomingIconViewController &&
@@ -168,9 +168,9 @@ class ZoomingIconTransition: NSObject, UINavigationControllerDelegate, UIViewCon
 
 @objc
 protocol ZoomingIconViewController {
-    func zoomingIconColoredViewForTransition(transition: ZoomingIconTransition) -> UIView!
-    func zoomingIconImageViewForTransition(transition: ZoomingIconTransition) -> UIImageView!
+    func zoomingIconColoredViewForTransition(_ transition: ZoomingIconTransition) -> UIView!
+    func zoomingIconImageViewForTransition(_ transition: ZoomingIconTransition) -> UIImageView!
     
-    optional
-    func zoomingIconTransition(transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool)
+    @objc optional
+    func zoomingIconTransition(_ transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool)
 }

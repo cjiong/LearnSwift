@@ -20,11 +20,11 @@ class DetailViewController: UIViewController, ZoomingIconViewController {
     @IBOutlet weak var backButtonTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var summaryLabelBottomConstraint: NSLayoutConstraint!
     
-    @IBAction func handleBackButton(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    @IBAction func handleBackButton(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
     }
     
-    func setupState(initial: Bool) {
+    func setupState(_ initial: Bool) {
         if initial {
             backButtonTopConstraint.constant = -64
             summaryLabelBottomConstraint.constant = -200
@@ -36,18 +36,18 @@ class DetailViewController: UIViewController, ZoomingIconViewController {
         view.layoutIfNeeded()
     }
     
-    func zoomingIconTransition(transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool) {
-        setupState(operation == .Push)
+    func zoomingIconTransition(_ transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool) {
+        setupState(operation == .push)
         
-        UIView.animateWithDuration(0.6, delay: operation == .Push ? 0.2 : 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
-            [self]
-            self.setupState(operation == .Pop)
+        UIView.animate(withDuration: 0.6, delay: operation == .push ? 0.2 : 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+        
+            self.setupState(operation == .pop)
             }) { (finished) -> Void in
         }
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
     
     override func viewDidLoad() {
@@ -62,7 +62,7 @@ class DetailViewController: UIViewController, ZoomingIconViewController {
             summaryLabel.text = item.summary
         }
         else {
-            coloredView.backgroundColor = UIColor.grayColor()
+            coloredView.backgroundColor = UIColor.gray
             imageView.image = nil
             
             titleLabel.text = nil
@@ -76,11 +76,11 @@ class DetailViewController: UIViewController, ZoomingIconViewController {
     }
     
     
-    func zoomingIconColoredViewForTransition(transition: ZoomingIconTransition) -> UIView! {
+    func zoomingIconColoredViewForTransition(_ transition: ZoomingIconTransition) -> UIView! {
         return coloredView
     }
     
-    func zoomingIconImageViewForTransition(transition: ZoomingIconTransition) -> UIImageView! {
+    func zoomingIconImageViewForTransition(_ transition: ZoomingIconTransition) -> UIImageView! {
         return imageView
     }
     

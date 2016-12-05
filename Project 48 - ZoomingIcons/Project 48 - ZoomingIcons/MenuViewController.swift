@@ -11,7 +11,7 @@ import UIKit
 let reuseIdentifier = "Cell"
 
 class MenuViewController: UICollectionViewController, ZoomingIconViewController {
-    var selectedIndexPath: NSIndexPath?
+    var selectedIndexPath: IndexPath?
     
     let data = [
         SocialItem(image: UIImage(named: "icon-twitter"), color: UIColor(red: 0.255, green: 0.557, blue: 0.910, alpha: 1), name: "Twitter", summary: "Twitter is an online social networking service that enables users to send and read short 140-character messages called \"tweets\"."),
@@ -33,11 +33,11 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
     }
     
     //MARK: UICollectionViewDataSource
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 2
@@ -48,8 +48,8 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
         }
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SocialItemCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SocialItemCell
         
         var index = 0
         for s in 0..<indexPath.section {
@@ -63,7 +63,7 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         
         let numberOfCells = self.collectionView(collectionView, numberOfItemsInSection: section)
@@ -76,7 +76,7 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
     
     
     //MARK: UICollectionViewDelegate
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedIndexPath = indexPath
         
         var index = 0
@@ -86,15 +86,15 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
         index += indexPath.item
         
         let item = data[index]
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         controller.item = item
         
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    func zoomingIconColoredViewForTransition(transition: ZoomingIconTransition) -> UIView! {
+    func zoomingIconColoredViewForTransition(_ transition: ZoomingIconTransition) -> UIView! {
         if let indexPath = selectedIndexPath {
-            let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! SocialItemCell
+            let cell = collectionView!.cellForItem(at: indexPath) as! SocialItemCell
             return cell.coloredView
         }
         else {
@@ -102,9 +102,9 @@ class MenuViewController: UICollectionViewController, ZoomingIconViewController 
         }
     }
     
-    func zoomingIconImageViewForTransition(transition: ZoomingIconTransition) -> UIImageView! {
+    func zoomingIconImageViewForTransition(_ transition: ZoomingIconTransition) -> UIImageView! {
         if let indexPath = selectedIndexPath {
-            let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! SocialItemCell
+            let cell = collectionView!.cellForItem(at: indexPath) as! SocialItemCell
             return cell.imageView
         }
         else {
