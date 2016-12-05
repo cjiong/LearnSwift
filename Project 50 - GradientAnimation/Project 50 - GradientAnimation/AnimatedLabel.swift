@@ -25,11 +25,11 @@ class AnimatedLabel: UIView {
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         
-        let colors = [UIColor.grayColor().CGColor, UIColor.whiteColor().CGColor, UIColor.grayColor().CGColor, UIColor.whiteColor().CGColor, UIColor.grayColor().CGColor]
+        let colors = [UIColor.gray.cgColor, UIColor.white.cgColor, UIColor.gray.cgColor, UIColor.white.cgColor, UIColor.gray.cgColor]
         gradientLayer.colors = colors
         
         let locations = [0.00, 0.25, 0.50, 0.75, 1.00]
-        gradientLayer.locations = locations
+        gradientLayer.locations = locations as [NSNumber]?
         
         return gradientLayer
     }()
@@ -37,7 +37,7 @@ class AnimatedLabel: UIView {
     let textAttributes: [String: AnyObject] = {
         
         let style = NSMutableParagraphStyle()
-        style.alignment = .Center
+        style.alignment = .center
         
         return [NSFontAttributeName: UIFont(name: Constants.Fonts.animatedLabel, size: 50)!, NSParagraphStyleAttributeName: style]
     }()
@@ -47,14 +47,14 @@ class AnimatedLabel: UIView {
             setNeedsDisplay()
             
             UIGraphicsBeginImageContextWithOptions(frame.size, false, 0)
-            text.drawInRect(bounds, withAttributes: textAttributes)
+            text.draw(in: bounds, withAttributes: textAttributes)
             let image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
             let maskLayer = CALayer()
-            maskLayer.backgroundColor = UIColor.clearColor().CGColor
-            maskLayer.frame = CGRectOffset(bounds, bounds.size.width, 0)
-            maskLayer.contents = image.CGImage
+            maskLayer.backgroundColor = UIColor.clear.cgColor
+            maskLayer.frame = bounds.offsetBy(dx: bounds.size.width, dy: 0)
+            maskLayer.contents = image?.cgImage
             
             gradientLayer.mask = maskLayer
             
@@ -75,10 +75,10 @@ class AnimatedLabel: UIView {
         gradientAnimation.toValue = [0.75, 1.0, 1.0, 1.0, 1.0]
         gradientAnimation.duration = 1.9
         gradientAnimation.repeatCount = 100
-        gradientAnimation.removedOnCompletion = false
+        gradientAnimation.isRemovedOnCompletion = false
         gradientAnimation.fillMode = kCAFillModeForwards
         
-        gradientLayer.addAnimation(gradientAnimation, forKey: nil)
+        gradientLayer.add(gradientAnimation, forKey: nil)
     }
     
     
