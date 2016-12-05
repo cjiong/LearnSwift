@@ -38,14 +38,14 @@ class ViewController: UITableViewController, UISearchResultsUpdating, UISearchBa
         tableView.tableHeaderView = searchController.searchBar
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     //MARK: tableview datasource
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             
             return resultdata.count
             
@@ -55,12 +55,12 @@ class ViewController: UITableViewController, UISearchResultsUpdating, UISearchBa
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! CarCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CarCell
         
         let currentCar: Car
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             
             currentCar = resultdata[indexPath.row]
         } else {
@@ -76,7 +76,7 @@ class ViewController: UITableViewController, UISearchResultsUpdating, UISearchBa
     
     
     //MARK: UISearchResultsUpdating
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         
         let searhBar = searchController.searchBar
         let scope = searhBar.scopeButtonTitles![searhBar.selectedScopeButtonIndex]
@@ -84,16 +84,16 @@ class ViewController: UITableViewController, UISearchResultsUpdating, UISearchBa
         search(searchController.searchBar.text!, scope: scope)
     }
     
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         
         search(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
     
-    func search(searchText: String, scope: String) {
+    func search(_ searchText: String, scope: String) {
         
         resultdata = data.filter { Car in
             
-            return Car.country == scope && Car.brand.lowercaseString.containsString(searchText.lowercaseString)
+            return Car.country == scope && Car.brand.lowercased().contains(searchText.lowercased())
         }
         
        tableView.reloadData()
