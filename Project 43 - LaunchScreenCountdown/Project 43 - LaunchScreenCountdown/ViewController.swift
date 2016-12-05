@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         LaunchScreenCountdownView.showLaunchScreenCountdownView(3, bgImage: UIImage(named: "Aurora"))
     }
