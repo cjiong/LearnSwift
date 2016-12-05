@@ -36,21 +36,26 @@ class ViewController: UIViewController {
         initFloatingButton()
         
         //MARK: 创建并添加手势
-        let gesture = UITapGestureRecognizer(target: self, action: "floatingButtonDidTouched:")
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.floatingButtonDidTouched(_:)))
         floatingButtonImageView.addGestureRecognizer(gesture)
         
     }
     
     func initFloatingButton() {
         
+        floatingButtonImageView.layer.masksToBounds = true
         floatingButtonImageView.layer.cornerRadius = floatingButtonImageView.frame.width / 2
+        wechatImageView.layer.masksToBounds = true
         wechatImageView.layer.cornerRadius = wechatImageView.frame.width / 2
+        qqImageView.layer.masksToBounds = true
         qqImageView.layer.cornerRadius = qqImageView.frame.width / 2
+        weiboImageView.layer.masksToBounds = true
         weiboImageView.layer.cornerRadius = weiboImageView.frame.width / 2
         
-        qqView.hidden = true
-        weiboView.hidden = true
-        wechatView.hidden = true
+        
+        qqView.isHidden = true
+        weiboView.isHidden = true
+        wechatView.isHidden = true
         
         qqLabel.alpha = 0
         weiboLabel.alpha = 0
@@ -62,20 +67,20 @@ class ViewController: UIViewController {
         
     }
     
-    func floatingButtonDidTouched(sender: UITapGestureRecognizer) {
+    func floatingButtonDidTouched(_ sender: UITapGestureRecognizer) {
         
         if !floatingButtonIsActive {
             
-            UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5, options: UIViewAnimationOptions(), animations: {
                 
-                self.wechatView.hidden = false
-                self.qqView.hidden = false
-                self.weiboView.hidden = false
+                self.wechatView.isHidden = false
+                self.qqView.isHidden = false
+                self.weiboView.isHidden = false
 
                 self.wechatLabel.alpha = 1
                 self.qqLabel.alpha = 1
                 self.weiboLabel.alpha = 1
-                self.floatingButtonImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+                self.floatingButtonImageView.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_4))
                 self.floatingButtonTopToWeiboViewBottomConstraint.constant += 30
                 self.weiboViewTopToQQViewBottomConstraint.constant += 30
                 self.qqViewTopToWeChatViewBottomConstraint.constant += 30
@@ -89,7 +94,7 @@ class ViewController: UIViewController {
             
         } else {
             
-            UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions(), animations: {
                 
                 self.wechatView.center.y = self.qqView.center.y
                 self.wechatLabel.alpha = 0
@@ -97,7 +102,7 @@ class ViewController: UIViewController {
                 
                 }, completion: { _ in
                     
-                    UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                    UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions(), animations: {
                         
                         self.wechatView.center.y = self.weiboView.center.y
                         self.qqView.center.y = self.weiboView.center.y
@@ -106,7 +111,7 @@ class ViewController: UIViewController {
                         
                         }, completion: { _ in
                             
-                            UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                            UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 5, options: UIViewAnimationOptions(), animations: {
                                 
                                 self.wechatView.center.y = self.floatingButtonImageView.center.y
                                 self.qqView.center.y = self.floatingButtonImageView.center.y
@@ -116,9 +121,9 @@ class ViewController: UIViewController {
                                 
                                 }, completion: { _ in
                                     
-                                    UIView.animateWithDuration(0.4, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 5, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                                    UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 5, options: UIViewAnimationOptions(), animations: {
                                         
-                                        self.floatingButtonImageView.transform = CGAffineTransformIdentity
+                                        self.floatingButtonImageView.transform = CGAffineTransform.identity
                                         
                                         }, completion: { _ in
                                             
@@ -127,9 +132,9 @@ class ViewController: UIViewController {
                                             self.qqViewTopToWeChatViewBottomConstraint.constant = 0
                                             self.view.layoutIfNeeded()
                                             
-                                            self.qqView.hidden = true
-                                            self.weiboView.hidden = true
-                                            self.wechatView.hidden = true
+                                            self.qqView.isHidden = true
+                                            self.weiboView.isHidden = true
+                                            self.wechatView.isHidden = true
                                             
                                             self.floatingButtonIsActive = false
                                             
