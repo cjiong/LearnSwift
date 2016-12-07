@@ -2,7 +2,7 @@
 
 ![](https://github.com/cjiong/LearnSwift/blob/master/learnswift-cover.png)
 
-![Language](https://img.shields.io/badge/language-Swift-orange.svg)  [![star this repo](http://github-svg-buttons.herokuapp.com/star.svg?user=cjiong&repo=LearnSwift&style=flat&background=1081C1)](https://github.com/cjiong/LearnSwift) [![fork this repo](http://github-svg-buttons.herokuapp.com/fork.svg?user=cjiong&repo=LearnSwift&style=flat&background=1081C1)](https://github.com/cjiong/LearnSwift/fork)  [![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
+![Language](https://img.shields.io/badge/language-Swift-orange.svg) ![](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)  [![star this repo](http://github-svg-buttons.herokuapp.com/star.svg?user=cjiong&repo=LearnSwift&style=flat&background=1081C1)](https://github.com/cjiong/LearnSwift) [![fork this repo](http://github-svg-buttons.herokuapp.com/fork.svg?user=cjiong&repo=LearnSwift&style=flat&background=1081C1)](https://github.com/cjiong/LearnSwift/fork)  [![apm](https://img.shields.io/apm/l/vim-mode.svg?maxAge=2592000)]()
 
 ## About Project
 
