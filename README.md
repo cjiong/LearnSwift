@@ -11,7 +11,7 @@ Some projects I made myself and some projects I made by following some tutorials
 
 ## About Me
 
-I am Chen Jiong, a thrid-year college student at Guangdong University of Technology.
+I am Chen Jiong, a Senior student at Guangdong University of Technology.
 
 ## Project Index & GIF Showcase
 
